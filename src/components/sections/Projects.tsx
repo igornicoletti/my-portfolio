@@ -11,30 +11,14 @@ interface ProjectCardProps {
   githubUrl?: string
 }
 
-const ProjectCard = ({
-  title,
-  description,
-  image,
-  technologies,
-  liveUrl,
-  githubUrl,
-}: ProjectCardProps) => (
+const ProjectCard = ({ title, description, image, technologies, liveUrl, githubUrl }: ProjectCardProps) => (
   <div className='group relative flex flex-col overflow-hidden rounded-xl border border-accent transition-all hover:border-primary/50'>
-    {/* Project Image */}
-    <div className='relative h-64 overflow-hidden bg-accent'>
-      <img
-        src={image}
-        alt={title}
-        className='object-cover transition-transform duration-300 group-hover:scale-105'
-      />
+    <div className='relative h-64 overflow-hidden bg-primary'>
+      <img src={image} alt={title} className='object-cover transition-transform duration-300 group-hover:scale-105' />
     </div>
-
-    {/* Content */}
     <div className='flex-1 flex flex-col p-6'>
       <h3 className='text-xl font-semibold mb-2'>{title}</h3>
       <p className='text-muted-foreground mb-4'>{description}</p>
-
-      {/* Technologies */}
       <div className='flex flex-wrap gap-2 mb-6'>
         {technologies.map((tech) => (
           <Badge key={tech} variant='secondary' className='rounded-full'>
@@ -42,8 +26,6 @@ const ProjectCard = ({
           </Badge>
         ))}
       </div>
-
-      {/* Actions */}
       <div className='flex gap-3 mt-auto'>
         {liveUrl && (
           <Button variant='default' className='rounded-full' asChild>
@@ -54,11 +36,7 @@ const ProjectCard = ({
           </Button>
         )}
         {githubUrl && (
-          <Button
-            variant='outline'
-            className='rounded-full shadow-none'
-            asChild
-          >
+          <Button variant='outline' className='rounded-full shadow-none' asChild>
             <a href={githubUrl} target='_blank' rel='noopener noreferrer'>
               <GithubLogoIcon className='mr-1 h-4 w-4' />
               View Code
@@ -69,7 +47,6 @@ const ProjectCard = ({
     </div>
   </div>
 )
-
 
 export const Projects = () => {
   const projects = [
@@ -107,11 +84,8 @@ export const Projects = () => {
             Showcasing some of my best projects and technical achievements
           </p>
         </div>
-
         <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
-          {projects.map((project, index) => (
-            <ProjectCard key={index} {...project} />
-          ))}
+          {projects.map((project, index) => <ProjectCard key={index} {...project} />)}
         </div>
       </div>
     </section>

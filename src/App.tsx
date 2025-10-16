@@ -4,14 +4,17 @@ import { About } from "@/components/sections/About"
 import { Experience } from "@/components/sections/Experience"
 import { Hero } from "@/components/sections/Hero"
 import { Projects } from "@/components/sections/Projects"
+import { ProviderTheme } from '@/hooks/use-theme'
 
 export const App = () => (
   <>
-    <Navbar />
-    <Hero />
-    <About />
-    <Experience />
-    <Projects />
-    <Footer />
+    <ProviderTheme>
+      <Navbar />
+      <Hero />
+      <About />
+      <Experience />
+      <Projects />
+      <Footer />
+    </ProviderTheme>
   </>
 )
