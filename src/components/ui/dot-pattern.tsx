@@ -1,5 +1,5 @@
-import React, { useEffect, useId, useRef, useState } from "react"
 import { motion } from "motion/react"
+import React, { useEffect, useId, useRef, useState } from "react"
 
 import { cn } from "@/lib/utils"
 
@@ -122,7 +122,7 @@ export function DotPattern({
           <stop offset="100%" stopColor="currentColor" stopOpacity="0" />
         </radialGradient>
       </defs>
-      {dots.map((dot, index) => (
+      {dots.map((dot) => (
         <motion.circle
           key={`${dot.x}-${dot.y}`}
           cx={dot.x}
@@ -133,20 +133,20 @@ export function DotPattern({
           animate={
             glow
               ? {
-                  opacity: [0.4, 1, 0.4],
-                  scale: [1, 1.5, 1],
-                }
+                opacity: [0.4, 1, 0.4],
+                scale: [1, 1.5, 1],
+              }
               : {}
           }
           transition={
             glow
               ? {
-                  duration: dot.duration,
-                  repeat: Infinity,
-                  repeatType: "reverse",
-                  delay: dot.delay,
-                  ease: "easeInOut",
-                }
+                duration: dot.duration,
+                repeat: Infinity,
+                repeatType: "reverse",
+                delay: dot.delay,
+                ease: "easeInOut",
+              }
               : {}
           }
         />
