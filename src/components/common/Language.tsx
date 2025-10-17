@@ -22,8 +22,8 @@ export const Language = ({ ...props }) => {
   return (
     <Button
       onClick={() => changeLanguage(nextLang.code)}
-      variant="ghost"
-      size="icon"
+      variant='ghost'
+      size='icon'
       aria-label={t('aria_toggle_language')}>
       <GlobeIcon {...props} />
     </Button>

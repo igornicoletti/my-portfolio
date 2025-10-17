@@ -16,7 +16,6 @@ const footerLinkKeys = [
   { key: 'nav_contact', url: '#contact' },
 ]
 
-
 export const Footer = () => {
   const { t } = useTranslation()
 
@@ -40,13 +39,13 @@ export const Footer = () => {
           </ul>
         </div>
         <Separator />
-        <div className='py-6 flex flex-col-reverse sm:flex-row items-center justify-between gap-x-2 gap-y-5 px-6 xl:px-0'>
+        <div className='py-6 flex flex-col-reverse sm:flex-row items-center justify-between gap-x-2 gap-y-4 px-6'>
           <span className='text-sm text-muted-foreground'>
             {t('footer_copyright', { year: new Date().getFullYear() })}
           </span>
           <div className='flex items-center gap-2 text-muted-foreground'>
-            <Button asChild variant="ghost" size="icon" aria-label={t('aria_github_profile')}>
-              <a href='https://github.com/igornicoletti' target="_blank" rel="noopener noreferrer">
+            <Button asChild variant='ghost' size='icon' aria-label={t('aria_github_profile')}>
+              <a href='https://github.com/igornicoletti' target='_blank' rel='noopener noreferrer'>
                 <GithubLogoIcon weight='fill' />
               </a>
             </Button>

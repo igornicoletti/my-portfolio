@@ -2,7 +2,7 @@ import { Language } from '@/components/common/Language'
 import { Button } from '@/components/ui/button'
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList } from '@/components/ui/navigation-menu'
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet'
-import { useTheme } from '@/hooks/use-theme'
+import { useTheme } from '@/hooks/useTheme'
 import { GithubLogoIcon, ListIcon, MoonIcon, SpiralIcon, SunIcon } from '@phosphor-icons/react'
 import type { ReactNode } from 'react'
 import { useTranslation } from 'react-i18next'
@@ -27,7 +27,7 @@ interface NavbarProps {
 
 const defaultLogoIcon: LogoProps = {
   url: '#home',
-  icon: <SpiralIcon weight='fill' className="size-8" />,
+  icon: <SpiralIcon weight='fill' className='size-8' />,
   title: '2Ti',
 }
 
@@ -36,17 +36,17 @@ const Actions = () => {
   const { t } = useTranslation()
 
   return (
-    <div className="flex items-center gap-1">
-      <Button asChild variant="ghost" size="icon" aria-label={t('aria_github_profile')}>
-        <a href='https://github.com/igornicoletti' target="_blank" rel="noopener noreferrer">
+    <div className='flex items-center gap-1'>
+      <Button asChild variant='ghost' size='icon' aria-label={t('aria_github_profile')}>
+        <a href='https://github.com/igornicoletti' target='_blank' rel='noopener noreferrer'>
           <GithubLogoIcon />
         </a>
       </Button>
       <Language />
       <Button
         onClick={toggleTheme}
-        variant="ghost"
-        size="icon"
+        variant='ghost'
+        size='icon'
         aria-label={t('aria_toggle_theme')}>
         {theme === 'dark' ? <SunIcon /> : <MoonIcon />}
       </Button>
@@ -65,8 +65,7 @@ const Logo = ({ url, src, alt, title, icon }: LogoProps) => (
   </a>
 )
 
-
-export const Navbar = ({ logo = defaultLogoIcon, menu: propMenu }: NavbarProps) => { // 👈 Renomear 'menu' para 'propMenu' para evitar conflito
+export const Navbar = ({ logo = defaultLogoIcon, menu: propMenu }: NavbarProps) => {
   const { t } = useTranslation()
 
   const defaultMenuItems: NavItem[] = [
@@ -119,11 +118,11 @@ const MobileNav = ({ logo, menu }: { logo: LogoProps; menu: NavItem[] }) => {
           <Actions />
           <Sheet>
             <SheetTrigger asChild>
-              <Button variant='ghost' size='icon' aria-label={t('aria_open_menu')}> {/* 👈 Traduzir o aria-label */}
+              <Button variant='ghost' size='icon' aria-label={t('aria_open_menu')}>
                 <ListIcon />
               </Button>
             </SheetTrigger>
-            <SheetContent side='right' className='overflow-y-auto w-full'>
+            <SheetContent side='right' className='overflow-y-auto'>
               <SheetHeader>
                 <SheetTitle><Logo {...logo} /></SheetTitle>
                 <SheetDescription></SheetDescription>
