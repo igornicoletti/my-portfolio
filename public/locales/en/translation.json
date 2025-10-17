@@ -1,0 +1,127 @@
+{
+  "nav_about": "About",
+  "nav_experience": "Experience",
+  "nav_projects": "Projects",
+  "nav_contact": "Contact",
+  "aria_github_profile": "Github Profile",
+  "aria_toggle_theme": "Toggle theme (light/dark)",
+  "aria_open_menu": "Open main menu",
+  "aria_toggle_language": "Switch language",
+  "hero_badge_title": "Fullstack Web Developer",
+  "hero_main_title": "Transforming Complex Ideas into Elegant Web Solutions",
+  "hero_subtitle": "I specialize in building modern, high-performance web applications with a focus on clean architecture and code quality, using technologies like React, TypeScript, and Firebase.",
+  "about_section_title": "About Me",
+  "about_main_title": "My Approach to Building Quality Software",
+  "about_paragraph_1": "With over 5 years of experience, my development philosophy centers on building efficient and scalable products with the right tools. I architect applications with a clear separation of responsibilities, creating a clean and maintainable codebase.",
+  "about_paragraph_2": "I ensure data integrity with robust forms using React Hook Form and Zod, manage server state efficiently with React Query, and build accessible UIs with Radix and Tailwind CSS. This structured approach allows me to deliver secure, consistent, and high-quality solutions.",
+  "about_btn_github": "View Github",
+  "about_btn_cv": "Download CV",
+  "about_image_alt": "Profile picture",
+  "experience_section_title": "Experience",
+  "experience_main_title": "Professional Journey",
+  "experience_subtitle": "A timeline of my professional growth and key achievements",
+  "experiences": [
+    {
+      "title": "Frontend Developer",
+      "company": "Hublab",
+      "period": "Oct 2019 - Feb 2023",
+      "description": "Led the front-end development of a chatbot ecosystem, creating an intuitive UI and a dynamic admin panel that allowed the operations team to manage conversation flows without new development, reducing business response time.",
+      "technologies": [
+        "React",
+        "TypeScript",
+        "State Management",
+        "API Integration",
+        "Responsive Design"
+      ]
+    },
+    {
+      "title": "Frontend Developer",
+      "company": "Olivas Digital",
+      "period": "Mar 2021 - Jan 2022",
+      "description": "Developed high-fidelity responsive interfaces and accelerated page load performance through in-depth code optimization and lazy loading, positively impacting Core Web Vitals and implementing advanced technical SEO practices.",
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "Performance Optimization",
+        "Core Web Vitals",
+        "SEO"
+      ]
+    },
+    {
+      "title": "Frontend Developer",
+      "company": "Trinto | Digital Partners",
+      "period": "Nov 2020 - Mar 2021",
+      "description": "Strengthened front-end security by implementing protections against XSS and CSRF vulnerabilities. Also eliminated critical performance bottlenecks and resolved complex caching issues to ensure data consistency.",
+      "technologies": [
+        "React",
+        "Security",
+        "Form Validation",
+        "Caching",
+        "Performance Tuning"
+      ]
+    },
+    {
+      "title": "Frontend Developer",
+      "company": "2morrow Sports",
+      "period": "Jan 2020 - Oct 2020",
+      "description": "Architected and developed critical user-facing features, including login/registration, profile management, and personalized user experiences. Built a comprehensive financial history dashboard to enhance member transparency.",
+      "technologies": [
+        "React",
+        "Authentication",
+        "UI/UX",
+        "Component Libraries",
+        "User Onboarding"
+      ]
+    },
+    {
+      "title": "Frontend Developer",
+      "company": "Velani Contabilidade",
+      "period": "Jun 2019 - Sep 2019",
+      "description": "Designed and led the development of an intuitive financial system interface, transforming complex data into actionable insights using charts and visualizations. Acted as the focal point for third-party API integrations.",
+      "technologies": [
+        "React",
+        "Data Visualization",
+        "D3.js / Chart.js",
+        "API Integration",
+        "Financial Tech"
+      ]
+    }
+  ],
+  "project_section_title": "Projects",
+  "project_main_title": "Featured Work",
+  "project_subtitle": "Showcasing some of my best projects and technical achievements",
+  "project_btn_live": "Live Demo",
+  "project_btn_code": "View Code",
+  "project_image_alt": "Screenshot of the {{projectName}} project",
+  "projects": [
+    {
+      "title": "E-Commerce Platform",
+      "description": "A full-featured e-commerce platform with real-time inventory management, payment processing, and admin dashboard.",
+      "image": "/placeholder.svg",
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "Stripe",
+        "Prisma",
+        "PostgreSQL"
+      ],
+      "liveUrl": "https://ecommerce-demo.com",
+      "githubUrl": "https://github.com/username/ecommerce"
+    },
+    {
+      "title": "AI Task Manager",
+      "description": "Smart task management app that uses AI to categorize, prioritize, and suggest optimal task scheduling.",
+      "image": "/placeholder.svg",
+      "technologies": [
+        "React",
+        "Python",
+        "TensorFlow",
+        "FastAPI",
+        "MongoDB"
+      ],
+      "liveUrl": "https://ai-taskmanager.com",
+      "githubUrl": "https://github.com/username/ai-taskmanager"
+    }
+  ],
+  "footer_copyright": "© {{year}}. All rights reserved."
+}

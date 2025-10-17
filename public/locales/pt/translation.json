@@ -1,0 +1,127 @@
+{
+  "nav_about": "Sobre",
+  "nav_experience": "Experiência",
+  "nav_projects": "Projetos",
+  "nav_contact": "Contato",
+  "aria_github_profile": "Perfil do Github",
+  "aria_toggle_theme": "Alternar tema (claro/escuro)",
+  "aria_open_menu": "Abrir menu principal",
+  "aria_toggle_language": "Mudar idioma",
+  "hero_badge_title": "Desenvolvedor Web Fullstack",
+  "hero_main_title": "Transformando Ideias Complexas em Soluções Web Elegantes",
+  "hero_subtitle": "Eu me especializo na construção de aplicações web modernas e de alto desempenho, com foco em arquitetura limpa e qualidade de código, usando tecnologias como React, TypeScript e Firebase.",
+  "about_section_title": "Sobre Mim",
+  "about_main_title": "Minha Abordagem para Construir Software de Qualidade",
+  "about_paragraph_1": "Com mais de 5 anos de experiência, minha filosofia de desenvolvimento se concentra na construção de produtos eficientes e escaláveis com as ferramentas certas. Eu arquiteto aplicações com uma clara separação de responsabilidades, criando uma base de código limpa e de fácil manutenção.",
+  "about_paragraph_2": "Eu garanto a integridade dos dados com formulários robustos usando React Hook Form e Zod, gerencio o estado do servidor de forma eficiente com React Query, e construo UIs acessíveis com Radix e Tailwind CSS. Essa abordagem estruturada me permite entregar soluções seguras, consistentes e de alta qualidade.",
+  "about_btn_github": "Ver Github",
+  "about_btn_cv": "Baixar CV",
+  "about_image_alt": "Foto de perfil",
+  "experience_section_title": "Experiência",
+  "experience_main_title": "Jornada Profissional",
+  "experience_subtitle": "Uma linha do tempo do meu crescimento profissional e principais conquistas",
+  "experiences": [
+    {
+      "title": "Desenvolvedor Frontend",
+      "company": "Hublab",
+      "period": "Out 2019 - Fev 2023",
+      "description": "Liderei o desenvolvimento front-end de um ecossistema de chatbot, criando uma UI intuitiva e um painel administrativo dinâmico que permitiu à equipe de operações gerenciar fluxos de conversa sem novo desenvolvimento, reduzindo o tempo de resposta do negócio.",
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Gerenciamento de Estado",
+        "Integração de API",
+        "Design Responsivo"
+      ]
+    },
+    {
+      "title": "Desenvolvedor Frontend",
+      "company": "Olivas Digital",
+      "period": "Mar 2021 - Jan 2022",
+      "description": "Desenvolvi interfaces responsivas de alta fidelidade e acelerei o desempenho de carregamento de páginas através de otimização de código aprofundada e lazy loading, impactando positivamente o Core Web Vitals e implementando práticas avançadas de SEO técnico.",
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "Otimização de Performance",
+        "Core Web Vitals",
+        "SEO"
+      ]
+    },
+    {
+      "title": "Desenvolvedor Frontend",
+      "company": "Trinto | Digital Partners",
+      "period": "Nov 2020 - Mar 2021",
+      "description": "Fortaleci a segurança front-end implementando proteções contra vulnerabilidades XSS e CSRF. Também eliminei gargalos críticos de desempenho e resolvi problemas complexos de cache para garantir a consistência dos dados.",
+      "technologies": [
+        "React",
+        "Segurança",
+        "Validação de Formulário",
+        "Caching",
+        "Performance Tuning"
+      ]
+    },
+    {
+      "title": "Desenvolvedor Frontend",
+      "company": "2morrow Sports",
+      "period": "Jan 2020 - Out 2020",
+      "description": "Arquitetei e desenvolvi funcionalidades críticas voltadas para o usuário, incluindo login/registro, gerenciamento de perfil e experiências personalizadas. Construí um painel de histórico financeiro abrangente para aumentar a transparência para os membros.",
+      "technologies": [
+        "React",
+        "Autenticação",
+        "UI/UX",
+        "Component Libraries",
+        "User Onboarding"
+      ]
+    },
+    {
+      "title": "Desenvolvedor Frontend",
+      "company": "Velani Contabilidade",
+      "period": "Jun 2019 - Set 2019",
+      "description": "Projetei e liderei o desenvolvimento de uma interface intuitiva de sistema financeiro, transformando dados complexos em insights acionáveis usando gráficos e visualizações. Atuei como ponto focal para integrações de API de terceiros.",
+      "technologies": [
+        "React",
+        "Visualização de Dados",
+        "D3.js / Chart.js",
+        "Integração de API",
+        "Financial Tech"
+      ]
+    }
+  ],
+  "project_section_title": "Projetos",
+  "project_main_title": "Trabalhos em Destaque",
+  "project_subtitle": "Apresentando alguns dos meus melhores projetos e conquistas técnicas",
+  "project_btn_live": "Ver Demo",
+  "project_btn_code": "Ver Código",
+  "project_image_alt": "Captura de tela do projeto {{projectName}}",
+  "projects": [
+    {
+      "title": "Plataforma de E-Commerce",
+      "description": "Uma plataforma de e-commerce completa com gerenciamento de estoque em tempo real, processamento de pagamentos e painel administrativo.",
+      "image": "/placeholder.svg",
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "Stripe",
+        "Prisma",
+        "PostgreSQL"
+      ],
+      "liveUrl": "https://ecommerce-demo.com",
+      "githubUrl": "https://github.com/username/ecommerce"
+    },
+    {
+      "title": "Gerenciador de Tarefas com IA",
+      "description": "Aplicativo inteligente de gerenciamento de tarefas que usa IA para categorizar, priorizar e sugerir o agendamento ideal de tarefas.",
+      "image": "/placeholder.svg",
+      "technologies": [
+        "React",
+        "Python",
+        "TensorFlow",
+        "FastAPI",
+        "MongoDB"
+      ],
+      "liveUrl": "https://ai-taskmanager.com",
+      "githubUrl": "https://github.com/username/ai-taskmanager"
+    }
+  ],
+  "footer_copyright": "© {{year}}. Todos os direitos reservados."
+}

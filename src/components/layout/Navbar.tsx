@@ -1,9 +1,11 @@
+import { Language } from '@/components/common/Language'
 import { Button } from '@/components/ui/button'
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList } from '@/components/ui/navigation-menu'
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet'
 import { useTheme } from '@/hooks/use-theme'
 import { GithubLogoIcon, ListIcon, MoonIcon, SpiralIcon, SunIcon } from '@phosphor-icons/react'
 import type { ReactNode } from 'react'
+import { useTranslation } from 'react-i18next'
 
 interface NavItem {
   title: string
@@ -23,13 +25,6 @@ interface NavbarProps {
   menu?: NavItem[]
 }
 
-const defaultMenuItems: NavItem[] = [
-  { title: 'About', url: '#about' },
-  { title: 'Experience', url: '#experience' },
-  { title: 'Projects', url: '#projects' },
-  { title: 'Contact', url: '#contact' },
-]
-
 const defaultLogoIcon: LogoProps = {
   url: '#home',
   icon: <SpiralIcon weight='fill' className="size-8" />,
@@ -38,21 +33,26 @@ const defaultLogoIcon: LogoProps = {
 
 const Actions = () => {
   const { theme, toggleTheme } = useTheme()
+  const { t } = useTranslation()
 
   return (
     <div className="flex items-center gap-1">
-      <Button asChild variant="ghost" size="icon" aria-label="Github Profile">
+      <Button asChild variant="ghost" size="icon" aria-label={t('aria_github_profile')}>
         <a href='https://github.com/igornicoletti' target="_blank" rel="noopener noreferrer">
           <GithubLogoIcon />
         </a>
       </Button>
-      <Button onClick={toggleTheme} variant="ghost" size="icon" aria-label="Toggle theme">
+      <Language />
+      <Button
+        onClick={toggleTheme}
+        variant="ghost"
+        size="icon"
+        aria-label={t('aria_toggle_theme')}>
         {theme === 'dark' ? <SunIcon /> : <MoonIcon />}
       </Button>
     </div>
   )
 }
-
 
 const Logo = ({ url, src, alt, title, icon }: LogoProps) => (
   <a href={url} className='flex items-center gap-2'>
@@ -65,14 +65,28 @@ const Logo = ({ url, src, alt, title, icon }: LogoProps) => (
   </a>
 )
 
-export const Navbar = ({ logo = defaultLogoIcon, menu = defaultMenuItems, }: NavbarProps) => (
-  <header className='p-4 sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b'>
-    <div className='container mx-auto'>
-      <DesktopNav logo={logo} menu={menu} />
-      <MobileNav logo={logo} menu={menu} />
-    </div>
-  </header>
-)
+
+export const Navbar = ({ logo = defaultLogoIcon, menu: propMenu }: NavbarProps) => { // 👈 Renomear 'menu' para 'propMenu' para evitar conflito
+  const { t } = useTranslation()
+
+  const defaultMenuItems: NavItem[] = [
+    { title: t('nav_about'), url: '#about' },
+    { title: t('nav_experience'), url: '#experience' },
+    { title: t('nav_projects'), url: '#projects' },
+    { title: t('nav_contact'), url: '#contact' },
+  ]
+
+  const menu = propMenu || defaultMenuItems
+
+  return (
+    <header className='p-4 sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b'>
+      <div className='container mx-auto'>
+        <DesktopNav logo={logo} menu={menu} />
+        <MobileNav logo={logo} menu={menu} />
+      </div>
+    </header>
+  )
+}
 
 const DesktopNav = ({ logo, menu }: { logo: LogoProps; menu: NavItem[] }) => (
   <nav className='hidden justify-between lg:flex'>
@@ -94,33 +108,37 @@ const DesktopNav = ({ logo, menu }: { logo: LogoProps; menu: NavItem[] }) => (
   </nav>
 )
 
-const MobileNav = ({ logo, menu }: { logo: LogoProps; menu: NavItem[] }) => (
-  <div className='block lg:hidden'>
-    <div className='flex items-center justify-between'>
-      <Logo {...logo} />
-      <div className='flex items-center gap-2'>
-        <Actions />
-        <Sheet>
-          <SheetTrigger asChild>
-            <Button variant='ghost' size='icon'>
-              <ListIcon />
-            </Button>
-          </SheetTrigger>
-          <SheetContent side='right' className='overflow-y-auto w-full'>
-            <SheetHeader>
-              <SheetTitle><Logo {...logo} /></SheetTitle>
-              <SheetDescription></SheetDescription>
-            </SheetHeader>
-            <div className='flex flex-col gap-4 p-4'>
-              {menu.map((item) => (
-                <a key={item.title} href={item.url} className='text-md font-semibold'>
-                  {item.title}
-                </a>
-              ))}
-            </div>
-          </SheetContent>
-        </Sheet>
+const MobileNav = ({ logo, menu }: { logo: LogoProps; menu: NavItem[] }) => {
+  const { t } = useTranslation()
+
+  return (
+    <div className='block lg:hidden'>
+      <div className='flex items-center justify-between'>
+        <Logo {...logo} />
+        <div className='flex items-center gap-2'>
+          <Actions />
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button variant='ghost' size='icon' aria-label={t('aria_open_menu')}> {/* 👈 Traduzir o aria-label */}
+                <ListIcon />
+              </Button>
+            </SheetTrigger>
+            <SheetContent side='right' className='overflow-y-auto w-full'>
+              <SheetHeader>
+                <SheetTitle><Logo {...logo} /></SheetTitle>
+                <SheetDescription></SheetDescription>
+              </SheetHeader>
+              <div className='flex flex-col gap-4 p-4'>
+                {menu.map((item) => (
+                  <a key={item.title} href={item.url} className='text-md font-semibold'>
+                    {item.title}
+                  </a>
+                ))}
+              </div>
+            </SheetContent>
+          </Sheet>
+        </div>
       </div>
     </div>
-  </div>
-)
+  )
+}
