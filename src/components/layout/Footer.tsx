@@ -1,15 +1,12 @@
-import { Language } from '@/components/common/Language'
+// src/components/layout/Footer.tsx
+import { LanguageToggle } from '@/components/shared/LanguageToggle'
+import { ThemeToggle } from '@/components/shared/ThemeToggle'
 import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
 import { GithubLogoIcon } from '@phosphor-icons/react'
 import { useTranslation } from 'react-i18next'
 
-interface NavItem {
-  title: string
-  url: string
-}
-
-const footerLinkKeys = [
+const FOOTER_LINKS = [
   { key: 'nav_about', url: '#about' },
   { key: 'nav_experience', url: '#experience' },
   { key: 'nav_projects', url: '#projects' },
@@ -19,27 +16,22 @@ const footerLinkKeys = [
 export const Footer = () => {
   const { t } = useTranslation()
 
-  const translatedLinks: NavItem[] = footerLinkKeys.map(item => ({
-    title: t(item.key),
-    url: item.url,
-  }))
-
   return (
     <footer className='mt-20'>
-      <div className='max-w-screen-2xl mx-auto'>
-        <div className='py-12 flex flex-col justify-start items-center'>
-          <ul className='mt-6 flex items-center gap-4 flex-wrap'>
-            {translatedLinks.map(({ title, url }) => (
-              <li key={title}>
+      <div className='container mx-auto'>
+        <div className='flex flex-col items-center justify-start py-12'>
+          <ul className='mt-6 flex flex-wrap items-center gap-4'>
+            {FOOTER_LINKS.map(({ key, url }) => (
+              <li key={key}>
                 <a href={url} className='text-muted-foreground hover:text-foreground'>
-                  {title}
+                  {t(key)}
                 </a>
               </li>
             ))}
           </ul>
         </div>
         <Separator />
-        <div className='py-6 flex flex-col-reverse sm:flex-row items-center justify-between gap-x-2 gap-y-4 px-6'>
+        <div className='flex flex-col-reverse items-center justify-between gap-x-2 gap-y-4 px-6 py-6 sm:flex-row'>
           <span className='text-sm text-muted-foreground'>
             {t('footer_copyright', { year: new Date().getFullYear() })}
           </span>
@@ -49,7 +41,8 @@ export const Footer = () => {
                 <GithubLogoIcon weight='fill' />
               </a>
             </Button>
-            <Language weight='fill' />
+            <LanguageToggle weight='fill' />
+            <ThemeToggle weight='fill' />
           </div>
         </div>
       </div>

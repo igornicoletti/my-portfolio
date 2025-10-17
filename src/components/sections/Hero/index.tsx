@@ -1,3 +1,4 @@
+// src/components/sections/Hero/index.tsx
 import AnimatedGridPattern from '@/components/ui/animated-grid-pattern'
 import { Badge } from '@/components/ui/badge'
 import { cn } from '@/lib/utils'
@@ -8,7 +9,7 @@ export const Hero = () => {
   const { t } = useTranslation()
 
   return (
-    <div className='relative min-h-screen flex items-center justify-center px-6 pt-6 overflow-hidden'>
+    <section id='home' className='relative flex min-h-screen items-center justify-center overflow-hidden px-6 pt-6'>
       <AnimatedGridPattern
         numSquares={30}
         maxOpacity={0.1}
@@ -16,19 +17,20 @@ export const Hero = () => {
         className={cn(
           '[mask-image:radial-gradient(500px_circle_at_center,white,transparent)]',
           'inset-x-0 h-full skew-y-12'
-        )} />
-      <div className='relative z-[1] text-center max-w-screen-md'>
-        <Badge className='rounded-full border-none px-3 py-1 inline-flex items-center gap-2 bg-primary/10 text-primary font-medium'>
+        )}
+      />
+      <div className='relative z-[1] mx-auto max-w-screen-md text-center'>
+        <Badge className='inline-flex items-center gap-2 rounded-full border-none bg-primary/10 px-3 py-1 font-medium text-primary'>
           <LightningIcon weight='fill' />
           {t('hero_badge_title')}
         </Badge>
-        <h1 className='mt-6 text-4xl sm:text-5xl md:text-6xl font-bold !leading-[1.2] tracking-tight'>
+        <h1 className='mt-6 text-4xl font-bold !leading-[1.2] tracking-tight sm:text-5xl md:text-6xl'>
           {t('hero_main_title')}
         </h1>
-        <p className='mt-6 text-[17px] md:text-lg text-muted-foreground'>
+        <p className='mt-6 text-[17px] text-muted-foreground md:text-lg'>
           {t('hero_subtitle')}
         </p>
       </div>
-    </div>
+    </section>
   )
 }
