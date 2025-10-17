@@ -9,7 +9,7 @@
   "aria_toggle_language": "Switch language",
   "hero_badge_title": "Fullstack Web Developer",
   "hero_main_title": "Transforming Complex Ideas into Elegant Web Solutions",
-  "hero_subtitle": "I specialize in building modern, high-performance web applications with a focus on clean architecture and code quality, using technologies like React, TypeScript, and Firebase.",
+  "hero_subtitle": "I specialize in building modern, high-performance web applications with a focus on clean architecture and code quality, using technologies like React, TypeScript, and NodeJS.",
   "about_section_title": "About Me",
   "about_main_title": "My Approach to Building Quality Software",
   "about_paragraph_1": "With over 5 years of experience, my development philosophy centers on building efficient and scalable products with the right tools. I architect applications with a clear separation of responsibilities, creating a clean and maintainable codebase.",
@@ -27,11 +27,11 @@
       "period": "Oct 2019 - Feb 2023",
       "description": "Led the front-end development of a chatbot ecosystem, creating an intuitive UI and a dynamic admin panel that allowed the operations team to manage conversation flows without new development, reducing business response time.",
       "technologies": [
+        "Angular",
         "React",
         "TypeScript",
         "State Management",
-        "API Integration",
-        "Responsive Design"
+        "API Integration"
       ]
     },
     {

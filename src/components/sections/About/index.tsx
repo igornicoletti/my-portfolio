@@ -27,13 +27,13 @@ export const About = () => {
             <p className='mb-6 text-muted-foreground'>{t('about_paragraph_2')}</p>
             <div className='flex flex-wrap justify-center gap-4 md:justify-start'>
               <Button className='rounded-full' asChild>
-                <a href='YOUR_GITHUB_LINK' target='_blank' rel='noopener noreferrer'>
+                <a href='https://github.com/igornicoletti' target='_blank' rel='noopener noreferrer'>
                   <GithubLogoIcon />
                   {t('about_btn_github')}
                 </a>
               </Button>
               <Button variant='outline' className='rounded-full' asChild>
-                <a href='/path-to-your-cv.pdf' download>
+                <a href='/igornicoletti.pdf' download>
                   <DownloadSimpleIcon />
                   {t('about_btn_cv')}
                 </a>

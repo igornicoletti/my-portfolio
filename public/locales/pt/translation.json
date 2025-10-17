@@ -9,7 +9,7 @@
   "aria_toggle_language": "Mudar idioma",
   "hero_badge_title": "Desenvolvedor Web Fullstack",
   "hero_main_title": "Transformando Ideias Complexas em Soluções Web Elegantes",
-  "hero_subtitle": "Eu me especializo na construção de aplicações web modernas e de alto desempenho, com foco em arquitetura limpa e qualidade de código, usando tecnologias como React, TypeScript e Firebase.",
+  "hero_subtitle": "Eu me especializo na construção de aplicações web modernas e de alto desempenho, com foco em arquitetura limpa e qualidade de código, usando tecnologias como React, TypeScript e NodeJS.",
   "about_section_title": "Sobre Mim",
   "about_main_title": "Minha Abordagem para Construir Software de Qualidade",
   "about_paragraph_1": "Com mais de 5 anos de experiência, minha filosofia de desenvolvimento se concentra na construção de produtos eficientes e escaláveis com as ferramentas certas. Eu arquiteto aplicações com uma clara separação de responsabilidades, criando uma base de código limpa e de fácil manutenção.",
@@ -27,11 +27,11 @@
       "period": "Out 2019 - Fev 2023",
       "description": "Liderei o desenvolvimento front-end de um ecossistema de chatbot, criando uma UI intuitiva e um painel administrativo dinâmico que permitiu à equipe de operações gerenciar fluxos de conversa sem novo desenvolvimento, reduzindo o tempo de resposta do negócio.",
       "technologies": [
+        "Angular",
         "React",
         "TypeScript",
         "Gerenciamento de Estado",
-        "Integração de API",
-        "Design Responsivo"
+        "Integração de API"
       ]
     },
     {

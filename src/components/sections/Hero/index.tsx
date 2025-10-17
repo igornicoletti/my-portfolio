@@ -3,13 +3,11 @@ import { Badge } from '@/components/ui/badge'
 import { BorderBeam } from '@/components/ui/border-beam'
 import { Particles } from '@/components/ui/particles'
 import { TextAnimate } from '@/components/ui/text-animate'
-import { useBreakpoint } from '@/hooks/useBreakpoint'
 import { LightningIcon } from '@phosphor-icons/react'
 import { useTranslation } from 'react-i18next'
 
 export const Hero = () => {
   const { t } = useTranslation()
-  const isDesktop = useBreakpoint('(min-width: 640px)')
 
   return (
     <section id='home' className='relative flex min-h-[calc(100vh-theme(spacing.16))] w-full items-center justify-center overflow-hidden px-6'>
@@ -25,7 +23,7 @@ export const Hero = () => {
         <TextAnimate
           duration={0.8}
           animation="blurInUp"
-          by={isDesktop ? "character" : "word"}
+          by="word"
           as="h1"
           className='mt-6 text-4xl font-bold !leading-[1.2] tracking-tight sm:text-5xl md:text-6xl'>
           {t('hero_main_title')}

@@ -88,9 +88,6 @@
   --sidebar-accent-foreground: oklch(0.6132 0.2294 291.7437);
   --sidebar-border: oklch(0.3289 0.0092 268.3843);
   --sidebar-ring: oklch(0.6132 0.2294 291.7437);
-  --font-sans: Plus Jakarta Sans, sans-serif;
-  --font-serif: Lora, serif;
-  --font-mono: IBM Plex Mono, monospace;
   --radius: 1.4rem;
   --shadow-x: 0px;
   --shadow-y: 2px;
@@ -160,6 +157,8 @@
   --tracking-wider: calc(var(--tracking-normal) + 0.05em);
   --tracking-widest: calc(var(--tracking-normal) + 0.1em);
   --animate-meteor: meteor 5s linear infinite;
+  --animate-shine: shine var(--duration) infinite linear;
+  --animate-aurora: aurora 8s ease-in-out infinite alternate;
   @keyframes meteor {
   0% {
     transform: rotate(var(--angle)) translateX(0);
@@ -173,8 +172,6 @@
     opacity: 0;
     }
   }
-  --animate-shine: shine var(--duration) infinite linear
-;
   @keyframes shine {
   0% {
     background-position: 0% 0%;
@@ -186,7 +183,6 @@
     background-position: 0% 0%;
     }
   }
-  --animate-aurora: aurora 8s ease-in-out infinite alternate;
   @keyframes aurora {
   0% {
     background-position: 0% 50%;
@@ -208,7 +204,8 @@
     background-position: 0% 50%;
     transform: rotate(-5deg) scale(0.9);
     }
-  }}
+  }
+}
 
 @layer base {
   * {
