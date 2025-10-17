@@ -5,11 +5,10 @@ import { About } from '@/components/sections/About'
 import { Experience } from '@/components/sections/Experience'
 import { Hero } from '@/components/sections/Hero'
 import { Projects } from '@/components/sections/Projects'
-import { ThemeProvider } from '@/contexts/ThemeProvider'
 
 function App() {
   return (
-    <ThemeProvider>
+    <>
       <Navbar />
       <main>
         <Hero />
@@ -18,7 +17,7 @@ function App() {
         <Projects />
       </main>
       <Footer />
-    </ThemeProvider>
+    </>
   )
 }
 

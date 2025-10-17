@@ -1,6 +1,6 @@
 // src/components/layout/Navbar/NavActions.tsx
 import { LanguageToggle } from '@/components/shared/LanguageToggle'
-import { ThemeToggle } from '@/components/shared/ThemeToggle'
+import { AnimatedThemeToggler } from '@/components/ui/animated-theme-toggler'
 import { Button } from '@/components/ui/button'
 import { GithubLogoIcon } from '@phosphor-icons/react'
 import { useTranslation } from 'react-i18next'
@@ -16,7 +16,7 @@ export const NavActions = () => {
         </a>
       </Button>
       <LanguageToggle />
-      <ThemeToggle />
+      <AnimatedThemeToggler />
     </div>
   )
 }

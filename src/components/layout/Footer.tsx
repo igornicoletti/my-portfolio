@@ -1,6 +1,5 @@
 // src/components/layout/Footer.tsx
 import { LanguageToggle } from '@/components/shared/LanguageToggle'
-import { ThemeToggle } from '@/components/shared/ThemeToggle'
 import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
 import { GithubLogoIcon } from '@phosphor-icons/react'
@@ -42,7 +41,6 @@ export const Footer = () => {
               </a>
             </Button>
             <LanguageToggle weight='fill' />
-            <ThemeToggle weight='fill' />
           </div>
         </div>
       </div>
