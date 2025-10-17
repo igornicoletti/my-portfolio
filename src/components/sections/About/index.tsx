@@ -22,7 +22,7 @@ export const About = () => {
             <div className='flex justify-center'>
               <ProfileImage className='mb-8 mt-3 block md:hidden' />
             </div>
-            <h2 className='mb-4 text-4xl font-bold'>{t('about_main_title')}</h2>
+            <h2 className='mb-4 text-4xl font-bold text-balance'>{t('about_main_title')}</h2>
             <p className='mb-4 text-muted-foreground'>{t('about_paragraph_1')}</p>
             <p className='mb-6 text-muted-foreground'>{t('about_paragraph_2')}</p>
             <div className='flex flex-wrap justify-center gap-4 md:justify-start'>

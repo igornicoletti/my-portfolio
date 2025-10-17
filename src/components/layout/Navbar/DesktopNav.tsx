@@ -21,7 +21,7 @@ export const DesktopNav = ({ logo, menu }: DesktopNavProps) => (
         <NavigationMenuList className='gap-1'>
           {menu.map((item) => (
             <NavigationMenuItem key={item.title}>
-              <NavigationMenuLink href={item.url} className='bg-background hover:bg-muted hover:text-accent-foreground group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors'>
+              <NavigationMenuLink href={item.url} className='bg-background hover:bg-muted hover:text-accent-foreground group inline-flex w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors'>
                 {item.title}
               </NavigationMenuLink>
             </NavigationMenuItem>

@@ -12,7 +12,7 @@ export const Projects = () => {
 
   return (
     <section id='projects' className='relative px-6 py-20'>
-      <div className='mx-auto max-w-screen-lg'>
+      <div className='mx-auto max-w-screen-md'>
         <SectionHeader
           badge={t('project_section_title')}
           title={t('project_main_title')}

@@ -1,7 +1,7 @@
 // src/components/layout/Navbar/MobileNav.tsx
 import { Logo, type LogoProps } from '@/components/shared/Logo'
 import { Button } from '@/components/ui/button'
-import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet'
+import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet'
 import { ListIcon } from '@phosphor-icons/react'
 import { useTranslation } from 'react-i18next'
 import { NavActions } from './NavActions'
@@ -30,13 +30,14 @@ export const MobileNav = ({ logo, menu }: MobileNavProps) => {
               <ListIcon />
             </Button>
           </SheetTrigger>
-          <SheetContent side='right'>
+          <SheetContent side='right' className='w-full'>
             <SheetHeader>
               <SheetTitle>
                 <Logo {...logo} />
               </SheetTitle>
+              <SheetDescription></SheetDescription>
             </SheetHeader>
-            <div className='flex flex-col gap-4 p-4'>
+            <div className='flex flex-col gap-4 px-6 py-4'>
               {menu.map((item) => (
                 <a key={item.title} href={item.url} className='text-md font-medium'>
                   {item.title}

@@ -20,7 +20,7 @@ export const Navbar = () => {
   ]
 
   return (
-    <header className='sticky top-0 z-50 border-b bg-background/80 p-4 backdrop-blur-sm'>
+    <header className='sticky top-0 z-50 h-16 border-b bg-background/80 p-4 backdrop-blur-sm'>
       <div className='container mx-auto'>
         <DesktopNav logo={defaultLogo} menu={menuItems} />
         <MobileNav logo={defaultLogo} menu={menuItems} />

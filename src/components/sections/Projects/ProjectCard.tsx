@@ -17,8 +17,8 @@ export const ProjectCard = ({ title, description, image, technologies, liveUrl, 
   const { t } = useTranslation()
 
   return (
-    <div className='group relative flex flex-col overflow-hidden rounded-xl border border-accent transition-all hover:border-primary/50'>
-      <div className='relative h-64 overflow-hidden bg-primary'>
+    <div className='group relative flex flex-col overflow-hidden rounded-lg border transition-all bg-card'>
+      <div className='relative h-48 overflow-hidden bg-secondary'>
         <img
           src={image}
           alt={t('project_image_alt', { projectName: title })}
