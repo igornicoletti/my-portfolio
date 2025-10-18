@@ -18,13 +18,13 @@ export const About = () => {
     <p className='mb-4 text-muted-foreground'>{t('about_paragraph_1')}</p>,
     <p className='mb-6 text-muted-foreground'>{t('about_paragraph_2')}</p>,
     <div className='flex flex-wrap justify-center gap-4 md:justify-start'>
-      <Button asChild>
+      <Button asChild className='w-full'>
         <a href='https://github.com/igornicoletti' target='_blank' rel='noopener noreferrer'>
           <GithubLogoIcon />
           {t('about_btn_github')}
         </a>
       </Button>
-      <Button asChild variant='outline'>
+      <Button asChild variant='outline' className='w-full'>
         <a href='/igornicoletti.pdf' download>
           <DownloadSimpleIcon />
           {t('about_btn_cv')}
