@@ -11,14 +11,11 @@ export const Hero = () => {
 
   return (
     <section id='home' className='relative flex min-h-[calc(100vh-theme(spacing.16))] w-full items-center justify-center overflow-hidden px-6'>
-      <div className='relative z-[1] mx-auto max-w-screen-md text-center'>
-        <Badge className='relative px-3 py-1.5 text-accent-foreground bg-accent/25 overflow-hidden'>
-          <LightningIcon weight='fill' />
+      <div className='relative z-[1] mx-auto max-w-screen-lg text-center'>
+        <Badge className='relative px-3 py-1.5 text-sm text-accent-foreground bg-accent/50 overflow-hidden'>
+          <LightningIcon weight='duotone' />
           {t('hero_badge_title')}
-          <BorderBeam
-            size={50}
-            className="from-transparent via-accent-foreground to-transparent"
-          />
+          <BorderBeam size={50} className="from-transparent via-accent-foreground to-transparent" />
         </Badge>
         <TextAnimate
           duration={0.8}
@@ -32,7 +29,8 @@ export const Hero = () => {
           delay={0.5}
           animation="fadeIn"
           by="line"
-          className='mt-6 text-[17px] text-muted-foreground md:text-lg'>
+          as="p"
+          className='mt-6 text-muted-foreground md:text-balance md:text-xl'>
           {t('hero_subtitle')}
         </TextAnimate>
       </div>

@@ -1,13 +1,7 @@
 // src/components/layout/Navbar/index.tsx
-import type { LogoProps } from '@/components/shared/Logo'
 import { useTranslation } from 'react-i18next'
 import { DesktopNav } from './DesktopNav'
 import { MobileNav } from './MobileNav'
-
-const defaultLogo: LogoProps = {
-  url: '#home',
-  title: '2Ti',
-}
 
 export const Navbar = () => {
   const { t } = useTranslation()
@@ -22,8 +16,8 @@ export const Navbar = () => {
   return (
     <header className='sticky top-0 z-50 h-16 border-b bg-background/80 p-4 backdrop-blur-sm'>
       <div className='container mx-auto'>
-        <DesktopNav logo={defaultLogo} menu={menuItems} />
-        <MobileNav logo={defaultLogo} menu={menuItems} />
+        <DesktopNav menu={menuItems} />
+        <MobileNav menu={menuItems} />
       </div>
     </header>
   )

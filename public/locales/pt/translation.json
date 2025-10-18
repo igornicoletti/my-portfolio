@@ -123,5 +123,15 @@
       "githubUrl": "https://github.com/username/ai-taskmanager"
     }
   ],
-  "footer_copyright": "© {{year}} 2Ti. Todos os direitos reservados."
+  "scroll_velocity_row_1": [
+    "Desenvolvedor Full Stack",
+    "Amante de Tecnologia",
+    "Entusiasta da Web"
+  ],
+  "scroll_velocity_row_2": [
+    "Programador Criativo",
+    "Aprendiz Contínuo",
+    "Resolvedor de Problemas"
+  ],
+  "footer_copyright": "© {{year}} Igor Nicoletti"
 }

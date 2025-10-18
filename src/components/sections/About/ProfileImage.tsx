@@ -10,11 +10,7 @@ export const ProfileImage = ({ className, ...props }: ProfileImageProps) => {
 
   return (
     <div className={cn('relative overflow-hidden rounded-2xl bg-accent', className)} {...props}>
-      <img
-        src='/igornicoletti.png'
-        alt={t('about_image_alt')}
-        className='h-full w-full object-cover'
-      />
+      <img src='/igornicoletti.png' alt={t('about_image_alt')} className='h-full w-full object-cover' />
     </div>
   )
 }

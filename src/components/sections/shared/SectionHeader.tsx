@@ -13,7 +13,7 @@ export const SectionHeader = ({ badge, title, subtitle }: SectionHeaderProps) =>
     <Badge variant='secondary' className='mb-4'>
       {badge}
     </Badge>
-    <h2 className='text-4xl font-bold tracking-tight sm:text-5xl'>{title}</h2>
-    <p className='mt-2 text-lg text-muted-foreground sm:mt-4'>{subtitle}</p>
+    <h2 className='mb-4 text-4xl font-bold tracking-tight sm:text-5xl'>{title}</h2>
+    <p className='mb-6 text-lg text-muted-foreground'>{subtitle}</p>
   </div>
 )

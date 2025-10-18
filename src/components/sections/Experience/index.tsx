@@ -16,11 +16,10 @@ export const Experience = () => {
         <SectionHeader
           badge={t('experience_section_title')}
           title={t('experience_main_title')}
-          subtitle={t('experience_subtitle')}
-        />
+          subtitle={t('experience_subtitle')} />
         <ul className='relative'>
-          {experiences.map((experience, index) => (
-            <ExperienceItem key={index} {...experience} />
+          {experiences.map((experience, idx) => (
+            <ExperienceItem key={idx} {...experience} />
           ))}
         </ul>
       </div>

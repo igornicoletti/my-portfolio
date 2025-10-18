@@ -1,6 +1,6 @@
 // src/components/layout/Navbar/DesktopNav.tsx
-import { Logo, type LogoProps } from '@/components/shared/Logo'
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList } from '@/components/ui/navigation-menu'
+import { SpiralIcon } from '@phosphor-icons/react'
 import { NavActions } from './NavActions'
 
 interface NavItem {
@@ -9,14 +9,16 @@ interface NavItem {
 }
 
 interface DesktopNavProps {
-  logo: LogoProps
   menu: NavItem[]
 }
 
-export const DesktopNav = ({ logo, menu }: DesktopNavProps) => (
+export const DesktopNav = ({ menu }: DesktopNavProps) => (
   <nav className='hidden justify-between lg:flex'>
     <div className='flex items-center gap-6'>
-      <Logo {...logo} />
+      <a href='#home' className='flex items-center gap-2'>
+        <SpiralIcon weight='fill' className='size-8' />
+        <span className='text-lg font-bold tracking-tight'>2Ti</span>
+      </a>
       <NavigationMenu>
         <NavigationMenuList className='gap-1'>
           {menu.map((item) => (

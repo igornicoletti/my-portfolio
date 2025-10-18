@@ -1,8 +1,7 @@
 // src/components/layout/Navbar/MobileNav.tsx
-import { Logo, type LogoProps } from '@/components/shared/Logo'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet'
-import { ListIcon } from '@phosphor-icons/react'
+import { ListIcon, SpiralIcon } from '@phosphor-icons/react'
 import { useTranslation } from 'react-i18next'
 import { NavActions } from './NavActions'
 
@@ -12,16 +11,18 @@ interface NavItem {
 }
 
 interface MobileNavProps {
-  logo: LogoProps
   menu: NavItem[]
 }
 
-export const MobileNav = ({ logo, menu }: MobileNavProps) => {
+export const MobileNav = ({ menu }: MobileNavProps) => {
   const { t } = useTranslation()
 
   return (
     <nav className='flex items-center justify-between lg:hidden'>
-      <Logo {...logo} />
+      <a href='#home' className='flex items-center gap-2'>
+        <SpiralIcon weight='fill' className='size-8' />
+        <span className='text-lg font-bold tracking-tight'>2Ti</span>
+      </a>
       <div className='flex items-center gap-2'>
         <NavActions />
         <Sheet>
@@ -33,7 +34,10 @@ export const MobileNav = ({ logo, menu }: MobileNavProps) => {
           <SheetContent side='right' className='w-full'>
             <SheetHeader>
               <SheetTitle>
-                <Logo {...logo} />
+                <a href='#home' className='flex items-center gap-2'>
+                  <SpiralIcon weight='fill' className='size-8' />
+                  <span className='text-lg font-bold tracking-tight'>2Ti</span>
+                </a>
               </SheetTitle>
               <SheetDescription></SheetDescription>
             </SheetHeader>
