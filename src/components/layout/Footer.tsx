@@ -20,7 +20,7 @@ export const Footer = () => {
         <div className='flex flex-col items-center justify-start py-12'>
           <a href='#home' className='flex items-center gap-2'>
             <SpiralIcon weight='fill' className='size-8' />
-            <span className='text-lg font-bold tracking-tight'>2Ti</span>
+            <span className='text-lg font-semibold tracking-tight'>2Ti</span>
           </a>
           <ul className='mt-6 flex flex-wrap items-center gap-4'>
             {FOOTER_LINKS.map(({ key, url }) => (

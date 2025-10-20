@@ -1,4 +1,3 @@
-// src/components/sections/Hero/index.tsx
 import { Badge } from '@/components/ui/badge'
 import { BorderBeam } from '@/components/ui/border-beam'
 import { Particles } from '@/components/ui/particles'
@@ -10,9 +9,9 @@ export const Hero = () => {
   const { t } = useTranslation()
 
   return (
-    <section id='home' className='relative flex min-h-[calc(100vh-theme(spacing.16))] w-full items-center justify-center overflow-hidden px-6'>
-      <div className='relative z-[1] mx-auto max-w-screen-lg text-center'>
-        <Badge className='relative px-3 py-1.5 text-accent-foreground bg-accent/50 overflow-hidden'>
+    <section id='home' className='relative flex min-h-[calc(100vh-theme(spacing.16))] w-full items-center justify-center py-20 px-6 overflow-hidden'>
+      <div className='relative z-[1] mx-auto max-w-screen-md text-center'>
+        <Badge className='relative mb-6 px-3 py-1 text-accent-foreground bg-accent/50 overflow-hidden'>
           <LightningIcon weight='duotone' />
           {t('hero_badge_title')}
           <BorderBeam size={50} className="from-transparent via-accent-foreground to-transparent" />
@@ -22,7 +21,7 @@ export const Hero = () => {
           animation="blurInUp"
           by="word"
           as="h1"
-          className='mt-6 text-4xl font-bold !leading-[1.2] tracking-tight sm:text-5xl md:text-6xl'>
+          className='mb-4 text-5xl text-balance font-medium md:text-6xl'>
           {t('hero_main_title')}
         </TextAnimate>
         <TextAnimate
@@ -30,14 +29,11 @@ export const Hero = () => {
           animation="fadeIn"
           by="line"
           as="p"
-          className='mt-6 text-muted-foreground md:text-balance md:text-xl'>
+          className='text-lg text-balance text-muted-foreground'>
           {t('hero_subtitle')}
         </TextAnimate>
       </div>
-      <Particles
-        className="absolute inset-0 z-0"
-        refresh
-      />
+      <Particles className="absolute inset-0 z-0" refresh />
     </section>
   )
 }

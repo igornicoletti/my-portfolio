@@ -9,7 +9,7 @@
   "aria_toggle_language": "Switch language",
   "hero_badge_title": "Fullstack Web Developer",
   "hero_main_title": "Transforming Complex Ideas into Elegant Web Solutions",
-  "hero_subtitle": "I specialize in building modern, high-performance web applications with a focus on clean architecture and code quality, using technologies like React, TypeScript, and NodeJS.",
+  "hero_subtitle": "I specialize in building modern, high-performance web applications with a focus on clean architecture and code quality, using technologies like React and NodeJS.",
   "about_section_title": "About Me",
   "about_main_title": "My Approach to Building Quality Software",
   "about_paragraph_1": "With over 5 years of experience, my development philosophy centers on building efficient and scalable products with the right tools. I architect applications with a clear separation of responsibilities, creating a clean and maintainable codebase.",
@@ -133,5 +133,5 @@
     "Lifelong Learner",
     "Problem Solver"
   ],
-  "footer_copyright": "© {{year}} Igor Nicoletti"
+  "footer_copyright": "© {{year}} 2Ti."
 }

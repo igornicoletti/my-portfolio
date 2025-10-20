@@ -207,16 +207,28 @@
   }
 }
 
+@font-face {
+  font-family: 'Satoshi-Variable';
+  src: url('/fonts/Satoshi-Variable.woff2') format('woff2'),
+       url('/fonts/Satoshi-Variable.woff') format('woff'),
+       url('/fonts/Satoshi-Variable.ttf') format('truetype');
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
   body {
+    font-family: 'Satoshi-Variable', sans-serif;
     @apply bg-background text-foreground;
   }
 }
 
-::view-transition-old(root), ::view-transition-new(root) {
+::view-transition-old(root),
+::view-transition-new(root) {
     animation: none;
     mix-blend-mode: normal;
 }

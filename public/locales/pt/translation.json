@@ -3,96 +3,103 @@
   "nav_experience": "Experiência",
   "nav_projects": "Projetos",
   "nav_contact": "Contato",
-  "aria_github_profile": "Perfil do Github",
+  "aria_github_profile": "Perfil no Github",
   "aria_toggle_theme": "Alternar tema (claro/escuro)",
   "aria_open_menu": "Abrir menu principal",
   "aria_toggle_language": "Mudar idioma",
-  "hero_badge_title": "Desenvolvedor Web Fullstack",
-  "hero_main_title": "Transformando Ideias Complexas em Soluções Web Elegantes",
-  "hero_subtitle": "Eu me especializo na construção de aplicações web modernas e de alto desempenho, com foco em arquitetura limpa e qualidade de código, usando tecnologias como React, TypeScript e NodeJS.",
+  "hero_badge_title": "Fullstack Web Developer",
+  "hero_main_title": "Experiências web modernas e eficientes",
+  "hero_subtitle": "Especializado na criação de aplicações web de alto desempenho, contribuindo para o desenvolvimento de produtos robustos, acessíveis e sustentáveis.",
   "about_section_title": "Sobre Mim",
-  "about_main_title": "Minha Abordagem para Construir Software de Qualidade",
-  "about_paragraph_1": "Com mais de 5 anos de experiência, minha filosofia de desenvolvimento se concentra na construção de produtos eficientes e escaláveis com as ferramentas certas. Eu arquiteto aplicações com uma clara separação de responsabilidades, criando uma base de código limpa e de fácil manutenção.",
-  "about_paragraph_2": "Eu garanto a integridade dos dados com formulários robustos usando React Hook Form e Zod, gerencio o estado do servidor de forma eficiente com React Query, e construo UIs acessíveis com Radix e Tailwind CSS. Essa abordagem estruturada me permite entregar soluções seguras, consistentes e de alta qualidade.",
-  "about_btn_github": "Ver Github",
-  "about_btn_cv": "Baixar CV",
-  "about_image_alt": "Foto de perfil",
+  "about_main_title": "Filosofia de desenvolvimento e abordagem técnica",
+  "about_paragraph_1": "Acredito que um código bem estruturado e testável é a base para produtos escaláveis e de longa vida útil. Meu trabalho combina conhecimento técnico sólido com atenção aos detalhes que tornam a experiência do usuário mais fluida e confiável.",
+  "about_paragraph_2": "Trabalho com um ecossistema moderno de desenvolvimento web que une React 19, TypeScript e Vite para construir aplicações rápidas e escaláveis. Adoto práticas ágeis e integração contínua para garantir entregas consistentes e de alta qualidade.",
+  "about_paragraph_3": "Tenho experiência na construção e evolução de sistemas complexos, contribuindo para decisões técnicas, definição de ferramentas e desenho de arquitetura. Busco constantemente novas tecnologias que impulsionem inovação, escalabilidade e a melhoria contínua dos processos de desenvolvimento.",
+  "about_btn_github": "Explorar Github",
+  "about_btn_cv": "Baixar Currículo",
+  "about_image_alt": "Imagem de perfil profissional",
   "experience_section_title": "Experiência",
-  "experience_main_title": "Jornada Profissional",
-  "experience_subtitle": "Uma linha do tempo do meu crescimento profissional e principais conquistas",
+  "experience_main_title": "Trajetória Profissional",
+  "experience_subtitle": "Uma linha do tempo do meu crescimento profissional e principais realizações.",
   "experiences": [
     {
       "title": "Desenvolvedor Frontend",
       "company": "Hublab",
       "period": "Out 2019 - Fev 2023",
-      "description": "Liderei o desenvolvimento front-end de um ecossistema de chatbot, criando uma UI intuitiva e um painel administrativo dinâmico que permitiu à equipe de operações gerenciar fluxos de conversa sem novo desenvolvimento, reduzindo o tempo de resposta do negócio.",
+      "description": "Desenvolvimento front-end de um ecossistema de chatbot, incluindo interface moderna e painel administrativo dinâmico. A solução permitiu à equipe de operações gerenciar fluxos de conversa de forma autônoma, reduzindo significativamente o time-to-market.",
       "technologies": [
         "Angular",
+        "API REST",
+        "JavaScript",
+        "Node.js",
         "React",
         "TypeScript",
-        "Gerenciamento de Estado",
-        "Integração de API"
+        "Watson da IBM"
       ]
     },
     {
       "title": "Desenvolvedor Frontend",
       "company": "Olivas Digital",
       "period": "Mar 2021 - Jan 2022",
-      "description": "Desenvolvi interfaces responsivas de alta fidelidade e acelerei o desempenho de carregamento de páginas através de otimização de código aprofundada e lazy loading, impactando positivamente o Core Web Vitals e implementando práticas avançadas de SEO técnico.",
+      "description": "Desenvolvimento de interfaces responsivas de alta fidelidade e otimização de desempenho através de lazy loading, refatoração de código e SEO técnico. As melhorias elevaram os indicadores de Core Web Vitals e aprimoraram a performance geral do produto.",
       "technologies": [
-        "Next.js",
-        "TypeScript",
-        "Otimização de Performance",
-        "Core Web Vitals",
-        "SEO"
+        "CSS3",
+        "HTML5",
+        "JavaScript",
+        "jQuery",
+        "React",
+        "Webpack"
       ]
     },
     {
       "title": "Desenvolvedor Frontend",
       "company": "Trinto | Digital Partners",
       "period": "Nov 2020 - Mar 2021",
-      "description": "Fortaleci a segurança front-end implementando proteções contra vulnerabilidades XSS e CSRF. Também eliminei gargalos críticos de desempenho e resolvi problemas complexos de cache para garantir a consistência dos dados.",
+      "description": "Implentação de defesas contra vulnerabilidades XSS e CSRF, fortalecimento da segurança das aplicações e otimização de estratégias de caching para maior estabilidade e agilidade em produção.",
       "technologies": [
+        "CSS3",
+        "HTML5",
+        "JavaScript",
+        "Linx Commerce",
         "React",
-        "Segurança",
-        "Validação de Formulário",
-        "Caching",
-        "Performance Tuning"
+        "VTEX"
       ]
     },
     {
       "title": "Desenvolvedor Frontend",
       "company": "2morrow Sports",
       "period": "Jan 2020 - Out 2020",
-      "description": "Arquitetei e desenvolvi funcionalidades críticas voltadas para o usuário, incluindo login/registro, gerenciamento de perfil e experiências personalizadas. Construí um painel de histórico financeiro abrangente para aumentar a transparência para os membros.",
+      "description": "Arquitetura e desenvolvimento de funcionalidades essenciais voltadas ao usuário, incluindo login, gerenciamento de perfil e histórico financeiro. As melhorias ampliaram a personalização e a transparência das informações para os membros da plataforma.",
       "technologies": [
-        "React",
-        "Autenticação",
-        "UI/UX",
-        "Component Libraries",
-        "User Onboarding"
+        "API REST",
+        "CSS3",
+        "HTML5",
+        "JavaScript",
+        "jQuery",
+        "Webpack"
       ]
     },
     {
       "title": "Desenvolvedor Frontend",
       "company": "Velani Contabilidade",
       "period": "Jun 2019 - Set 2019",
-      "description": "Projetei e liderei o desenvolvimento de uma interface intuitiva de sistema financeiro, transformando dados complexos em insights acionáveis usando gráficos e visualizações. Atuei como ponto focal para integrações de API de terceiros.",
+      "description": "Arquitetura e desenvolvimento de uma interface intuitiva para sistema financeiro, transformando dados complexos em visualizações claras e acionáveis. Responsabilidade direta por integrações de APIs externas e aprimoramento da experiência do usuário.",
       "technologies": [
-        "React",
-        "Visualização de Dados",
-        "D3.js / Chart.js",
-        "Integração de API",
-        "Financial Tech"
+        "API REST",
+        "CSS3",
+        "HTML5",
+        "JavaScript",
+        "Jquery",
+        "PHP"
       ]
     }
   ],
   "project_section_title": "Projetos",
   "project_main_title": "Trabalhos em Destaque",
-  "project_subtitle": "Apresentando alguns dos meus melhores projetos e conquistas técnicas",
+  "project_subtitle": "Apresentando alguns dos meus melhores projetos e testes.",
   "project_btn_live": "Ver Demo",
   "project_btn_code": "Ver Código",
-  "project_image_alt": "Captura de tela do projeto {{projectName}}",
+  "project_image_alt": "Captura de tela do projeto",
   "projects": [
     {
       "title": "Plataforma de E-Commerce",
@@ -124,14 +131,22 @@
     }
   ],
   "scroll_velocity_row_1": [
-    "Desenvolvedor Full Stack",
-    "Amante de Tecnologia",
-    "Entusiasta da Web"
+    "Vite",
+    "React",
+    "TypeScript",
+    "Firebase",
+    "Redux",
+    "Jest",
+    "Context API",
+    "Design Systems"
   ],
   "scroll_velocity_row_2": [
-    "Programador Criativo",
-    "Aprendiz Contínuo",
-    "Resolvedor de Problemas"
+    "Metodologias Ágeis",
+    "Versionamento Git",
+    "Testes Automatizados",
+    "Performance Web",
+    "Acessibilidade",
+    "Design Responsivo"
   ],
-  "footer_copyright": "© {{year}} Igor Nicoletti"
+  "footer_copyright": "© {{year}} 2Ti."
 }
