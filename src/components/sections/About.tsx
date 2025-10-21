@@ -37,7 +37,12 @@ export const About = () => {
   return (
     <section id='about' className='relative px-6 py-20'>
       <div className='mx-auto max-w-screen-lg'>
-        <div className='flex gap-x-16'>
+        <div className='flex flex-col gap-x-16 md:flex-row-reverse'>
+          <BlurFade direction='up' delay={0.25} inView>
+            <div className='hidden sticky top-20 max-w-xs rounded-lg overflow-hidden md:block'>
+              <img src='/images/igornicoletti.png' alt={t('about_image_alt')} className='w-full h-full object-cover' />
+            </div>
+          </BlurFade>
           <div className='flex-1'>
             {contentToAnimate.map((component, idx) => (
               <BlurFade key={idx} direction='up' delay={0.25 + idx * FADE_UP_DELAY} inView>
@@ -45,11 +50,6 @@ export const About = () => {
               </BlurFade>
             ))}
           </div>
-          <BlurFade direction='up' delay={0.25} inView>
-            <div className='hidden sticky top-20 max-w-xs rounded-lg overflow-hidden md:block'>
-              <img src='/images/igornicoletti.png' alt={t('about_image_alt')} className='w-full h-full object-cover' />
-            </div>
-          </BlurFade>
         </div>
       </div>
     </section>

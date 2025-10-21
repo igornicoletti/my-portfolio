@@ -13,7 +13,7 @@ export const Skills = () => {
   const row2String = row2Phrases.map((item) => item + separator).join('')
 
   return (
-    <section id='scroll' className='relative flex w-full flex-col items-center justify-center overflow-hidden py-6 md:py-20'>
+    <section className='relative flex w-full flex-col items-center justify-center overflow-hidden py-6 md:py-20'>
       <ScrollVelocityContainer className="text-4xl font-bold tracking-[-0.02em] md:text-7xl md:leading-[5rem] text-muted-foreground/10">
         <ScrollVelocityRow baseVelocity={2} direction={1}>
           {row1String}
