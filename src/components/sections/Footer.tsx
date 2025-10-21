@@ -1,7 +1,6 @@
-// src/components/layout/Footer.tsx
-import { NavActions } from '@/components/layout/Navbar/NavActions'
+import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
-import { SpiralIcon } from '@phosphor-icons/react'
+import { GlobeIcon, SpiralIcon } from '@phosphor-icons/react'
 import { useTranslation } from 'react-i18next'
 
 const FOOTER_LINKS = [
@@ -12,7 +11,13 @@ const FOOTER_LINKS = [
 ]
 
 export const Footer = () => {
-  const { t } = useTranslation()
+  const { i18n, t } = useTranslation()
+
+  const handleLanguageChange = () => {
+    const currentLang = i18n.language.substring(0, 2)
+    const nextLang = currentLang === 'en' ? 'pt' : 'en'
+    i18n.changeLanguage(nextLang)
+  }
 
   return (
     <footer className='mt-20'>
@@ -37,7 +42,13 @@ export const Footer = () => {
           <span className='text-sm text-muted-foreground'>
             {t('footer_copyright', { year: new Date().getFullYear() })}
           </span>
-          <NavActions />
+          <Button
+            onClick={handleLanguageChange}
+            variant='ghost'
+            size='icon'
+            aria-label={t('aria_toggle_language')}>
+            <GlobeIcon />
+          </Button>
         </div>
       </div>
     </footer>

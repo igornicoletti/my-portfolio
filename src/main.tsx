@@ -1,4 +1,3 @@
-// src/main.tsx
 import App from '@/App'
 import '@/index.css'
 import '@/lib/i18n'

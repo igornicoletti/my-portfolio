@@ -1,7 +1,8 @@
 // src/components/layout/Navbar/DesktopNav.tsx
+import { AnimatedThemeToggler } from '@/components/ui/animated-theme-toggler'
+import { Button } from '@/components/ui/button'
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList } from '@/components/ui/navigation-menu'
-import { SpiralIcon } from '@phosphor-icons/react'
-import { NavActions } from './NavActions'
+import { GithubLogoIcon, SpiralIcon } from '@phosphor-icons/react'
 
 interface NavItem {
   title: string
@@ -31,6 +32,13 @@ export const DesktopNav = ({ menu }: DesktopNavProps) => (
         </NavigationMenuList>
       </NavigationMenu>
     </div>
-    <NavActions />
+    <div className='flex items-center gap-2'>
+      <Button asChild variant='ghost' size='icon'>
+        <a href='https://github.com/images/igornicoletti' target='_blank' rel='noopener noreferrer'>
+          <GithubLogoIcon />
+        </a>
+      </Button>
+      <AnimatedThemeToggler />
+    </div>
   </nav>
 )

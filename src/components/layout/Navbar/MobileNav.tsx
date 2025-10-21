@@ -3,7 +3,6 @@ import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet'
 import { ListIcon, SpiralIcon } from '@phosphor-icons/react'
 import { useTranslation } from 'react-i18next'
-import { NavActions } from './NavActions'
 
 interface NavItem {
   title: string
@@ -24,14 +23,13 @@ export const MobileNav = ({ menu }: MobileNavProps) => {
         <span className='text-lg font-semibold tracking-tight'>2Ti</span>
       </a>
       <div className='flex items-center gap-2'>
-        <NavActions />
         <Sheet>
           <SheetTrigger asChild>
             <Button variant='ghost' size='icon' aria-label={t('aria_open_menu')}>
               <ListIcon />
             </Button>
           </SheetTrigger>
-          <SheetContent side='right' className='w-full'>
+          <SheetContent side='right'>
             <SheetHeader>
               <SheetTitle>
                 <a href='#home' className='flex items-center gap-2'>

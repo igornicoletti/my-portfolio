@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 
 const separator = '\u00A0'
 
-export const ScrollVelocity = () => {
+export const Skills = () => {
   const { t } = useTranslation()
 
   const row1Phrases = t('scroll_velocity_row_1', { returnObjects: true }) as string[]
@@ -13,8 +13,8 @@ export const ScrollVelocity = () => {
   const row2String = row2Phrases.map((item) => item + separator).join('')
 
   return (
-    <section id='scroll' className='relative -translate-y-1/3 w-full overflow-hidden py-4'>
-      <ScrollVelocityContainer className="text-4xl font-bold md:text-7xl text-muted-foreground/10">
+    <section id='scroll' className='relative flex w-full flex-col items-center justify-center overflow-hidden py-6 md:py-20'>
+      <ScrollVelocityContainer className="text-4xl font-bold tracking-[-0.02em] md:text-7xl md:leading-[5rem] text-muted-foreground/10">
         <ScrollVelocityRow baseVelocity={2} direction={1}>
           {row1String}
         </ScrollVelocityRow>
