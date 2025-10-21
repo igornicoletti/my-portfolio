@@ -97,14 +97,14 @@
   "project_section_title": "Projetos",
   "project_main_title": "Trabalhos em destaque",
   "project_subtitle": "Trabalhei em diversos projetos, desde sites simples até aplicativos web complexos. Aqui estão alguns dos meus favoritos.",
-  "project_btn_live": "Ver Demo",
-  "project_btn_code": "Ver Código",
+  "project_btn_live": "Ver Demostração",
+  "project_btn_code": "Explorar Código",
   "project_image_alt": "Captura de tela do projeto",
   "projects": [
     {
       "title": "Plataforma de E-Commerce",
       "description": "Uma plataforma de e-commerce completa com gerenciamento de estoque em tempo real, processamento de pagamentos e painel administrativo.",
-      "image": "/images/igornicoletti.png",
+      "image": "/images/screenshot.png",
       "technologies": [
         "Next.js",
         "TypeScript",
@@ -117,7 +117,7 @@
     {
       "title": "Gerenciador de Tarefas com IA",
       "description": "Aplicativo inteligente de gerenciamento de tarefas que usa IA para categorizar, priorizar e sugerir o agendamento ideal de tarefas.",
-      "image": "/images/igornicoletti.png",
+      "image": "/images/screenshot.png",
       "technologies": [
         "React",
         "Python",

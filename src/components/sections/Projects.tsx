@@ -31,12 +31,12 @@ export const Projects = () => {
           <p className="max-w-xl text-muted-foreground text-base text-balance md:text-lg">{t("project_subtitle")}</p>
         </div>
 
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           {projects.map((project, idx) => (
             <Card key={idx} className="w-full border-none p-0 shadow-none bg-transparent">
               <MagicCard gradientFrom='#1e69dc' gradientTo='#7033ff'>
-                <CardHeader className="p-0">
-                  <div className="relative h-48 overflow-hidden rounded-t-lg">
+                <CardHeader className="p-0.5">
+                  <div className="relative w-full overflow-hidden rounded-t-lg">
                     <img src={project.image} alt={t("project_image_alt")} className="object-cover w-full h-full transition-transform duration-300 hover:scale-105" />
                   </div>
                 </CardHeader>
@@ -53,7 +53,7 @@ export const Projects = () => {
                   </div>
                 </CardContent>
 
-                <CardFooter className="p-4 flex gap-2">
+                <CardFooter className="p-4 grid sm:grid-cols-2 gap-2">
                   {project.githubUrl && (
                     <Button asChild>
                       <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
