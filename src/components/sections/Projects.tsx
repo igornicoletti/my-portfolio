@@ -34,7 +34,7 @@ export const Projects = () => {
 
   return (
     <section id='projects' className='relative px-6 py-20'>
-      <div className='mx-auto max-w-screen-md'>
+      <div className='mx-auto max-w-screen-lg'>
         <div className='mb-12 flex flex-col items-center gap-4 text-center'>
           <BlurFade direction='up' delay={BASE_DELAY + STAGGER_DELAY * 0} inView>
             <Badge variant='secondary'>{t('project_section_title')}</Badge>
@@ -50,7 +50,7 @@ export const Projects = () => {
             </p>
           </BlurFade>
         </div>
-        <div className='grid grid-cols-1 gap-4 sm:grid-cols-2'>
+        <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-2'>
           {projects.map((project, idx) => (
             <BlurFade key={idx} direction='up' delay={BASE_DELAY + STAGGER_DELAY * (3 + idx)} inView>
               <Card className='w-full border-none p-0 shadow-none bg-transparent'>

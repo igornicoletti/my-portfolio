@@ -6,7 +6,7 @@ export const Footer = () => {
 
   return (
     <footer className='relative px-6 py-20'>
-      <div className='mx-auto max-w-screen-lg'>
+      <div className='mx-auto max-w-screen-xl'>
         <div className='flex flex-col-reverse items-center justify-between gap-6 sm:flex-row'>
           <span className='text-muted-foreground text-sm'>
             {t('footer_copyright', { year: new Date().getFullYear() })}

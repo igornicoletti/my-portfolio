@@ -119,27 +119,40 @@
       "githubUrl": "https://github.com/igornicoletti"
     },
     {
-      "title": "Gerenciador de Tarefas com IA",
-      "description": "Aplicativo inteligente de gerenciamento de tarefas que usa IA para categorizar, priorizar e sugerir o agendamento ideal das atividades.",
+      "title": "Plataforma de E-commerce",
+      "description": "Uma plataforma de e-commerce completa, com gerenciamento de estoque em tempo real, processamento de pagamentos e painel administrativo.",
       "image": "/images/screenshot.png",
       "technologies": [
-        "React",
-        "Python",
-        "FastAPI",
-        "MongoDB"
+        "Next.js",
+        "TypeScript",
+        "Stripe",
+        "Prisma"
+      ],
+      "liveUrl": "https://github.com/igornicoletti",
+      "githubUrl": "https://github.com/igornicoletti"
+    },
+    {
+      "title": "Plataforma de E-commerce",
+      "description": "Uma plataforma de e-commerce completa, com gerenciamento de estoque em tempo real, processamento de pagamentos e painel administrativo.",
+      "image": "/images/screenshot.png",
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "Stripe",
+        "Prisma"
       ],
       "liveUrl": "https://github.com/igornicoletti",
       "githubUrl": "https://github.com/igornicoletti"
     }
   ],
-  "scroll_velocity_row_1": [
+  "technologies_row_1": [
     "JavaScript",
     "jQuery",
     "TailwindCSS",
     "ShadcnUI",
     "Radix"
   ],
-  "scroll_velocity_row_2": [
+  "technologies_row_2": [
     "Vite",
     "React",
     "TypeScript",
