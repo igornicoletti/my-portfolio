@@ -16,26 +16,23 @@ export const Hero = () => {
           {t('hero_badge_title')}
           <BorderBeam size={35} className="from-transparent via-accent-foreground to-transparent" />
         </Badge>
-
         <TextAnimate
           duration={0.8}
           animation="blurInUp"
           by="word"
           as="h1"
-          className="max-w-2xl font-semibold tracking-tighter text-balance text-5xl md:text-7xl">
+          className="max-w-2xl font-medium tracking-tighter text-balance text-5xl md:text-6xl">
           {t('hero_main_title')}
         </TextAnimate>
-
         <TextAnimate
           delay={0.5}
           animation="fadeIn"
           by="line"
           as="p"
-          className="text-muted-foreground max-w-xl tracking-tight text-base text-balance md:text-lg">
+          className="max-w-2xl text-muted-foreground text-balance md:text-lg">
           {t('hero_subtitle')}
         </TextAnimate>
       </div>
-
       <Particles className="fixed inset-0 z-0 w-screen h-screen" refresh />
     </section>
 

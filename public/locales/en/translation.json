@@ -3,166 +3,149 @@
   "nav_about": "About",
   "nav_experience": "Experience",
   "nav_projects": "Projects",
-  "aria_github_profile": "Github",
-  "aria_linkedin_profile": "Linkedin",
-  "aria_mail_profile": "Mail",
+  "aria_github_profile": "GitHub",
+  "aria_linkedin_profile": "LinkedIn",
+  "aria_mail_profile": "Email",
   "aria_whatsapp_profile": "WhatsApp",
   "aria_toggle_theme": "Theme",
   "aria_open_menu": "Menu",
   "aria_toggle_language": "Language",
   "hero_badge_title": "Fullstack Web Developer",
-  "hero_main_title": "Transforming Complex Ideas into Elegant Web Solutions",
-  "hero_subtitle": "I specialize in building modern, high-performance web applications with a focus on clean architecture and code quality, using technologies like React and NodeJS.",
+  "hero_main_title": "Modern and efficient web experiences",
+  "hero_subtitle": "Specialized in building high-performance web applications, contributing to the development of robust, accessible, and scalable products.",
   "about_section_title": "About Me",
-  "about_main_title": "My Approach to Building Quality Software",
-  "about_paragraph_1": "With over 5 years of experience, my development philosophy centers on building efficient and scalable products with the right tools. I architect applications with a clear separation of responsibilities, creating a clean and maintainable codebase.",
-  "about_paragraph_2": "I ensure data integrity with robust forms using React Hook Form and Zod, manage server state efficiently with React Query, and build accessible UIs with Radix and Tailwind CSS. This structured approach allows me to deliver secure, consistent, and high-quality solutions.",
-  "about_btn_github": "View Github",
-  "about_btn_cv": "Download CV",
-  "about_image_alt": "Profile picture",
+  "about_main_title": "Development philosophy and technical approach",
+  "about_paragraph_1": "I believe that well-structured and testable code is the foundation for scalable and long-lasting products. My work combines solid technical knowledge with attention to detail that makes the user experience smoother and more reliable.",
+  "about_paragraph_2": "I work with a modern web development ecosystem that integrates React 19, TypeScript, and Vite to build fast and scalable applications. I adopt agile practices and continuous integration to ensure consistent and high-quality deliveries.",
+  "about_paragraph_3": "I have experience building and evolving complex systems, contributing to technical decisions, tool selection, and architecture design. I constantly seek new technologies that drive innovation, scalability, and continuous improvement in development processes.",
+  "about_btn_github": "Explore GitHub",
+  "about_btn_cv": "Download Resume",
+  "about_image_alt": "Professional profile picture",
   "experience_section_title": "Experience",
   "experience_main_title": "Professional Journey",
-  "experience_subtitle": "A timeline of my professional growth and key achievements",
+  "experience_subtitle": "A timeline of my professional growth and key technologies.",
   "experiences": [
     {
       "title": "Frontend Developer",
       "company": "Hublab",
       "period": "Oct 2019 - Feb 2023",
-      "description": "Led the front-end development of a chatbot ecosystem, creating an intuitive UI and a dynamic admin panel that allowed the operations team to manage conversation flows without new development, reducing business response time.",
+      "description": "Frontend development of a chatbot ecosystem, including a modern interface and dynamic admin panel. The solution allowed the operations team to manage conversation flows autonomously, significantly reducing time-to-market.",
       "technologies": [
         "Angular",
+        "MirageJS",
         "React",
+        "Socket.IO",
+        "TailwindCSS",
         "TypeScript",
-        "State Management",
-        "API Integration"
+        "Vite"
       ]
     },
     {
       "title": "Frontend Developer",
       "company": "Olivas Digital",
       "period": "Mar 2021 - Jan 2022",
-      "description": "Developed high-fidelity responsive interfaces and accelerated page load performance through in-depth code optimization and lazy loading, positively impacting Core Web Vitals and implementing advanced technical SEO practices.",
+      "description": "Development of high-fidelity responsive interfaces and performance optimization through lazy loading, code refactoring, and technical SEO. The improvements boosted Core Web Vitals metrics and enhanced overall product performance.",
       "technologies": [
+        "Framer Motion",
+        "jQuery",
         "Next.js",
+        "React",
         "TypeScript",
-        "Performance Optimization",
-        "Core Web Vitals",
-        "SEO"
+        "Webpack"
       ]
     },
     {
       "title": "Frontend Developer",
       "company": "Trinto | Digital Partners",
       "period": "Nov 2020 - Mar 2021",
-      "description": "Strengthened front-end security by implementing protections against XSS and CSRF vulnerabilities. Also eliminated critical performance bottlenecks and resolved complex caching issues to ensure data consistency.",
+      "description": "Implementation of XSS and CSRF vulnerability defenses, strengthening application security and optimizing caching strategies for greater stability and speed in production.",
       "technologies": [
+        "Linx Commerce",
         "React",
-        "Security",
-        "Form Validation",
-        "Caching",
-        "Performance Tuning"
+        "Redux",
+        "TypeScript",
+        "VTEX",
+        "JavaScript"
       ]
     },
     {
       "title": "Frontend Developer",
       "company": "2morrow Sports",
       "period": "Jan 2020 - Oct 2020",
-      "description": "Architected and developed critical user-facing features, including login/registration, profile management, and personalized user experiences. Built a comprehensive financial history dashboard to enhance member transparency.",
+      "description": "Architecture and development of key user-facing features, including login, profile management, and financial history. The improvements increased personalization and transparency of information for platform members.",
       "technologies": [
-        "React",
-        "Authentication",
-        "UI/UX",
-        "Component Libraries",
-        "User Onboarding"
+        "Axios",
+        "Bootstrap",
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "jQuery",
+        "Webpack"
       ]
     },
     {
       "title": "Frontend Developer",
       "company": "Velani Contabilidade",
       "period": "Jun 2019 - Sep 2019",
-      "description": "Designed and led the development of an intuitive financial system interface, transforming complex data into actionable insights using charts and visualizations. Acted as the focal point for third-party API integrations.",
+      "description": "Architecture and development of an intuitive interface for a financial system, turning complex data into clear and actionable visualizations. Responsible for integrating external APIs and enhancing user experience.",
       "technologies": [
-        "React",
-        "Data Visualization",
-        "D3.js / Chart.js",
-        "API Integration",
-        "Financial Tech"
+        "Bootstrap",
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "jQuery",
+        "PHP"
       ]
     }
   ],
   "project_section_title": "Projects",
-  "project_main_title": "Projetos Latest",
-  "project_subtitle": "Showcasing some of my best projects and technical achievements",
+  "project_main_title": "Latest Projects",
+  "project_subtitle": "I have worked on several projects, from simple websites to complex web applications. Here are some of my favorites.",
   "project_btn_live": "Live Demo",
   "project_btn_code": "View Code",
-  "project_image_alt": "Screenshot of the {{projectName}} project",
+  "project_image_alt": "Project screenshot",
   "projects": [
     {
-      "title": "E-Commerce Platform",
-      "description": "A full-featured e-commerce platform with real-time inventory management, payment processing, and admin dashboard.",
+      "title": "E-commerce Platform",
+      "description": "A complete e-commerce platform with real-time inventory management, payment processing, and an admin dashboard.",
       "image": "/images/screenshot.png",
       "technologies": [
         "Next.js",
         "TypeScript",
         "Stripe",
-        "Prisma",
-        "PostgreSQL"
+        "Prisma"
       ],
-      "liveUrl": "https://ecommerce-demo.com",
-      "githubUrl": "https://github.com/username/ecommerce"
+      "liveUrl": "https://github.com/igornicoletti",
+      "githubUrl": "https://github.com/igornicoletti"
     },
     {
       "title": "AI Task Manager",
-      "description": "Smart task management app that uses AI to categorize, prioritize, and suggest optimal task scheduling.",
+      "description": "An intelligent task management app that uses AI to categorize, prioritize, and suggest optimal task scheduling.",
       "image": "/images/screenshot.png",
       "technologies": [
         "React",
         "Python",
-        "TensorFlow",
         "FastAPI",
         "MongoDB"
       ],
-      "liveUrl": "https://ai-taskmanager.com",
-      "githubUrl": "https://github.com/username/ai-taskmanager"
-    },
-    {
-      "title": "E-Commerce Platform",
-      "description": "A full-featured e-commerce platform with real-time inventory management, payment processing, and admin dashboard.",
-      "image": "/images/screenshot.png",
-      "technologies": [
-        "Next.js",
-        "TypeScript",
-        "Stripe",
-        "Prisma",
-        "PostgreSQL"
-      ],
-      "liveUrl": "https://ecommerce-demo.com",
-      "githubUrl": "https://github.com/username/ecommerce"
-    },
-    {
-      "title": "AI Task Manager",
-      "description": "Smart task management app that uses AI to categorize, prioritize, and suggest optimal task scheduling.",
-      "image": "/images/screenshot.png",
-      "technologies": [
-        "React",
-        "Python",
-        "TensorFlow",
-        "FastAPI",
-        "MongoDB"
-      ],
-      "liveUrl": "https://ai-taskmanager.com",
-      "githubUrl": "https://github.com/username/ai-taskmanager"
+      "liveUrl": "https://github.com/igornicoletti",
+      "githubUrl": "https://github.com/igornicoletti"
     }
   ],
   "scroll_velocity_row_1": [
-    "Fullstack Developer",
-    "Tech Lover",
-    "Web Enthusiast"
+    "JavaScript",
+    "jQuery",
+    "TailwindCSS",
+    "ShadcnUI",
+    "Radix"
   ],
   "scroll_velocity_row_2": [
-    "Creative Coder",
-    "Lifelong Learner",
-    "Problem Solver"
+    "Vite",
+    "React",
+    "TypeScript",
+    "Firebase",
+    "Postman",
+    "Git"
   ],
-  "footer_copyright": "2Ti © {{year}} All rights reserved."
+  "footer_copyright": "© {{year}} 2Ti All Rights Reserved."
 }

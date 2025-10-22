@@ -1,6 +1,6 @@
 import { Badge } from '@/components/ui/badge'
 import { BlurFade } from '@/components/ui/blur-fade'
-import { CalendarBlankIcon } from '@phosphor-icons/react'
+import { CalendarIcon } from '@radix-ui/react-icons'
 import { useTranslation } from 'react-i18next'
 
 interface ExperienceProps {
@@ -29,12 +29,12 @@ export const Experience = () => {
             <Badge variant='secondary'>{t('experience_section_title')}</Badge>
           </BlurFade>
           <BlurFade direction='up' delay={BASE_DELAY + STAGGER_DELAY * 1} inView>
-            <h2 className='text-4xl font-extralight text-balance sm:text-5xl'>
+            <h2 className='text-3xl font-extralight text-balance sm:text-4xl'>
               {t('experience_main_title')}
             </h2>
           </BlurFade>
           <BlurFade direction='up' delay={BASE_DELAY + STAGGER_DELAY * 2} inView>
-            <p className='max-w-xl text-muted-foreground text-balance md:text-lg'>
+            <p className='max-w-2xl text-muted-foreground text-balance md:text-lg'>
               {t('experience_subtitle')}
             </p>
           </BlurFade>
@@ -46,19 +46,19 @@ export const Experience = () => {
               <div className='absolute -left-0.5 top-2 size-2.5 rounded-full border-2 border-primary bg-background' />
               <BlurFade direction='up' delay={BASE_DELAY + STAGGER_DELAY * (3 + idx)} inView>
                 <div className='pl-8'>
-                  <h3 className='mb-2 text-xl font-medium text-balance sm:text-2xl'>
+                  <h3 className='text-lg font-medium text-balance sm:text-xl'>
                     {experience.company}
                   </h3>
-                  <h4 className='mb-2 text-muted-foreground text-balance md:text-lg'>
+                  <h4 className='text-muted-foreground text-balance md:text-lg'>
                     {experience.title}
                   </h4>
-                  <div className='mb-4 text-muted-foreground text-balance text-sm'>
+                  <div className='mb-2 text-muted-foreground text-balance text-sm'>
                     <div className='flex items-center gap-2'>
-                      <CalendarBlankIcon weight='duotone' />
+                      <CalendarIcon />
                       <span>{experience.period}</span>
                     </div>
                   </div>
-                  <p className='mb-4 text-muted-foreground text-balance md:text-lg'>
+                  <p className='mb-4 text-muted-foreground text-balance'>
                     {experience.description}
                   </p>
                   <div className='flex flex-wrap gap-2'>

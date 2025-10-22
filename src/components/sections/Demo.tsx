@@ -59,7 +59,7 @@ const features = [
 export function BentoDemo() {
   return (
     <section id='demo' className='relative px-6 py-20'>
-      <div className='mx-auto max-w-screen-xl'>
+      <div className='mx-auto max-w-screen-lg'>
         <BentoGrid className="lg:grid-rows-3">
           {features.map((feature) => (
             <BentoCard key={feature.name} {...feature} />

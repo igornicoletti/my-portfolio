@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Dock, DockIcon } from "@/components/ui/dock"
 import { Separator } from '@/components/ui/separator'
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip"
-import { EnvelopeSimpleIcon, GithubLogoIcon, GlobeIcon, LinkedinLogoIcon, WhatsappLogoIcon } from "@phosphor-icons/react"
+import { EnvelopeClosedIcon, GitHubLogoIcon, GlobeIcon, LinkedInLogoIcon } from '@radix-ui/react-icons'
 import { useTranslation } from "react-i18next"
 
 export const DockDemo = () => {
@@ -23,7 +23,7 @@ export const DockDemo = () => {
             <TooltipTrigger asChild>
               <Button asChild variant="ghost" size="icon">
                 <a href="https://linkedin.com/in/igornicoletti" target="_blank" rel="noopener noreferrer">
-                  <LinkedinLogoIcon />
+                  <LinkedInLogoIcon />
                 </a>
               </Button>
             </TooltipTrigger>
@@ -35,7 +35,7 @@ export const DockDemo = () => {
             <TooltipTrigger asChild>
               <Button asChild variant="ghost" size="icon">
                 <a href="https://github.com/igornicoletti" target="_blank" rel="noopener noreferrer">
-                  <GithubLogoIcon />
+                  <GitHubLogoIcon />
                 </a>
               </Button>
             </TooltipTrigger>
@@ -47,23 +47,11 @@ export const DockDemo = () => {
             <TooltipTrigger asChild>
               <Button asChild variant="ghost" size="icon">
                 <a href="mailto:igor93nicoletti@gmail.com" target="_blank" rel="noopener noreferrer">
-                  <EnvelopeSimpleIcon />
+                  <EnvelopeClosedIcon />
                 </a>
               </Button>
             </TooltipTrigger>
             <TooltipContent>{t("aria_mail_profile")}</TooltipContent>
-          </Tooltip>
-        </DockIcon>
-        <DockIcon>
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <Button asChild variant="ghost" size="icon">
-                <a href="https://wa.me/5517991382583" target="_blank" rel="noopener noreferrer">
-                  <WhatsappLogoIcon />
-                </a>
-              </Button>
-            </TooltipTrigger>
-            <TooltipContent>{t("aria_whatsapp_profile")}</TooltipContent>
           </Tooltip>
         </DockIcon>
         <Separator orientation='vertical' className='data-[orientation=vertical]:h-6' />

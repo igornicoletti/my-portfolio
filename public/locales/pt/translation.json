@@ -3,80 +3,81 @@
   "nav_about": "Sobre",
   "nav_experience": "Experiência",
   "nav_projects": "Projetos",
-  "aria_github_profile": "Github",
-  "aria_linkedin_profile": "Linkedin",
+  "aria_github_profile": "GitHub",
+  "aria_linkedin_profile": "LinkedIn",
   "aria_mail_profile": "E-mail",
   "aria_whatsapp_profile": "WhatsApp",
   "aria_toggle_theme": "Tema",
   "aria_open_menu": "Menu",
   "aria_toggle_language": "Idioma",
-  "hero_badge_title": "Fullstack Web Developer",
+  "hero_badge_title": "Desenvolvedor Web Fullstack",
   "hero_main_title": "Experiências web modernas e eficientes",
-  "hero_subtitle": "Especializado na criação de aplicações web de alto desempenho, contribuindo para o desenvolvimento de produtos robustos, acessíveis e sustentáveis.",
-  "about_section_title": "Sobre Mim",
+  "hero_subtitle": "Especializado na criação de aplicações web de alto desempenho, contribuindo para o desenvolvimento de produtos robustos, acessíveis e escaláveis.",
+  "about_section_title": "Sobre mim",
   "about_main_title": "Filosofia de desenvolvimento e abordagem técnica",
   "about_paragraph_1": "Acredito que um código bem estruturado e testável é a base para produtos escaláveis e de longa vida útil. Meu trabalho combina conhecimento técnico sólido com atenção aos detalhes que tornam a experiência do usuário mais fluida e confiável.",
-  "about_paragraph_2": "Trabalho com um ecossistema moderno de desenvolvimento web que une React 19, TypeScript e Vite para construir aplicações rápidas e escaláveis. Adoto práticas ágeis e integração contínua para garantir entregas consistentes e de alta qualidade.",
-  "about_paragraph_3": "Tenho experiência na construção e evolução de sistemas complexos, contribuindo para decisões técnicas, definição de ferramentas e desenho de arquitetura. Busco constantemente novas tecnologias que impulsionem inovação, escalabilidade e a melhoria contínua dos processos de desenvolvimento.",
-  "about_btn_github": "Explorar Github",
-  "about_btn_cv": "Baixar Currículo",
+  "about_paragraph_2": "Trabalho com um ecossistema moderno de desenvolvimento web que integra React 19, TypeScript e Vite para construir aplicações rápidas e escaláveis. Adoto práticas ágeis e integração contínua para garantir entregas consistentes e de alta qualidade.",
+  "about_paragraph_3": "Tenho experiência na construção e evolução de sistemas complexos, contribuindo para decisões técnicas, definição de ferramentas e desenho de arquitetura. Busco constantemente novas tecnologias que impulsionem a inovação, a escalabilidade e a melhoria contínua dos processos de desenvolvimento.",
+  "about_btn_github": "Explorar GitHub",
+  "about_btn_cv": "Baixar currículo",
   "about_image_alt": "Imagem de perfil profissional",
   "experience_section_title": "Experiência",
   "experience_main_title": "Trajetória profissional",
-  "experience_subtitle": "Uma linha do tempo do meu crescimento profissional e principais realizações.",
+  "experience_subtitle": "Uma linha do tempo do meu crescimento profissional e das principais tecnologias utilizadas.",
   "experiences": [
     {
       "title": "Desenvolvedor Frontend",
       "company": "Hublab",
-      "period": "Out 2019 - Fev 2023",
+      "period": "out. 2019 - fev. 2023",
       "description": "Desenvolvimento front-end de um ecossistema de chatbot, incluindo interface moderna e painel administrativo dinâmico. A solução permitiu à equipe de operações gerenciar fluxos de conversa de forma autônoma, reduzindo significativamente o time-to-market.",
       "technologies": [
         "Angular",
-        "API REST",
-        "JavaScript",
-        "Node.js",
+        "MirageJS",
         "React",
+        "Socket.IO",
+        "TailwindCSS",
         "TypeScript",
-        "Watson da IBM"
+        "Vite"
       ]
     },
     {
       "title": "Desenvolvedor Frontend",
       "company": "Olivas Digital",
-      "period": "Mar 2021 - Jan 2022",
-      "description": "Desenvolvimento de interfaces responsivas de alta fidelidade e otimização de desempenho através de lazy loading, refatoração de código e SEO técnico. As melhorias elevaram os indicadores de Core Web Vitals e aprimoraram a performance geral do produto.",
+      "period": "mar. 2021 - jan. 2022",
+      "description": "Desenvolvimento de interfaces responsivas de alta fidelidade e otimização de desempenho por meio de lazy loading, refatoração de código e SEO técnico. As melhorias elevaram os indicadores de Core Web Vitals e aprimoraram a performance geral do produto.",
       "technologies": [
-        "CSS3",
-        "HTML5",
-        "JavaScript",
+        "Framer Motion",
         "jQuery",
+        "Next.js",
         "React",
+        "TypeScript",
         "Webpack"
       ]
     },
     {
       "title": "Desenvolvedor Frontend",
       "company": "Trinto | Digital Partners",
-      "period": "Nov 2020 - Mar 2021",
-      "description": "Implentação de defesas contra vulnerabilidades XSS e CSRF, fortalecimento da segurança das aplicações e otimização de estratégias de caching para maior estabilidade e agilidade em produção.",
+      "period": "nov. 2020 - mar. 2021",
+      "description": "Implementação de defesas contra vulnerabilidades XSS e CSRF, fortalecimento da segurança das aplicações e otimização de estratégias de cache para maior estabilidade e agilidade em produção.",
       "technologies": [
-        "CSS3",
-        "HTML5",
-        "JavaScript",
         "Linx Commerce",
         "React",
-        "VTEX"
+        "Redux",
+        "TypeScript",
+        "VTEX",
+        "JavaScript"
       ]
     },
     {
       "title": "Desenvolvedor Frontend",
       "company": "2morrow Sports",
-      "period": "Jan 2020 - Out 2020",
+      "period": "jan. 2020 - out. 2020",
       "description": "Arquitetura e desenvolvimento de funcionalidades essenciais voltadas ao usuário, incluindo login, gerenciamento de perfil e histórico financeiro. As melhorias ampliaram a personalização e a transparência das informações para os membros da plataforma.",
       "technologies": [
-        "API REST",
-        "CSS3",
+        "Axios",
+        "Bootstrap",
         "HTML5",
+        "CSS3",
         "JavaScript",
         "jQuery",
         "Webpack"
@@ -85,14 +86,14 @@
     {
       "title": "Desenvolvedor Frontend",
       "company": "Velani Contabilidade",
-      "period": "Jun 2019 - Set 2019",
-      "description": "Arquitetura e desenvolvimento de uma interface intuitiva para sistema financeiro, transformando dados complexos em visualizações claras e acionáveis. Responsabilidade direta por integrações de APIs externas e aprimoramento da experiência do usuário.",
+      "period": "jun. 2019 - set. 2019",
+      "description": "Arquitetura e desenvolvimento de uma interface intuitiva para o sistema financeiro, transformando dados complexos em visualizações claras e acionáveis. Responsável por integrações de APIs externas e aprimoramento da experiência do usuário.",
       "technologies": [
-        "API REST",
-        "CSS3",
+        "Bootstrap",
         "HTML5",
+        "CSS3",
         "JavaScript",
-        "Jquery",
+        "jQuery",
         "PHP"
       ]
     }
@@ -101,12 +102,12 @@
   "project_main_title": "Projetos mais recentes",
   "project_subtitle": "Trabalhei em diversos projetos, desde sites simples até aplicativos web complexos. Aqui estão alguns dos meus favoritos.",
   "project_btn_live": "Demonstração ao vivo",
-  "project_btn_code": "Ver Código",
+  "project_btn_code": "Ver código",
   "project_image_alt": "Captura de tela do projeto",
   "projects": [
     {
-      "title": "Plataforma de E-Commerce",
-      "description": "Uma plataforma de e-commerce completa com gerenciamento de estoque em tempo real, processamento de pagamentos e painel administrativo.",
+      "title": "Plataforma de E-commerce",
+      "description": "Uma plataforma de e-commerce completa, com gerenciamento de estoque em tempo real, processamento de pagamentos e painel administrativo.",
       "image": "/images/screenshot.png",
       "technologies": [
         "Next.js",
@@ -119,7 +120,7 @@
     },
     {
       "title": "Gerenciador de Tarefas com IA",
-      "description": "Aplicativo inteligente de gerenciamento de tarefas que usa IA para categorizar, priorizar e sugerir o agendamento ideal de tarefas.",
+      "description": "Aplicativo inteligente de gerenciamento de tarefas que usa IA para categorizar, priorizar e sugerir o agendamento ideal das atividades.",
       "image": "/images/screenshot.png",
       "technologies": [
         "React",
@@ -132,22 +133,19 @@
     }
   ],
   "scroll_velocity_row_1": [
+    "JavaScript",
+    "jQuery",
+    "TailwindCSS",
+    "ShadcnUI",
+    "Radix"
+  ],
+  "scroll_velocity_row_2": [
     "Vite",
     "React",
     "TypeScript",
     "Firebase",
-    "Redux",
-    "Jest",
-    "Context API",
-    "Design Systems"
+    "Postman",
+    "Git"
   ],
-  "scroll_velocity_row_2": [
-    "Metodologias Ágeis",
-    "Versionamento Git",
-    "Testes Automatizados",
-    "Performance Web",
-    "Acessibilidade",
-    "Design Responsivo"
-  ],
-  "footer_copyright": "2Ti © {{year}} Todos os direitos reservados."
+  "footer_copyright": "© {{year}} 2Ti Todos os direitos reservados."
 }

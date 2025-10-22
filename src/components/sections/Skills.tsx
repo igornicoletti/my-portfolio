@@ -14,7 +14,7 @@ export const Skills = () => {
 
   return (
     <section className='relative flex w-full flex-col items-center justify-center overflow-hidden py-6 md:py-20'>
-      <ScrollVelocityContainer className="text-4xl font-bold tracking-[-0.02em] md:text-7xl md:leading-[5rem] text-muted-foreground/10">
+      <ScrollVelocityContainer className="text-muted-foreground/10 font-bold text-5xl md:text-6xl">
         <ScrollVelocityRow baseVelocity={2} direction={1}>
           {row1String}
         </ScrollVelocityRow>

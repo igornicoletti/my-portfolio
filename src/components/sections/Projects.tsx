@@ -10,7 +10,7 @@ import {
   CardTitle,
 } from '@/components/ui/card'
 import { MagicCard } from '@/components/ui/magic-card'
-import { ArrowSquareOutIcon, GithubLogoIcon } from '@phosphor-icons/react'
+import { ExternalLinkIcon, GitHubLogoIcon } from '@radix-ui/react-icons'
 import { useTranslation } from 'react-i18next'
 
 interface ProjectsProps {
@@ -34,18 +34,18 @@ export const Projects = () => {
 
   return (
     <section id='projects' className='relative px-6 py-20'>
-      <div className='mx-auto max-w-screen-lg'>
+      <div className='mx-auto max-w-screen-md'>
         <div className='mb-12 flex flex-col items-center gap-4 text-center'>
           <BlurFade direction='up' delay={BASE_DELAY + STAGGER_DELAY * 0} inView>
             <Badge variant='secondary'>{t('project_section_title')}</Badge>
           </BlurFade>
           <BlurFade direction='up' delay={BASE_DELAY + STAGGER_DELAY * 1} inView>
-            <h2 className='text-4xl font-extralight text-balance sm:text-5xl'>
+            <h2 className='text-3xl font-extralight text-balance sm:text-4xl'>
               {t('project_main_title')}
             </h2>
           </BlurFade>
           <BlurFade direction='up' delay={BASE_DELAY + STAGGER_DELAY * 2} inView>
-            <p className='max-w-xl text-muted-foreground text-balance md:text-lg'>
+            <p className='max-w-2xl text-muted-foreground text-balance md:text-lg'>
               {t('project_subtitle')}
             </p>
           </BlurFade>
@@ -57,32 +57,23 @@ export const Projects = () => {
                 <MagicCard gradientFrom='#1e69dc' gradientTo='#7033ff'>
                   <CardHeader className='p-0.5'>
                     <div className='relative w-full overflow-hidden rounded-t-lg'>
-                      <img
-                        src={project.image}
-                        alt={t('project_image_alt')}
-                        className='object-cover w-full h-full transition-transform duration-300 hover:scale-105' />
+                      <img src={project.image} alt={t('project_image_alt')} className='object-cover w-full h-full transition-transform duration-300 hover:scale-105' />
                     </div>
                   </CardHeader>
-                  <CardContent className='px-4 py-2'>
-                    <CardTitle className='mb-2 text-lg font-medium text-balance sm:text-xl'>
-                      {project.title}
-                    </CardTitle>
-                    <CardDescription className='mb-4 text-muted-foreground text-balance'>
-                      {project.description}
-                    </CardDescription>
-                    <div className='flex flex-wrap gap-2'>
-                      {project.technologies.map((tech) => (
-                        <Badge key={tech} variant='secondary'>
-                          {tech}
-                        </Badge>
-                      ))}
-                    </div>
+                  <CardContent className='flex flex-col gap-2 px-4 py-2'>
+                    <CardTitle>{project.title}</CardTitle>
+                    <CardDescription>{project.description}</CardDescription>
                   </CardContent>
-                  <CardFooter className='p-4 grid sm:grid-cols-2 gap-2'>
+                  <div className='flex flex-wrap gap-2 px-4 py-2'>
+                    {project.technologies.map((tech) => (
+                      <Badge key={tech} variant='secondary'>{tech}</Badge>
+                    ))}
+                  </div>
+                  <CardFooter className='flex flex-wrap gap-2 p-4'>
                     {project.githubUrl && (
                       <Button asChild variant='default' size='sm'>
                         <a href={project.githubUrl} target='_blank' rel='noopener noreferrer'>
-                          <GithubLogoIcon />
+                          <GitHubLogoIcon />
                           {t('project_btn_code')}
                         </a>
                       </Button>
@@ -90,7 +81,7 @@ export const Projects = () => {
                     {project.liveUrl && (
                       <Button asChild variant='outline' size='sm'>
                         <a href={project.liveUrl} target='_blank' rel='noopener noreferrer'>
-                          <ArrowSquareOutIcon />
+                          <ExternalLinkIcon />
                           {t('project_btn_live')}
                         </a>
                       </Button>

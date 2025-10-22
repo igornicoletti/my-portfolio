@@ -1,7 +1,7 @@
 import { Badge } from '@/components/ui/badge'
 import { BlurFade } from '@/components/ui/blur-fade'
 import { Button } from '@/components/ui/button'
-import { DownloadSimpleIcon, GithubLogoIcon } from '@phosphor-icons/react'
+import { DownloadIcon, GitHubLogoIcon } from '@radix-ui/react-icons'
 import { useTranslation } from 'react-i18next'
 
 const BASE_DELAY = 0.25
@@ -38,7 +38,7 @@ export const About = () => {
               </div>
             </BlurFade>
             <BlurFade direction='up' delay={BASE_DELAY + STAGGER_DELAY * 2} inView>
-              <h2 className='mb-4 text-4xl font-extralight text-balance sm:text-5xl'>
+              <h2 className='mb-4 text-3xl font-extralight text-balance sm:text-4xl'>
                 {t('about_main_title')}
               </h2>
             </BlurFade>
@@ -61,13 +61,13 @@ export const About = () => {
               <div className='flex flex-wrap gap-2'>
                 <Button asChild variant='default'>
                   <a href='https://github.com/igornicoletti' target='_blank' rel='noopener noreferrer'>
-                    <GithubLogoIcon />
+                    <GitHubLogoIcon />
                     {t('about_btn_github')}
                   </a>
                 </Button>
                 <Button asChild variant='outline'>
                   <a href='/images/igornicoletti.pdf' download>
-                    <DownloadSimpleIcon />
+                    <DownloadIcon />
                     {t('about_btn_cv')}
                   </a>
                 </Button>

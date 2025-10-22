@@ -1,4 +1,4 @@
-import { Moon, Sun } from "lucide-react"
+import { MoonIcon, SunIcon } from '@radix-ui/react-icons'
 import { useCallback, useEffect, useRef, useState } from "react"
 import { flushSync } from "react-dom"
 
@@ -79,7 +79,7 @@ export const AnimatedThemeToggler = ({
       className={cn(className)}
       {...props}
     >
-      {isDark ? <Sun /> : <Moon />}
+      {isDark ? <SunIcon /> : <MoonIcon />}
       <span className="sr-only">Toggle theme</span>
     </Button>
   )
