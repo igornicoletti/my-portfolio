@@ -22,7 +22,7 @@ export const DockDemo = () => {
           <Tooltip>
             <TooltipTrigger asChild>
               <Button asChild variant="ghost" size="icon">
-                <a href="https://linkedin.com/igornicoletti" target="_blank" rel="noopener noreferrer">
+                <a href="https://linkedin.com/in/igornicoletti" target="_blank" rel="noopener noreferrer">
                   <LinkedinLogoIcon />
                 </a>
               </Button>
