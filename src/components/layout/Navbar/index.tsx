@@ -7,6 +7,7 @@ export const Navbar = () => {
   const { t } = useTranslation()
 
   const menuItems = [
+    { title: t('nav_home'), url: '#home' },
     { title: t('nav_about'), url: '#about' },
     { title: t('nav_experience'), url: '#experience' },
     { title: t('nav_projects'), url: '#projects' },

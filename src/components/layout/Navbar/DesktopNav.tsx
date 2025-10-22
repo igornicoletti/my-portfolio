@@ -1,8 +1,7 @@
 // src/components/layout/Navbar/DesktopNav.tsx
-import { AnimatedThemeToggler } from '@/components/ui/animated-theme-toggler'
-import { Button } from '@/components/ui/button'
+import { DockDemo } from '@/components/shared/DockDemo'
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList } from '@/components/ui/navigation-menu'
-import { GithubLogoIcon, SpiralIcon } from '@phosphor-icons/react'
+import { SpiralIcon } from '@phosphor-icons/react'
 
 interface NavItem {
   title: string
@@ -24,7 +23,7 @@ export const DesktopNav = ({ menu }: DesktopNavProps) => (
         <NavigationMenuList className='gap-1'>
           {menu.map((item) => (
             <NavigationMenuItem key={item.title}>
-              <NavigationMenuLink href={item.url} className='bg-background hover:bg-muted hover:text-accent-foreground group inline-flex w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors'>
+              <NavigationMenuLink href={item.url} className='px-4 py-2 font-medium transition-colors'>
                 {item.title}
               </NavigationMenuLink>
             </NavigationMenuItem>
@@ -32,13 +31,6 @@ export const DesktopNav = ({ menu }: DesktopNavProps) => (
         </NavigationMenuList>
       </NavigationMenu>
     </div>
-    <div className='flex items-center gap-2'>
-      <Button asChild variant='ghost' size='icon'>
-        <a href='https://github.com/images/igornicoletti' target='_blank' rel='noopener noreferrer'>
-          <GithubLogoIcon />
-        </a>
-      </Button>
-      <AnimatedThemeToggler />
-    </div>
+    <DockDemo />
   </nav>
 )

@@ -1,4 +1,4 @@
-// src/components/layout/Navbar/MobileNav.tsx
+import { DockDemo } from '@/components/shared/DockDemo'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet'
 import { ListIcon, SpiralIcon } from '@phosphor-icons/react'
@@ -29,7 +29,7 @@ export const MobileNav = ({ menu }: MobileNavProps) => {
               <ListIcon />
             </Button>
           </SheetTrigger>
-          <SheetContent side='right'>
+          <SheetContent side='right' className='w-full max-w-xs'>
             <SheetHeader>
               <SheetTitle>
                 <a href='#home' className='flex items-center gap-2'>
@@ -45,6 +45,9 @@ export const MobileNav = ({ menu }: MobileNavProps) => {
                   {item.title}
                 </a>
               ))}
+            </div>
+            <div className='mt-auto py-4'>
+              <DockDemo />
             </div>
           </SheetContent>
         </Sheet>
