@@ -1,6 +1,5 @@
 import { Navbar } from '@/components/layout/Navbar'
 import { About } from '@/components/sections/About'
-import { Contact } from '@/components/sections/Contact'
 import { BentoDemo } from '@/components/sections/Demo'
 import { Experience } from '@/components/sections/Experience'
 import { Footer } from '@/components/sections/Footer'
@@ -18,7 +17,6 @@ function App() {
       <Experience />
       <Projects />
       <BentoDemo />
-      <Contact />
       <Footer />
     </>
   )
