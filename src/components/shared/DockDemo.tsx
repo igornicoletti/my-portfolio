@@ -70,7 +70,7 @@ export const DockDemo = () => {
         <DockIcon>
           <Tooltip>
             <TooltipTrigger asChild>
-              <Button onClick={() => handleLanguageChange} variant="ghost" size="icon">
+              <Button onClick={handleLanguageChange} variant="ghost" size="icon">
                 <GlobeIcon />
               </Button>
             </TooltipTrigger>
