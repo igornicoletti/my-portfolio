@@ -12,14 +12,14 @@ interface DesktopNavProps {
 }
 
 export const DesktopNav = ({ menu }: DesktopNavProps) => (
-  <nav className='hidden justify-between lg:flex'>
+  <nav className='hidden lg:flex items-center justify-between'>
     <div className='flex items-center gap-6'>
       <a href='#home' className='flex items-center gap-2'>
         <SpiralIcon weight='fill' className='size-8' />
         <span className='text-lg font-semibold tracking-tight'>2Ti</span>
       </a>
       <NavigationMenu>
-        <NavigationMenuList className='gap-1'>
+        <NavigationMenuList>
           {menu.map((item) => (
             <NavigationMenuItem key={item.title}>
               <NavigationMenuLink href={item.url} className='px-4 py-2 font-medium transition-colors'>

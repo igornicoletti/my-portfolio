@@ -37,15 +37,14 @@ export const MobileNav = ({ menu }: MobileNavProps) => {
                   <span className='text-lg font-semibold tracking-tight'>2Ti</span>
                 </a>
               </SheetTitle>
-              <SheetDescription></SheetDescription>
+              <SheetDescription className='flex flex-col gap-4 py-6'>
+                {menu.map((item) => (
+                  <a key={item.title} href={item.url}>
+                    {item.title}
+                  </a>
+                ))}
+              </SheetDescription>
             </SheetHeader>
-            <div className='flex flex-col gap-4 px-6'>
-              {menu.map((item) => (
-                <a key={item.title} href={item.url} className='text-md font-medium'>
-                  {item.title}
-                </a>
-              ))}
-            </div>
             <SheetFooter>
               <DockDemo />
             </SheetFooter>
