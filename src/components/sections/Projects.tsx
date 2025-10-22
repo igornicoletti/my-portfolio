@@ -50,7 +50,7 @@ export const Projects = () => {
             </p>
           </BlurFade>
         </div>
-        <div className='grid grid-cols-1 gap-4 md:grid-cols-2'>
+        <div className='grid grid-cols-1 gap-4 sm:grid-cols-2'>
           {projects.map((project, idx) => (
             <BlurFade key={idx} direction='up' delay={BASE_DELAY + STAGGER_DELAY * (3 + idx)} inView>
               <Card className='w-full border-none p-0 shadow-none bg-transparent'>
