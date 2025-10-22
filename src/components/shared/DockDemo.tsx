@@ -78,12 +78,7 @@ export const DockDemo = () => {
           </Tooltip>
         </DockIcon>
         <DockIcon>
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <AnimatedThemeToggler />
-            </TooltipTrigger>
-            <TooltipContent>{t("aria_toggle_theme")}</TooltipContent>
-          </Tooltip>
+          <AnimatedThemeToggler />
         </DockIcon>
       </Dock>
     </div>
