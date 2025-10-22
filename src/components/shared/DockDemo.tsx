@@ -18,73 +18,73 @@ export const DockDemo = () => {
   return (
     <div className="relative">
       <Dock>
-        <Tooltip>
-          <TooltipTrigger asChild>
-            <DockIcon>
-              <Button asChild variant="ghost" size="icon" aria-label={t("aria_linkedin_profile")}>
+        <DockIcon>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button asChild variant="ghost" size="icon">
                 <a href="https://linkedin.com/igornicoletti" target="_blank" rel="noopener noreferrer">
                   <LinkedinLogoIcon />
                 </a>
               </Button>
-            </DockIcon>
-          </TooltipTrigger>
-          <TooltipContent>{t("aria_linkedin_profile")}</TooltipContent>
-        </Tooltip>
-        <Tooltip>
-          <TooltipTrigger asChild>
-            <DockIcon>
-              <Button asChild variant="ghost" size="icon" aria-label={t("aria_github_profile")}>
+            </TooltipTrigger>
+            <TooltipContent>{t("aria_linkedin_profile")}</TooltipContent>
+          </Tooltip>
+        </DockIcon>
+        <DockIcon>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button asChild variant="ghost" size="icon">
                 <a href="https://github.com/igornicoletti" target="_blank" rel="noopener noreferrer">
                   <GithubLogoIcon />
                 </a>
               </Button>
-            </DockIcon>
-          </TooltipTrigger>
-          <TooltipContent>{t("aria_github_profile")}</TooltipContent>
-        </Tooltip>
-        <Tooltip>
-          <TooltipTrigger asChild>
-            <DockIcon>
-              <Button asChild variant="ghost" size="icon" aria-label={t("aria_mail_profile")}>
+            </TooltipTrigger>
+            <TooltipContent>{t("aria_github_profile")}</TooltipContent>
+          </Tooltip>
+        </DockIcon>
+        <DockIcon>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button asChild variant="ghost" size="icon">
                 <a href="mailto:igor93nicoletti@gmail.com" target="_blank" rel="noopener noreferrer">
                   <EnvelopeSimpleIcon />
                 </a>
               </Button>
-            </DockIcon>
-          </TooltipTrigger>
-          <TooltipContent>{t("aria_mail_profile")}</TooltipContent>
-        </Tooltip>
-        <Tooltip>
-          <TooltipTrigger asChild>
-            <DockIcon>
-              <Button asChild variant="ghost" size="icon" aria-label={t("aria_whatsapp_profile")}>
+            </TooltipTrigger>
+            <TooltipContent>{t("aria_mail_profile")}</TooltipContent>
+          </Tooltip>
+        </DockIcon>
+        <DockIcon>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button asChild variant="ghost" size="icon">
                 <a href="https://wa.me/5517991382583" target="_blank" rel="noopener noreferrer">
                   <WhatsappLogoIcon />
                 </a>
               </Button>
-            </DockIcon>
-          </TooltipTrigger>
-          <TooltipContent>{t("aria_whatsapp_profile")}</TooltipContent>
-        </Tooltip>
+            </TooltipTrigger>
+            <TooltipContent>{t("aria_whatsapp_profile")}</TooltipContent>
+          </Tooltip>
+        </DockIcon>
         <Separator orientation='vertical' className='data-[orientation=vertical]:h-6' />
-        <Tooltip>
-          <TooltipTrigger asChild>
-            <DockIcon>
-              <Button onClick={handleLanguageChange} variant="ghost" size="icon" aria-label={t("aria_toggle_language")}>
+        <DockIcon>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button onClick={handleLanguageChange} variant="ghost" size="icon">
                 <GlobeIcon />
               </Button>
-            </DockIcon>
-          </TooltipTrigger>
-          <TooltipContent>{t("aria_toggle_language")}</TooltipContent>
-        </Tooltip>
-        <Tooltip>
-          <TooltipTrigger asChild>
-            <DockIcon>
+            </TooltipTrigger>
+            <TooltipContent>{t("aria_toggle_language")}</TooltipContent>
+          </Tooltip>
+        </DockIcon>
+        <DockIcon>
+          <Tooltip>
+            <TooltipTrigger asChild>
               <AnimatedThemeToggler />
-            </DockIcon>
-          </TooltipTrigger>
-          <TooltipContent>{t("aria_toggle_theme")}</TooltipContent>
-        </Tooltip>
+            </TooltipTrigger>
+            <TooltipContent>{t("aria_toggle_theme")}</TooltipContent>
+          </Tooltip>
+        </DockIcon>
       </Dock>
     </div>
   )

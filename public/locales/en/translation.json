@@ -92,7 +92,7 @@
     }
   ],
   "project_section_title": "Projects",
-  "project_main_title": "Featured Work",
+  "project_main_title": "Projetos Latest",
   "project_subtitle": "Showcasing some of my best projects and technical achievements",
   "project_btn_live": "Live Demo",
   "project_btn_code": "View Code",
@@ -101,7 +101,7 @@
     {
       "title": "E-Commerce Platform",
       "description": "A full-featured e-commerce platform with real-time inventory management, payment processing, and admin dashboard.",
-      "image": "/placeholder.svg",
+      "image": "/images/screenshot.png",
       "technologies": [
         "Next.js",
         "TypeScript",
@@ -115,7 +115,35 @@
     {
       "title": "AI Task Manager",
       "description": "Smart task management app that uses AI to categorize, prioritize, and suggest optimal task scheduling.",
-      "image": "/placeholder.svg",
+      "image": "/images/screenshot.png",
+      "technologies": [
+        "React",
+        "Python",
+        "TensorFlow",
+        "FastAPI",
+        "MongoDB"
+      ],
+      "liveUrl": "https://ai-taskmanager.com",
+      "githubUrl": "https://github.com/username/ai-taskmanager"
+    },
+    {
+      "title": "E-Commerce Platform",
+      "description": "A full-featured e-commerce platform with real-time inventory management, payment processing, and admin dashboard.",
+      "image": "/images/screenshot.png",
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "Stripe",
+        "Prisma",
+        "PostgreSQL"
+      ],
+      "liveUrl": "https://ecommerce-demo.com",
+      "githubUrl": "https://github.com/username/ecommerce"
+    },
+    {
+      "title": "AI Task Manager",
+      "description": "Smart task management app that uses AI to categorize, prioritize, and suggest optimal task scheduling.",
+      "image": "/images/screenshot.png",
       "technologies": [
         "React",
         "Python",

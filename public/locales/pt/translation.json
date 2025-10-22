@@ -99,10 +99,10 @@
     }
   ],
   "project_section_title": "Projetos",
-  "project_main_title": "Trabalhos em destaque",
+  "project_main_title": "Projetos mais recentes",
   "project_subtitle": "Trabalhei em diversos projetos, desde sites simples até aplicativos web complexos. Aqui estão alguns dos meus favoritos.",
-  "project_btn_live": "Ver Demostração",
-  "project_btn_code": "Explorar Código",
+  "project_btn_live": "Demonstração ao vivo",
+  "project_btn_code": "Ver Código",
   "project_image_alt": "Captura de tela do projeto",
   "projects": [
     {

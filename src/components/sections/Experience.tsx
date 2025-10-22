@@ -1,4 +1,5 @@
 import { Badge } from '@/components/ui/badge'
+import { BlurFade } from '@/components/ui/blur-fade'
 import { CalendarBlankIcon } from '@phosphor-icons/react'
 import { useTranslation } from 'react-i18next'
 
@@ -10,6 +11,9 @@ interface ExperienceProps {
   technologies: string[]
 }
 
+const BASE_DELAY = 0.25
+const STAGGER_DELAY = 0.05
+
 export const Experience = () => {
   const { t } = useTranslation()
 
@@ -20,28 +24,50 @@ export const Experience = () => {
   return (
     <section id='experience' className='relative px-6 py-20'>
       <div className='mx-auto max-w-screen-md'>
-        <div className='mb-12 flex flex-col items-center gap-6 text-center'>
-          <Badge variant='secondary'>{t('experience_section_title')}</Badge>
-          <h2 className='text-4xl font-extralight text-balance sm:text-5xl'>{t('experience_main_title')}</h2>
-          <p className='text-muted-foreground text-base text-balance md:text-lg'>{t('experience_subtitle')}</p>
+        <div className='mb-12 flex flex-col items-center gap-4 text-center'>
+          <BlurFade direction='up' delay={BASE_DELAY + STAGGER_DELAY * 0} inView>
+            <Badge variant='secondary'>{t('experience_section_title')}</Badge>
+          </BlurFade>
+          <BlurFade direction='up' delay={BASE_DELAY + STAGGER_DELAY * 1} inView>
+            <h2 className='text-4xl font-extralight text-balance sm:text-5xl'>
+              {t('experience_main_title')}
+            </h2>
+          </BlurFade>
+          <BlurFade direction='up' delay={BASE_DELAY + STAGGER_DELAY * 2} inView>
+            <p className='max-w-xl text-muted-foreground text-balance md:text-lg'>
+              {t('experience_subtitle')}
+            </p>
+          </BlurFade>
         </div>
         <ul className='relative'>
           {experiences.map((experience, idx) => (
-            <li key={idx} className='relative pl-8 not-last:pb-12 group'>
+            <li key={idx} className='relative not-last:pb-12 group'>
               <div className='absolute left-0.5 top-2 h-full w-0.5 bg-muted' />
               <div className='absolute -left-0.5 top-2 size-2.5 rounded-full border-2 border-primary bg-background' />
-              <h3 className='mb-2 text-xl font-medium sm:text-2xl'>{experience.company}</h3>
-              <h4 className='mb-2 text-lg font-extralight'>{experience.title}</h4>
-              <div className='flex items-center gap-2 mb-4 font-extralight text-sm text-muted-foreground'>
-                <CalendarBlankIcon weight='duotone' />
-                <span>{experience.period}</span>
-              </div>
-              <p className='mb-6 text-lg text-balance text-muted-foreground'>{experience.description}</p>
-              <div className='flex flex-wrap gap-2'>
-                {experience.technologies.map((tech) => (
-                  <Badge key={tech} variant='secondary'>{tech}</Badge>
-                ))}
-              </div>
+              <BlurFade direction='up' delay={BASE_DELAY + STAGGER_DELAY * (3 + idx)} inView>
+                <div className='pl-8'>
+                  <h3 className='mb-2 text-xl font-medium text-balance sm:text-2xl'>
+                    {experience.company}
+                  </h3>
+                  <h4 className='mb-2 text-muted-foreground text-balance md:text-lg'>
+                    {experience.title}
+                  </h4>
+                  <div className='mb-4 text-muted-foreground text-balance text-sm'>
+                    <div className='flex items-center gap-2'>
+                      <CalendarBlankIcon weight='duotone' />
+                      <span>{experience.period}</span>
+                    </div>
+                  </div>
+                  <p className='mb-4 text-muted-foreground text-balance md:text-lg'>
+                    {experience.description}
+                  </p>
+                  <div className='flex flex-wrap gap-2'>
+                    {experience.technologies.map((tech) => (
+                      <Badge key={tech} variant='secondary'>{tech}</Badge>
+                    ))}
+                  </div>
+                </div>
+              </BlurFade>
             </li>
           ))}
         </ul>

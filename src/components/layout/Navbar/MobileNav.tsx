@@ -1,6 +1,6 @@
 import { DockDemo } from '@/components/shared/DockDemo'
 import { Button } from '@/components/ui/button'
-import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet'
+import { Sheet, SheetContent, SheetDescription, SheetFooter, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet'
 import { ListIcon, SpiralIcon } from '@phosphor-icons/react'
 import { useTranslation } from 'react-i18next'
 
@@ -39,16 +39,16 @@ export const MobileNav = ({ menu }: MobileNavProps) => {
               </SheetTitle>
               <SheetDescription></SheetDescription>
             </SheetHeader>
-            <div className='flex flex-col gap-4 px-6 py-4'>
+            <div className='flex flex-col gap-4 px-6'>
               {menu.map((item) => (
                 <a key={item.title} href={item.url} className='text-md font-medium'>
                   {item.title}
                 </a>
               ))}
             </div>
-            <div className='mt-auto py-4'>
+            <SheetFooter>
               <DockDemo />
-            </div>
+            </SheetFooter>
           </SheetContent>
         </Sheet>
       </div>

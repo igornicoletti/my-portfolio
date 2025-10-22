@@ -1,4 +1,3 @@
-// src/components/layout/Navbar/DesktopNav.tsx
 import { DockDemo } from '@/components/shared/DockDemo'
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList } from '@/components/ui/navigation-menu'
 import { SpiralIcon } from '@phosphor-icons/react'
