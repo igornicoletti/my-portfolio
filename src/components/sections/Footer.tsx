@@ -8,7 +8,6 @@ const FOOTER_LINKS = [
   { key: 'nav_about', url: '#about' },
   { key: 'nav_experience', url: '#experience' },
   { key: 'nav_projects', url: '#projects' },
-  { key: 'nav_contact', url: '#contact' },
 ]
 
 export const Footer = () => {

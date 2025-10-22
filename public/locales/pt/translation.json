@@ -3,7 +3,6 @@
   "nav_about": "Sobre",
   "nav_experience": "Experiência",
   "nav_projects": "Projetos",
-  "nav_contact": "Contato",
   "aria_github_profile": "Github",
   "aria_linkedin_profile": "Linkedin",
   "aria_mail_profile": "E-mail",
@@ -150,8 +149,5 @@
     "Acessibilidade",
     "Design Responsivo"
   ],
-  "contact_section_title": "Contato",
-  "contact_main_title": "Entre em contato",
-  "contact_subtitle": "Quer conversar? Apenas me mande uma mensagem no WhatsApp e responderei sempre que puder.",
   "footer_copyright": "© {{year}} 2Ti."
 }
