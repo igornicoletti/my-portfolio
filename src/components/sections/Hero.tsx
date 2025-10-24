@@ -10,10 +10,10 @@ export const Hero = () => {
 
   return (
     <section id="home" className="relative h-full overflow-hidden py-6 md:py-20">
-      <div className="z-10 flex flex-col items-center gap-6 px-6 pb-8 text-center md:px-10 mt-10 md:mt-20">
-        <Badge className="relative text-accent-foreground bg-accent/50 overflow-hidden">
+      <div className="z-10 flex flex-col items-center gap-6 px-4 text-center mt-10 md:mt-20">
+        <Badge className="relative text-accent-foreground bg-accent/75 overflow-hidden">
           <LightningIcon weight="duotone" />
-          {t('hero_badge_title')}
+          {t('hero_badge')}
           <BorderBeam size={35} className="from-transparent via-accent-foreground to-transparent" />
         </Badge>
         <TextAnimate
@@ -21,8 +21,8 @@ export const Hero = () => {
           animation="blurInUp"
           by="word"
           as="h1"
-          className="max-w-2xl font-medium tracking-tighter text-balance text-5xl md:text-6xl">
-          {t('hero_main_title')}
+          className="max-w-2xl text-5xl font-semibold text-balance md:text-6xl">
+          {t('hero_title')}
         </TextAnimate>
         <TextAnimate
           delay={0.5}

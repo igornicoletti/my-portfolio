@@ -4,19 +4,19 @@ import { Experience } from '@/components/sections/Experience'
 import { Footer } from '@/components/sections/Footer'
 import { Hero } from '@/components/sections/Hero'
 import { Projects } from '@/components/sections/Projects'
-import { Skills } from '@/components/sections/Skills'
-import { Technologies } from '@/components/sections/Technologies'
+import { Technology } from '@/components/sections/Technology'
+import { BentoDemo } from '@/components/shared/BentoDemo'
 
 function App() {
   return (
     <>
       <Navbar />
       <Hero />
-      <Technologies />
+      <Technology />
+      <BentoDemo />
       <About />
       <Experience />
       <Projects />
-      <Skills />
       <Footer />
     </>
   )

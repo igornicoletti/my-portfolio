@@ -17,24 +17,24 @@ const STAGGER_DELAY = 0.05
 export const Experience = () => {
   const { t } = useTranslation()
 
-  const experiences = t('experiences', {
-    returnObjects: true,
+  const experiences = t('experience_items', {
+    returnObjects: true
   }) as ExperienceProps[]
 
   return (
-    <section id='experience' className='relative px-6 py-20'>
+    <section id='experience' className='relative px-4 py-20'>
       <div className='mx-auto max-w-screen-md'>
         <div className='mb-12 flex flex-col items-center gap-4 text-center'>
           <BlurFade direction='up' delay={BASE_DELAY + STAGGER_DELAY * 0} inView>
-            <Badge variant='secondary'>{t('experience_section_title')}</Badge>
+            <Badge variant='secondary'>{t('experience_badge')}</Badge>
           </BlurFade>
           <BlurFade direction='up' delay={BASE_DELAY + STAGGER_DELAY * 1} inView>
-            <h2 className='text-3xl font-extralight text-balance sm:text-4xl'>
-              {t('experience_main_title')}
+            <h2 className='text-3xl font-medium text-balance sm:text-4xl'>
+              {t('experience_title')}
             </h2>
           </BlurFade>
           <BlurFade direction='up' delay={BASE_DELAY + STAGGER_DELAY * 2} inView>
-            <p className='max-w-2xl text-muted-foreground text-balance md:text-lg'>
+            <p className='max-w-2xl text-muted-foreground text-balance sm:text-lg'>
               {t('experience_subtitle')}
             </p>
           </BlurFade>

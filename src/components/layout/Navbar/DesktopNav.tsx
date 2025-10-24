@@ -15,8 +15,8 @@ export const DesktopNav = ({ menu }: DesktopNavProps) => (
   <nav className='hidden lg:flex items-center justify-between'>
     <div className='flex items-center gap-6'>
       <a href='#home' className='flex items-center gap-2'>
-        <SpiralIcon weight='fill' className='size-8' />
-        <span className='text-xl font-semibold tracking-tighter text-balance sm:text-2xl'>2Ti</span>
+        <SpiralIcon weight='fill' className='size-6' />
+        <span className='text-xl font-bold'>2Ti</span>
       </a>
       <NavigationMenu>
         <NavigationMenuList>

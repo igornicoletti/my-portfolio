@@ -3,28 +3,28 @@
   "nav_about": "About",
   "nav_experience": "Experience",
   "nav_projects": "Projects",
-  "aria_github_profile": "GitHub",
-  "aria_linkedin_profile": "LinkedIn",
-  "aria_mail_profile": "Email",
-  "aria_whatsapp_profile": "WhatsApp",
-  "aria_toggle_theme": "Theme",
-  "aria_open_menu": "Menu",
-  "aria_toggle_language": "Language",
-  "hero_badge_title": "Fullstack Web Developer",
-  "hero_main_title": "Modern and efficient web experiences",
+  "dock_github": "GitHub",
+  "dock_linkedin": "LinkedIn",
+  "dock_mail": "Email",
+  "dock_whatsapp": "WhatsApp",
+  "dock_theme": "Theme",
+  "nav_menu": "Menu",
+  "dock_language": "Translate",
+  "hero_badge": "Fullstack Web Developer",
+  "hero_title": "Modern and efficient web experiences",
   "hero_subtitle": "Specialized in building high-performance web applications, contributing to the development of robust, accessible, and scalable products.",
-  "about_section_title": "About Me",
-  "about_main_title": "Development philosophy and technical approach",
+  "about_badge": "About Me",
+  "about_title": "Development philosophy and technical approach",
   "about_paragraph_1": "I believe that well-structured and testable code is the foundation for scalable and long-lasting products. My work combines solid technical knowledge with attention to detail that makes the user experience smoother and more reliable.",
   "about_paragraph_2": "I work with a modern web development ecosystem that integrates React 19, TypeScript, and Vite to build fast and scalable applications. I adopt agile practices and continuous integration to ensure consistent and high-quality deliveries.",
   "about_paragraph_3": "I have experience building and evolving complex systems, contributing to technical decisions, tool selection, and architecture design. I constantly seek new technologies that drive innovation, scalability, and continuous improvement in development processes.",
-  "about_btn_github": "Explore GitHub",
-  "about_btn_cv": "Download Resume",
-  "about_image_alt": "Professional profile picture",
-  "experience_section_title": "Experience",
-  "experience_main_title": "Professional Journey",
+  "about_github": "Explore GitHub",
+  "about_resume": "Download Resume",
+  "about_image": "Professional profile picture",
+  "experience_badge": "Experience",
+  "experience_title": "Professional Journey",
   "experience_subtitle": "A timeline of my professional growth and key technologies.",
-  "experiences": [
+  "experience_items": [
     {
       "title": "Frontend Developer",
       "company": "Hublab",
@@ -98,13 +98,13 @@
       ]
     }
   ],
-  "project_section_title": "Projects",
-  "project_main_title": "Latest Projects",
+  "project_badge": "Projects",
+  "project_title": "Latest Projects",
   "project_subtitle": "I have worked on several projects, from simple websites to complex web applications. Here are some of my favorites.",
-  "project_btn_live": "Live Demo",
-  "project_btn_code": "View Code",
-  "project_image_alt": "Project screenshot",
-  "projects": [
+  "project_demo": "Live Demo",
+  "project_code": "View Code",
+  "project_image": "Project screenshot",
+  "project_items": [
     {
       "title": "E-commerce Platform",
       "description": "A complete e-commerce platform with real-time inventory management, payment processing, and an admin dashboard.",
@@ -132,20 +132,30 @@
       "githubUrl": "https://github.com/igornicoletti"
     }
   ],
-  "technologies_row_1": [
-    "JavaScript",
-    "jQuery",
-    "TailwindCSS",
-    "ShadcnUI",
-    "Radix"
+  "skills_section_title": "Habilidades e Stack",
+  "skills_subtitle": "Tecnologias e práticas que aplico para criar produtos digitais de alta qualidade.",
+  "skills_items": [
+    {
+      "name": "Aplicações seguras",
+      "description": "Fluxos de autenticação seguros e validação de dados robusta (Zod).",
+      "cta": "Ver integrações"
+    },
+    {
+      "name": "Código Limpo e escalável",
+      "description": "Arquitetura modular e hooks personalizados que garantem separação de responsabilidades, facilitando a manutenção e escalabilidade.",
+      "cta": "Ver stack"
+    },
+    {
+      "name": "UI moderna e ecessível",
+      "description": "Interfaces reativas e estilizadas com Tailwind CSS, combinadas com componentes acessíveis e funcionais do Radix UI.",
+      "cta": "Explorar UI/UX"
+    },
+    {
+      "name": "Testes e automações",
+      "description": "Pipelines de automação (CI/CD) para testes, lint e build. Deploys contínuos otimizados.",
+      "cta": "Ver automações"
+    }
   ],
-  "technologies_row_2": [
-    "Vite",
-    "React",
-    "TypeScript",
-    "Firebase",
-    "Postman",
-    "Git"
-  ],
-  "footer_copyright": "© {{year}} 2Ti All rights reserved."
+  "footer_copyright": "© {{year}} 2Ti All Rights Reserved.",
+  "footer_contact": "Get In Touch"
 }

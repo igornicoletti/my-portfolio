@@ -27,7 +27,7 @@ const DEFAULT_DISTANCE = 140
 const DEFAULT_DISABLEMAGNIFICATION = false
 
 const dockVariants = cva(
-  "mx-auto flex h-8 w-max items-center justify-center gap-1"
+  "mx-auto flex h-8 w-max items-center justify-center gap-2"
 )
 
 const Dock = React.forwardRef<HTMLDivElement, DockProps>(

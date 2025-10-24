@@ -11,14 +11,14 @@ export const About = () => {
   const { t } = useTranslation()
 
   return (
-    <section id='about' className='relative px-6 py-20'>
+    <section id='about' className='relative px-4 py-20'>
       <div className='mx-auto max-w-screen-lg'>
         <div className='flex flex-col gap-x-16 md:flex-row-reverse'>
           <BlurFade direction='up' delay={BASE_DELAY} inView>
             <div className='hidden sticky top-20 max-w-xs rounded-lg overflow-hidden md:block'>
               <img
                 src='/images/igornicoletti.png'
-                alt={t('about_image_alt')}
+                alt={t('about_image')}
                 className='w-full h-full object-cover'
               />
             </div>
@@ -26,34 +26,34 @@ export const About = () => {
           <div className='flex-1'>
             <BlurFade direction='up' delay={BASE_DELAY + STAGGER_DELAY * 0} inView>
               <Badge variant='secondary' className='mb-4'>
-                {t('about_section_title')}
+                {t('about_badge')}
               </Badge>
             </BlurFade>
             <BlurFade direction='up' delay={BASE_DELAY + STAGGER_DELAY * 1} inView>
               <div className='mb-4 max-w-xs rounded-lg overflow-hidden md:hidden'>
                 <img
                   src='/images/igornicoletti.png'
-                  alt={t('about_image_alt')}
+                  alt={t('about_image')}
                   className='w-full h-full object-cover' />
               </div>
             </BlurFade>
             <BlurFade direction='up' delay={BASE_DELAY + STAGGER_DELAY * 2} inView>
-              <h2 className='mb-4 text-3xl font-extralight text-balance sm:text-4xl'>
-                {t('about_main_title')}
+              <h2 className='mb-4 text-3xl font-medium text-balance sm:text-4xl'>
+                {t('about_title')}
               </h2>
             </BlurFade>
             <BlurFade direction='up' delay={BASE_DELAY + STAGGER_DELAY * 3} inView>
-              <p className='mb-4 text-muted-foreground text-balance md:text-lg'>
+              <p className='mb-4 text-muted-foreground text-balance sm:text-lg'>
                 {t('about_paragraph_1')}
               </p>
             </BlurFade>
             <BlurFade direction='up' delay={BASE_DELAY + STAGGER_DELAY * 4} inView>
-              <p className='mb-4 text-muted-foreground text-balance md:text-lg'>
+              <p className='mb-4 text-muted-foreground text-balance sm:text-lg'>
                 {t('about_paragraph_2')}
               </p>
             </BlurFade>
             <BlurFade direction='up' delay={BASE_DELAY + STAGGER_DELAY * 5} inView>
-              <p className='mb-8 text-muted-foreground text-balance md:text-lg'>
+              <p className='mb-8 text-muted-foreground text-balance sm:text-lg'>
                 {t('about_paragraph_3')}
               </p>
             </BlurFade>
@@ -62,13 +62,13 @@ export const About = () => {
                 <Button asChild variant='default'>
                   <a href='https://github.com/igornicoletti' target='_blank' rel='noopener noreferrer'>
                     <GitHubLogoIcon />
-                    {t('about_btn_github')}
+                    {t('about_github')}
                   </a>
                 </Button>
                 <Button asChild variant='outline'>
                   <a href='/images/igornicoletti.pdf' download>
                     <DownloadIcon />
-                    {t('about_btn_cv')}
+                    {t('about_resume')}
                   </a>
                 </Button>
               </div>

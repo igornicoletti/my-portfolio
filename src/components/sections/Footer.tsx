@@ -1,17 +1,21 @@
-import { DockDemo } from '@/components/shared/DockDemo'
+import { InteractiveHoverButton } from '@/components/ui/interactive-hover-button'
 import { useTranslation } from 'react-i18next'
 
 export const Footer = () => {
   const { t } = useTranslation()
 
   return (
-    <footer className='relative px-6 py-20'>
-      <div className='mx-auto max-w-screen-xl'>
-        <div className='flex flex-col-reverse items-center justify-between gap-6 sm:flex-row'>
+    <footer className='relative p-6 pt-20'>
+      <div className='container mx-auto'>
+        <div className='flex flex-col items-center justify-between gap-4 sm:flex-row'>
+          <InteractiveHoverButton className='text-sm'>
+            <a href="mailto:igor93nicoletti@gmail.com" target="_blank" rel="noopener noreferrer">
+              {t('footer_contact')}
+            </a>
+          </InteractiveHoverButton>
           <span className='text-muted-foreground text-sm'>
             {t('footer_copyright', { year: new Date().getFullYear() })}
           </span>
-          <DockDemo />
         </div>
       </div>
     </footer>

@@ -3,28 +3,28 @@
   "nav_about": "Sobre",
   "nav_experience": "Experiência",
   "nav_projects": "Projetos",
-  "aria_github_profile": "GitHub",
-  "aria_linkedin_profile": "LinkedIn",
-  "aria_mail_profile": "E-mail",
-  "aria_whatsapp_profile": "WhatsApp",
-  "aria_toggle_theme": "Tema",
-  "aria_open_menu": "Menu",
-  "aria_toggle_language": "Idioma",
-  "hero_badge_title": "Desenvolvedor Web Fullstack",
-  "hero_main_title": "Experiências web modernas e eficientes",
+  "nav_menu": "Menu",
+  "dock_github": "GitHub",
+  "dock_linkedin": "LinkedIn",
+  "dock_mail": "E-mail",
+  "dock_whatsapp": "WhatsApp",
+  "dock_theme": "Tema",
+  "dock_language": "Traduzir",
+  "hero_badge": "Desenvolvedor Web Fullstack",
+  "hero_title": "Experiências web modernas e eficientes",
   "hero_subtitle": "Especializado na criação de aplicações web de alto desempenho, contribuindo para o desenvolvimento de produtos robustos, acessíveis e escaláveis.",
-  "about_section_title": "Sobre mim",
-  "about_main_title": "Filosofia de desenvolvimento e abordagem técnica",
+  "about_badge": "Sobre mim",
+  "about_title": "Filosofia de desenvolvimento e abordagem técnica",
   "about_paragraph_1": "Acredito que um código bem estruturado e testável é a base para produtos escaláveis e de longa vida útil. Meu trabalho combina conhecimento técnico sólido com atenção aos detalhes que tornam a experiência do usuário mais fluida e confiável.",
   "about_paragraph_2": "Trabalho com um ecossistema moderno de desenvolvimento web que integra React 19, TypeScript e Vite para construir aplicações rápidas e escaláveis. Adoto práticas ágeis e integração contínua para garantir entregas consistentes e de alta qualidade.",
   "about_paragraph_3": "Tenho experiência na construção e evolução de sistemas complexos, contribuindo para decisões técnicas, definição de ferramentas e desenho de arquitetura. Busco constantemente novas tecnologias que impulsionem a inovação, a escalabilidade e a melhoria contínua dos processos de desenvolvimento.",
-  "about_btn_github": "Explorar GitHub",
-  "about_btn_cv": "Baixar currículo",
-  "about_image_alt": "Imagem de perfil profissional",
-  "experience_section_title": "Experiência",
-  "experience_main_title": "Trajetória profissional",
+  "about_github": "Explorar GitHub",
+  "about_resume": "Baixar currículo",
+  "about_image": "Imagem de perfil profissional",
+  "experience_badge": "Experiência",
+  "experience_title": "Trajetória profissional",
   "experience_subtitle": "Uma linha do tempo do meu crescimento profissional e das principais tecnologias utilizadas.",
-  "experiences": [
+  "experience_items": [
     {
       "title": "Desenvolvedor Frontend",
       "company": "Hublab",
@@ -98,26 +98,13 @@
       ]
     }
   ],
-  "project_section_title": "Projetos",
-  "project_main_title": "Projetos mais recentes",
+  "project_badge": "Projetos",
+  "project_title": "Projetos mais recentes",
   "project_subtitle": "Trabalhei em diversos projetos, desde sites simples até aplicativos web complexos. Aqui estão alguns dos meus favoritos.",
-  "project_btn_live": "Demonstração ao vivo",
-  "project_btn_code": "Ver código",
-  "project_image_alt": "Captura de tela do projeto",
-  "projects": [
-    {
-      "title": "Plataforma de E-commerce",
-      "description": "Uma plataforma de e-commerce completa, com gerenciamento de estoque em tempo real, processamento de pagamentos e painel administrativo.",
-      "image": "/images/screenshot.png",
-      "technologies": [
-        "Next.js",
-        "TypeScript",
-        "Stripe",
-        "Prisma"
-      ],
-      "liveUrl": "https://github.com/igornicoletti",
-      "githubUrl": "https://github.com/igornicoletti"
-    },
+  "project_demo": "Demonstração ao vivo",
+  "project_code": "Ver código",
+  "project_image": "Captura de tela do projeto",
+  "project_items": [
     {
       "title": "Plataforma de E-commerce",
       "description": "Uma plataforma de e-commerce completa, com gerenciamento de estoque em tempo real, processamento de pagamentos e painel administrativo.",
@@ -145,20 +132,30 @@
       "githubUrl": "https://github.com/igornicoletti"
     }
   ],
-  "technologies_row_1": [
-    "JavaScript",
-    "jQuery",
-    "TailwindCSS",
-    "ShadcnUI",
-    "Radix"
+  "skills_section_title": "Habilidades e Stack",
+  "skills_subtitle": "Tecnologias e práticas que aplico para criar produtos digitais de alta qualidade.",
+  "skills_items": [
+    {
+      "name": "Aplicações seguras",
+      "description": "Fluxos de autenticação seguros e validação de dados robusta (Zod).",
+      "cta": "Ver integrações"
+    },
+    {
+      "name": "Código Limpo e escalável",
+      "description": "Arquitetura modular e hooks personalizados que garantem separação de responsabilidades, facilitando a manutenção e escalabilidade.",
+      "cta": "Ver stack"
+    },
+    {
+      "name": "UI moderna e ecessível",
+      "description": "Interfaces reativas e estilizadas com Tailwind CSS, combinadas com componentes acessíveis e funcionais do Radix UI.",
+      "cta": "Explorar UI/UX"
+    },
+    {
+      "name": "Testes e automações",
+      "description": "Pipelines de automação (CI/CD) para testes, lint e build. Deploys contínuos otimizados.",
+      "cta": "Ver automações"
+    }
   ],
-  "technologies_row_2": [
-    "Vite",
-    "React",
-    "TypeScript",
-    "Firebase",
-    "Postman",
-    "Git"
-  ],
-  "footer_copyright": "© {{year}} 2Ti Todos os direitos reservados."
+  "footer_copyright": "© {{year}} 2Ti Todos os direitos reservados.",
+  "footer_contact": "Entre em contato"
 }

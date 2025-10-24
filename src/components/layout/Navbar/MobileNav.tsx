@@ -25,7 +25,7 @@ export const MobileNav = ({ menu }: MobileNavProps) => {
       <div className='flex items-center gap-2'>
         <Sheet>
           <SheetTrigger asChild>
-            <Button variant='ghost' size='icon' aria-label={t('aria_open_menu')}>
+            <Button variant='ghost' size='icon' aria-label={t('nav_menu')}>
               <ListIcon />
             </Button>
           </SheetTrigger>

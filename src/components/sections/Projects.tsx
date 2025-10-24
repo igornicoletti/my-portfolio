@@ -28,24 +28,24 @@ const STAGGER_DELAY = 0.05
 export const Projects = () => {
   const { t } = useTranslation()
 
-  const projects = t('projects', {
+  const projects = t('project_items', {
     returnObjects: true,
   }) as ProjectsProps[]
 
   return (
-    <section id='projects' className='relative px-6 py-20'>
-      <div className='mx-auto max-w-screen-lg'>
+    <section id='projects' className='relative px-4 py-20'>
+      <div className='mx-auto max-w-screen-md'>
         <div className='mb-12 flex flex-col items-center gap-4 text-center'>
           <BlurFade direction='up' delay={BASE_DELAY + STAGGER_DELAY * 0} inView>
-            <Badge variant='secondary'>{t('project_section_title')}</Badge>
+            <Badge variant='secondary'>{t('project_badge')}</Badge>
           </BlurFade>
           <BlurFade direction='up' delay={BASE_DELAY + STAGGER_DELAY * 1} inView>
-            <h2 className='text-3xl font-extralight text-balance sm:text-4xl'>
-              {t('project_main_title')}
+            <h2 className='text-3xl font-medium text-balance sm:text-4xl'>
+              {t('project_title')}
             </h2>
           </BlurFade>
           <BlurFade direction='up' delay={BASE_DELAY + STAGGER_DELAY * 2} inView>
-            <p className='max-w-2xl text-muted-foreground text-balance md:text-lg'>
+            <p className='max-w-2xl text-muted-foreground text-balance sm:text-lg'>
               {t('project_subtitle')}
             </p>
           </BlurFade>
@@ -57,7 +57,7 @@ export const Projects = () => {
                 <MagicCard gradientFrom='#1e69dc' gradientTo='#7033ff'>
                   <CardHeader className='p-0.5'>
                     <div className='relative w-full overflow-hidden rounded-t-lg'>
-                      <img src={project.image} alt={t('project_image_alt')} className='object-cover w-full h-full transition-transform duration-300 hover:scale-105' />
+                      <img src={project.image} alt={t('project_image')} className='object-cover w-full h-full transition-transform duration-300 hover:scale-105' />
                     </div>
                   </CardHeader>
                   <CardContent className='flex flex-col gap-2 px-4 py-2'>
@@ -74,7 +74,7 @@ export const Projects = () => {
                       <Button asChild variant='default' size='sm'>
                         <a href={project.githubUrl} target='_blank' rel='noopener noreferrer'>
                           <GitHubLogoIcon />
-                          {t('project_btn_code')}
+                          {t('project_code')}
                         </a>
                       </Button>
                     )}
@@ -82,7 +82,7 @@ export const Projects = () => {
                       <Button asChild variant='outline' size='sm'>
                         <a href={project.liveUrl} target='_blank' rel='noopener noreferrer'>
                           <ExternalLinkIcon />
-                          {t('project_btn_live')}
+                          {t('project_demo')}
                         </a>
                       </Button>
                     )}
