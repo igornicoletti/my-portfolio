@@ -136,20 +136,20 @@
   "skills_subtitle": "Tecnologias e práticas que aplico para criar produtos digitais de alta qualidade.",
   "skills_items": [
     {
-      "name": "Aplicações seguras",
-      "description": "Fluxos de autenticação seguros e validação de dados robusta (Zod)."
+      "name": "Boas práticas de código",
+      "description": "Desenvolvimento orientado a padrões limpos, modulares e fáceis de manter ao longo do ciclo de vida do produto."
     },
     {
-      "name": "Código Limpo e escalável",
-      "description": "Arquitetura modular e hooks personalizados que garantem separação de responsabilidades, facilitando a manutenção e escalabilidade."
+      "name": "Integrações e APIs",
+      "description": "Conexão entre sistemas e serviços com foco em desempenho, segurança e consistência de dados."
     },
     {
-      "name": "UI moderna e ecessível",
-      "description": "Interfaces reativas e estilizadas com Tailwind CSS, combinadas com componentes acessíveis e funcionais do Radix UI."
+      "name": "Segurança e autenticação",
+      "description": "Implementação de fluxos seguros com JWT, OAuth e práticas modernas de proteção de dados."
     },
     {
-      "name": "Testes e automações",
-      "description": "Pipelines de automação (CI/CD) para testes, lint e build. Deploys contínuos otimizados."
+      "name": "Desempenho e escalabilidade",
+      "description": "Foco em eficiência e estabilidade, garantindo aplicações rápidas e preparadas para crescer."
     }
   ],
   "footer_copyright": "2Ti © {{year}} All Rights Reserved.",

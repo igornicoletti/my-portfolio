@@ -137,20 +137,20 @@
   "skills_subtitle": "Tecnologias e práticas que aplico para criar produtos digitais de alta qualidade.",
   "skills_items": [
     {
-      "name": "Desempenho e Escalabilidade",
-      "description": "Desenvolvimento com foco em eficiência e estabilidade, garantindo aplicações rápidas e preparadas para crescer."
-    },
-    {
-      "name": "Segurança e Autenticação",
-      "description": "Implementação de fluxos seguros com JWT, OAuth e práticas modernas de proteção de dados."
+      "name": "Boas práticas de código",
+      "description": "Desenvolvimento orientado a padrões limpos, modulares e fáceis de manter ao longo do ciclo de vida do produto."
     },
     {
       "name": "Integrações e APIs",
       "description": "Conexão entre sistemas e serviços com foco em desempenho, segurança e consistência de dados."
     },
     {
-      "name": "Boas Práticas de Código",
-      "description": "Desenvolvimento orientado a padrões limpos, modulares e fáceis de manter ao longo do ciclo de vida do produto."
+      "name": "Segurança e autenticação",
+      "description": "Implementação de fluxos seguros com JWT, OAuth e práticas modernas de proteção de dados."
+    },
+    {
+      "name": "Desempenho e escalabilidade",
+      "description": "Foco em eficiência e estabilidade, garantindo aplicações rápidas e preparadas para crescer."
     }
   ],
   "footer_copyright": "2Ti © {{year}} Todos os direitos reservados.",
