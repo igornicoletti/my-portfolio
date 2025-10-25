@@ -25,9 +25,7 @@ export const Hero = () => {
                   type: 'spring',
                   stiffness: 40,
                   damping: 20,
-                }}
-              />
-              {/* <BorderBeam size={35} className='from-transparent via-accent-foreground to-transparent' /> */}
+                }} />
             </Badge>
           </BlurFade>
           <BlurFade delay={0.25 + 1 * 0.05} inView>

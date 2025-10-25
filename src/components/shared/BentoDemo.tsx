@@ -50,7 +50,7 @@ const items = [
   {
     className: "col-span-3 lg:col-span-1",
     background: (
-      <AnimatedListDemo className="absolute top-0 right-0 h-[300px] w-full scale-90 border-none [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] transition-all duration-800 ease-out group-hover:scale-90" />
+      <AnimatedListDemo className="absolute top-0 right-0 h-[300px] w-full scale-90 border-none [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] transition-all duration-300 ease-out group-hover:scale-90" />
     ),
   },
 ]
