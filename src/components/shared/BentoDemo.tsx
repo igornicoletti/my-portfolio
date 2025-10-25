@@ -23,9 +23,7 @@ const items = [
 export function BentoDemo() {
   const { t } = useTranslation()
 
-  const skills = t("skills_items", {
-    returnObjects: true
-  })
+  const skills = t("skills_items", { returnObjects: true })
 
   const features = Array.isArray(skills)
     ? items.map((feature, idx) => ({
