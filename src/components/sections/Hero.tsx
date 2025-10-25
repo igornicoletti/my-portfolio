@@ -13,10 +13,21 @@ export const Hero = () => {
       <div className='mx-auto max-w-screen-md px-4 py-20 md:py-40'>
         <div className='flex flex-col items-center gap-4 text-center'>
           <BlurFade delay={0.25 + 0 * 0.05} inView>
-            <Badge className="relative text-accent-foreground bg-accent/75 overflow-hidden">
-              <LightningIcon weight="duotone" />
+            <Badge className='relative py-1 text-accent-foreground bg-accent/50 overflow-hidden'>
+              <LightningIcon weight='duotone' />
               {t('hero_badge')}
-              <BorderBeam size={35} className="from-transparent via-accent-foreground to-transparent" />
+              <BorderBeam
+                size={40}
+                borderWidth={2}
+                initialOffset={20}
+                className='from-transparent via-accent-foreground to-transparent'
+                transition={{
+                  type: 'spring',
+                  stiffness: 40,
+                  damping: 20,
+                }}
+              />
+              {/* <BorderBeam size={35} className='from-transparent via-accent-foreground to-transparent' /> */}
             </Badge>
           </BlurFade>
           <BlurFade delay={0.25 + 1 * 0.05} inView>
@@ -31,7 +42,7 @@ export const Hero = () => {
           </BlurFade>
         </div>
       </div>
-      <Particles className="fixed inset-0 z-0 w-screen h-screen" refresh />
+      <Particles className='fixed inset-0 z-0 w-screen h-screen' refresh />
     </section>
 
   )

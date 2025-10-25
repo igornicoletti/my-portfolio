@@ -1,8 +1,8 @@
 import { DockDemo } from '@/components/shared/DockDemo'
 import { Button } from '@/components/ui/button'
-import { Sheet, SheetContent, SheetDescription, SheetFooter, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet'
+import { Drawer, DrawerContent, DrawerDescription, DrawerFooter, DrawerHeader, DrawerTitle, DrawerTrigger } from '@/components/ui/drawer'
 import { ListIcon, SpiralIcon } from '@phosphor-icons/react'
-import { useTranslation } from 'react-i18next'
+import { useState } from 'react'
 
 interface NavItem {
   title: string
@@ -14,43 +14,58 @@ interface MobileNavProps {
 }
 
 export const MobileNav = ({ menu }: MobileNavProps) => {
-  const { t } = useTranslation()
+  const [isOpen, setIsOpen] = useState(false)
+
+  const handleLinkClick = (url: string) => {
+    setIsOpen(false)
+
+    const targetId = url.substring(1)
+    const targetElement = document.getElementById(targetId)
+
+    if (targetElement) {
+      setTimeout(() => {
+        targetElement.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        })
+      }, 300)
+    }
+  }
 
   return (
-    <nav className='flex items-center justify-between lg:hidden'>
-      <a href='#home' className='flex items-center gap-2'>
+    <div className='flex items-center justify-between lg:hidden'>
+      <Button variant='ghost' onClick={() => handleLinkClick('#home')}>
         <SpiralIcon weight='fill' className='size-8' />
-        <span className='text-lg font-semibold tracking-tight'>2Ti</span>
-      </a>
-      <div className='flex items-center gap-2'>
-        <Sheet>
-          <SheetTrigger asChild>
-            <Button variant='ghost' size='icon' aria-label={t('nav_menu')}>
-              <ListIcon />
-            </Button>
-          </SheetTrigger>
-          <SheetContent side='right' className='w-full max-w-xs'>
-            <SheetHeader>
-              <SheetTitle>
-                <a href='#home' className='flex items-center gap-2'>
-                  <SpiralIcon weight='fill' className='size-8' />
-                  <span className='text-lg font-semibold tracking-tight'>2Ti</span>
-                </a>
-              </SheetTitle>
-              <SheetDescription className='flex flex-col gap-4 py-6'>
-                {menu.map((item) => (
-                  <a key={item.title} href={item.url}>
-                    {item.title}
-                  </a>
-                ))}
-              </SheetDescription>
-            </SheetHeader>
-            <SheetFooter>
-              <DockDemo />
-            </SheetFooter>
-          </SheetContent>
-        </Sheet>
-      </div>
-    </nav>
+        <span className='text-xl font-bold'>2Ti</span>
+      </Button>
+      <Drawer open={isOpen} onOpenChange={setIsOpen}>
+        <DrawerTrigger asChild>
+          <Button variant='ghost' size='icon'>
+            <ListIcon />
+          </Button>
+        </DrawerTrigger>
+        <DrawerContent>
+          <DrawerHeader>
+            <DrawerTitle>
+              <Button variant='ghost' onClick={() => handleLinkClick('#home')}>
+                <SpiralIcon weight='fill' className='size-8' />
+                <span className='text-xl font-bold'>2Ti</span>
+              </Button>
+            </DrawerTitle>
+            <DrawerDescription />
+          </DrawerHeader>
+          <div className='flex flex-col'>
+            {menu.map((item) => (
+              <Button key={item.title} variant='ghost' onClick={() => handleLinkClick(item.url)}>
+                {item.title}
+              </Button>
+            ))}
+          </div>
+          <DrawerFooter>
+            <DockDemo />
+          </DrawerFooter>
+        </DrawerContent>
+      </Drawer>
+    </div>
   )
 }

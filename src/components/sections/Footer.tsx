@@ -13,7 +13,7 @@ export const Footer = () => {
       <div className='mx-auto max-w-screen-md px-4 py-20'>
         <div className='flex flex-col items-center gap-4 text-center'>
           <BlurFade delay={BASE_DELAY + 0 * STAGGER_DELAY} inView>
-            <InteractiveHoverButton className='text-sm'>
+            <InteractiveHoverButton>
               <a href="mailto:igor93nicoletti@gmail.com" target="_blank" rel="noopener noreferrer">
                 {t('footer_contact')}
               </a>
