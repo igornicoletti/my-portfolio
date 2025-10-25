@@ -137,20 +137,20 @@
   "skills_subtitle": "Tecnologias e práticas que aplico para criar produtos digitais de alta qualidade.",
   "skills_items": [
     {
-      "name": "Desenvolvimento Frontend",
-      "description": "React 19 com TypeScript e Vite como ferramenta de construção e servidor de desenvolvimento."
+      "name": "Desempenho e Escalabilidade",
+      "description": "Desenvolvimento com foco em eficiência e estabilidade, garantindo aplicações rápidas e preparadas para crescer."
     },
     {
-      "name": "Código Limpo e escalável",
-      "description": "Arquitetura modular e hooks personalizados que garantem separação de responsabilidades, facilitando a manutenção e escalabilidade."
+      "name": "Segurança e Autenticação",
+      "description": "Implementação de fluxos seguros com JWT, OAuth e práticas modernas de proteção de dados."
     },
     {
-      "name": "UI moderna e ecessível",
-      "description": "Interfaces reativas e estilizadas com Tailwind CSS, combinadas com componentes acessíveis e funcionais do Radix UI."
+      "name": "Integrações e APIs",
+      "description": "Conexão entre sistemas e serviços com foco em desempenho, segurança e consistência de dados."
     },
     {
-      "name": "Testes e automações",
-      "description": "Pipelines de automação (CI/CD) para testes, lint e build. Deploys contínuos otimizados."
+      "name": "Boas Práticas de Código",
+      "description": "Desenvolvimento orientado a padrões limpos, modulares e fáceis de manter ao longo do ciclo de vida do produto."
     }
   ],
   "footer_copyright": "2Ti © {{year}} Todos os direitos reservados.",

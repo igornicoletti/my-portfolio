@@ -1,14 +1,51 @@
+import { AnimatedBeamMultipleOutputDemo } from '@/components/shared/AnimatedBeamMultipleOutputDemo'
+import { AnimatedListDemo } from '@/components/shared/AnimatedListDemo'
 import { BentoCard, BentoGrid } from "@/components/ui/bento-grid"
+import { Marquee } from '@/components/ui/marquee'
+import { cn } from '@/lib/utils'
 import { useTranslation } from "react-i18next"
+
+const codingPrinciples = [
+  { name: "Código Limpo", body: "Priorize legibilidade e modularidade para manter escalabilidade." },
+  { name: "Funções Pequenas", body: "Cada função deve resolver um único problema de forma clara." },
+  { name: "Tratamento de Erros", body: "Use mensagens claras e capturas seguras para lidar com exceções." },
+  { name: "Evite Globais", body: "Isolamento lógico reduz efeitos colaterais e melhora a previsibilidade." },
+  { name: "Formatação Consistente", body: "Estilo uniforme facilita a leitura e revisão de código." },
+]
 
 const items = [
   {
     className: "col-span-3 lg:col-span-2",
-    background: <></>,
+    background: (
+      <AnimatedListDemo className="absolute top-4 right-2 h-[300px] w-full scale-90 border-none [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] transition-all duration-800 ease-out group-hover:scale-90" />
+    ),
   },
   {
     className: "col-span-3 lg:col-span-1",
-    background: <></>,
+    background: (
+      <Marquee pauseOnHover className="absolute top-10 [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] [--duration:20s]">
+        {codingPrinciples.map((f, idx) => (
+          <figure
+            key={idx}
+            className={cn(
+              "relative w-44 cursor-pointer overflow-hidden rounded-xl border rounded-sm p-4",
+              "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
+              "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]",
+              "transform-gpu blur-[1px] transition-all duration-300 ease-out hover:blur-none"
+            )}
+          >
+            <div className="flex flex-row items-center gap-2">
+              <div className="flex flex-col">
+                <figcaption className="text-sm font-medium dark:text-white">
+                  {f.name}
+                </figcaption>
+              </div>
+            </div>
+            <blockquote className="mt-2 text-sm">{f.body}</blockquote>
+          </figure>
+        ))}
+      </Marquee>
+    ),
   },
   {
     className: "col-span-3 lg:col-span-1",
@@ -16,7 +53,9 @@ const items = [
   },
   {
     className: "col-span-3 lg:col-span-2",
-    background: <></>,
+    background: (
+      <AnimatedBeamMultipleOutputDemo className="absolute top-4 right-2 h-[300px] border-none [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] transition-all duration-300 ease-out group-hover:scale-105" />
+    ),
   },
 ]
 
