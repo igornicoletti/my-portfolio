@@ -1,5 +1,4 @@
 import { BentoCard, BentoGrid } from "@/components/ui/bento-grid"
-import { BlurFade } from '@/components/ui/blur-fade'
 import { useTranslation } from "react-i18next"
 
 const items = [
@@ -35,16 +34,14 @@ export function BentoDemo() {
     })) : []
 
   return (
-    <BlurFade direction='up' delay={2} inView>
-      <section className='relative'>
-        <div className='mx-auto max-w-screen-lg px-4 py-20'>
-          <BentoGrid>
-            {features.map((feature, idx) => (
-              <BentoCard key={idx} {...feature} />
-            ))}
-          </BentoGrid>
-        </div>
-      </section>
-    </BlurFade>
+    <section className='relative'>
+      <div className='mx-auto max-w-screen-lg px-4 py-20'>
+        <BentoGrid>
+          {features.map((feature, idx) => (
+            <BentoCard key={idx} {...feature} />
+          ))}
+        </BentoGrid>
+      </div>
+    </section>
   )
 }
