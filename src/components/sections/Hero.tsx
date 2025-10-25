@@ -11,7 +11,7 @@ export const Hero = () => {
   return (
     <section id='home' className='relative'>
       <div className='mx-auto max-w-screen-md px-4 py-20 md:py-40'>
-        <div className='mb-12 flex flex-col items-center gap-4 text-center'>
+        <div className='flex flex-col items-center gap-4 text-center'>
           <BlurFade delay={0.25 + 0 * 0.05} inView>
             <Badge className="relative text-accent-foreground bg-accent/75 overflow-hidden">
               <LightningIcon weight="duotone" />
@@ -20,7 +20,7 @@ export const Hero = () => {
             </Badge>
           </BlurFade>
           <BlurFade delay={0.25 + 1 * 0.05} inView>
-            <h1 className='text-4xl text-balance font-semibold sm:text-6xl'>
+            <h1 className='text-5xl text-balance font-semibold sm:text-6xl'>
               {t('hero_title')}
             </h1>
           </BlurFade>
