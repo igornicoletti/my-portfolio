@@ -16,20 +16,20 @@
   "about_badge": "Sobre mim",
   "about_title": "Filosofia de desenvolvimento e abordagem técnica",
   "about_paragraph_1": "Acredito que um código bem estruturado e testável é a base para produtos escaláveis e de longa vida útil. Meu trabalho combina conhecimento técnico sólido com atenção aos detalhes que tornam a experiência do usuário mais fluida e confiável.",
-  "about_paragraph_2": "Trabalho com um ecossistema moderno de desenvolvimento web que integra React 19, TypeScript e Vite para construir aplicações rápidas e escaláveis. Adoto práticas ágeis e integração contínua para garantir entregas consistentes e de alta qualidade.",
-  "about_paragraph_3": "Tenho experiência na construção e evolução de sistemas complexos, contribuindo para decisões técnicas, definição de ferramentas e desenho de arquitetura. Busco constantemente novas tecnologias que impulsionem a inovação, a escalabilidade e a melhoria contínua dos processos de desenvolvimento.",
+  "about_paragraph_2": "Trabalho com um ecossistema moderno de desenvolvimento web que integra React 19, TypeScript e Vite para construir aplicações seguras e robustas. Adoto práticas ágeis e integração contínua para garantir entregas consistentes e de alta qualidade.",
+  "about_paragraph_3": "Tenho experiência na construção e evolução de sistemas complexos, contribuindo para decisões técnicas, definição de ferramentas e desenho de arquitetura. Busco constantemente novas tecnologias que impulsionem a inovação e a melhoria contínua dos processos de desenvolvimento.",
   "about_github": "Explorar GitHub",
   "about_resume": "Baixar currículo",
   "about_image": "Imagem de perfil profissional",
   "experience_badge": "Experiência",
   "experience_title": "Trajetória profissional",
-  "experience_subtitle": "Uma linha do tempo do meu crescimento profissional e das principais tecnologias utilizadas.",
+  "experience_subtitle": "Uma linha do tempo do meu crescimento profissional e tecnologias utilizadas.",
   "experience_items": [
     {
       "title": "Desenvolvedor Frontend",
       "company": "Hublab",
       "period": "out. 2019 - fev. 2023",
-      "description": "Desenvolvimento front-end de um ecossistema de chatbot, incluindo interface moderna e painel administrativo dinâmico. A solução permitiu à equipe de operações gerenciar fluxos de conversa de forma autônoma, reduzindo significativamente o time-to-market.",
+      "description": "Desenvolvimento de um ecossistema de chatbot, incluindo interface moderna e painel administrativo dinâmico. A solução permitiu à equipe de operações gerenciar fluxos de conversa de forma autônoma, reduzindo significativamente o time-to-market.",
       "technologies": [
         "Angular",
         "MirageJS",
@@ -58,7 +58,7 @@
       "title": "Desenvolvedor Frontend",
       "company": "Trinto | Digital Partners",
       "period": "nov. 2020 - mar. 2021",
-      "description": "Implementação de defesas contra vulnerabilidades XSS e CSRF, fortalecimento da segurança das aplicações e otimização de estratégias de cache para maior estabilidade e agilidade em produção.",
+      "description": "Implementações de defesas contra vulnerabilidades XSS e CSRF, fortalecimento da segurança das aplicações e otimização de estratégias de cache para maior estabilidade e agilidade em produção.",
       "technologies": [
         "Linx Commerce",
         "React",
@@ -72,7 +72,7 @@
       "title": "Desenvolvedor Frontend",
       "company": "2morrow Sports",
       "period": "jan. 2020 - out. 2020",
-      "description": "Arquitetura e desenvolvimento de funcionalidades essenciais voltadas ao usuário, incluindo login, gerenciamento de perfil e histórico financeiro. As melhorias ampliaram a personalização e a transparência das informações para os membros da plataforma.",
+      "description": "Desenvolvimento de funcionalidades essenciais voltadas ao usuário, incluindo login, gerenciamento de perfil e histórico financeiro. As melhorias ampliaram a personalização e a transparência das informações para os membros da plataforma.",
       "technologies": [
         "Axios",
         "Bootstrap",
@@ -87,9 +87,10 @@
       "title": "Desenvolvedor Frontend",
       "company": "Velani Contabilidade",
       "period": "jun. 2019 - set. 2019",
-      "description": "Arquitetura e desenvolvimento de uma interface intuitiva para o sistema financeiro, transformando dados complexos em visualizações claras e acionáveis. Responsável por integrações de APIs externas e aprimoramento da experiência do usuário.",
+      "description": "Desenvolvimento de interfaces intuitivas para o sistema financeiro, transformando dados complexos em visualizações claras e acionáveis. Responsável por integrações de APIs externas e aprimoramento da experiência do usuário.",
       "technologies": [
         "Bootstrap",
+        "Chart.js",
         "HTML5",
         "CSS3",
         "JavaScript",
@@ -121,7 +122,7 @@
     {
       "title": "Plataforma de E-commerce",
       "description": "Uma plataforma de e-commerce completa, com gerenciamento de estoque em tempo real, processamento de pagamentos e painel administrativo.",
-      "image": "/images/screenshot.png",
+      "image": "/images/screenshot_2.png",
       "technologies": [
         "Next.js",
         "TypeScript",
@@ -136,26 +137,22 @@
   "skills_subtitle": "Tecnologias e práticas que aplico para criar produtos digitais de alta qualidade.",
   "skills_items": [
     {
-      "name": "Aplicações seguras",
-      "description": "Fluxos de autenticação seguros e validação de dados robusta (Zod).",
-      "cta": "Ver integrações"
+      "name": "Desenvolvimento Frontend",
+      "description": "React 19 com TypeScript e Vite como ferramenta de construção e servidor de desenvolvimento."
     },
     {
       "name": "Código Limpo e escalável",
-      "description": "Arquitetura modular e hooks personalizados que garantem separação de responsabilidades, facilitando a manutenção e escalabilidade.",
-      "cta": "Ver stack"
+      "description": "Arquitetura modular e hooks personalizados que garantem separação de responsabilidades, facilitando a manutenção e escalabilidade."
     },
     {
       "name": "UI moderna e ecessível",
-      "description": "Interfaces reativas e estilizadas com Tailwind CSS, combinadas com componentes acessíveis e funcionais do Radix UI.",
-      "cta": "Explorar UI/UX"
+      "description": "Interfaces reativas e estilizadas com Tailwind CSS, combinadas com componentes acessíveis e funcionais do Radix UI."
     },
     {
       "name": "Testes e automações",
-      "description": "Pipelines de automação (CI/CD) para testes, lint e build. Deploys contínuos otimizados.",
-      "cta": "Ver automações"
+      "description": "Pipelines de automação (CI/CD) para testes, lint e build. Deploys contínuos otimizados."
     }
   ],
-  "footer_copyright": "© {{year}} 2Ti Todos os direitos reservados.",
+  "footer_copyright": "2Ti © {{year}} Todos os direitos reservados.",
   "footer_contact": "Entre em contato"
 }

@@ -1,4 +1,3 @@
-// src/components/layout/Navbar/index.tsx
 import { useTranslation } from 'react-i18next'
 import { DesktopNav } from './DesktopNav'
 import { MobileNav } from './MobileNav'
@@ -14,7 +13,7 @@ export const Navbar = () => {
   ]
 
   return (
-    <header className='sticky top-0 z-50 h-16 border-b bg-background/80 p-4 backdrop-blur-sm'>
+    <header className='sticky top-0 z-50 h-16 p-4 border-b bg-background/80 backdrop-blur-sm'>
       <div className='container mx-auto'>
         <DesktopNav menu={menuItems} />
         <MobileNav menu={menuItems} />

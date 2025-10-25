@@ -33,26 +33,26 @@ export const Projects = () => {
   }) as ProjectsProps[]
 
   return (
-    <section id='projects' className='relative px-4 py-20'>
-      <div className='mx-auto max-w-screen-md'>
+    <section id='projects' className='relative'>
+      <div className='mx-auto max-w-screen-md px-4 py-20'>
         <div className='mb-12 flex flex-col items-center gap-4 text-center'>
-          <BlurFade direction='up' delay={BASE_DELAY + STAGGER_DELAY * 0} inView>
+          <BlurFade delay={BASE_DELAY + 0 * STAGGER_DELAY} inView>
             <Badge variant='secondary'>{t('project_badge')}</Badge>
           </BlurFade>
-          <BlurFade direction='up' delay={BASE_DELAY + STAGGER_DELAY * 1} inView>
-            <h2 className='text-3xl font-medium text-balance sm:text-4xl'>
+          <BlurFade delay={BASE_DELAY + 1 * STAGGER_DELAY} inView>
+            <h2 className='text-3xl text-balance font-medium sm:text-4xl'>
               {t('project_title')}
             </h2>
           </BlurFade>
-          <BlurFade direction='up' delay={BASE_DELAY + STAGGER_DELAY * 2} inView>
-            <p className='max-w-2xl text-muted-foreground text-balance sm:text-lg'>
+          <BlurFade delay={BASE_DELAY + 2 * STAGGER_DELAY} inView>
+            <p className='text-lg text-pretty text-muted-foreground sm:text-xl'>
               {t('project_subtitle')}
             </p>
           </BlurFade>
         </div>
         <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-2'>
           {projects.map((project, idx) => (
-            <BlurFade key={idx} direction='up' delay={BASE_DELAY + STAGGER_DELAY * (3 + idx)} inView>
+            <BlurFade key={idx} delay={BASE_DELAY + idx * STAGGER_DELAY} inView>
               <Card className='w-full border-none p-0 shadow-none bg-transparent'>
                 <MagicCard gradientFrom='#1e69dc' gradientTo='#7033ff'>
                   <CardHeader className='p-0.5'>

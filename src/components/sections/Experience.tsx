@@ -22,19 +22,19 @@ export const Experience = () => {
   }) as ExperienceProps[]
 
   return (
-    <section id='experience' className='relative px-4 py-20'>
-      <div className='mx-auto max-w-screen-md'>
+    <section id='experience' className='relative'>
+      <div className='mx-auto max-w-screen-md px-4 py-20'>
         <div className='mb-12 flex flex-col items-center gap-4 text-center'>
-          <BlurFade direction='up' delay={BASE_DELAY + STAGGER_DELAY * 0} inView>
+          <BlurFade delay={BASE_DELAY + 0 * STAGGER_DELAY} inView>
             <Badge variant='secondary'>{t('experience_badge')}</Badge>
           </BlurFade>
-          <BlurFade direction='up' delay={BASE_DELAY + STAGGER_DELAY * 1} inView>
-            <h2 className='text-3xl font-medium text-balance sm:text-4xl'>
+          <BlurFade delay={BASE_DELAY + 1 * STAGGER_DELAY} inView>
+            <h2 className='text-3xl text-balance font-medium sm:text-4xl'>
               {t('experience_title')}
             </h2>
           </BlurFade>
-          <BlurFade direction='up' delay={BASE_DELAY + STAGGER_DELAY * 2} inView>
-            <p className='max-w-2xl text-muted-foreground text-balance sm:text-lg'>
+          <BlurFade delay={BASE_DELAY + 2 * STAGGER_DELAY} inView>
+            <p className='text-lg text-pretty text-muted-foreground sm:text-xl'>
               {t('experience_subtitle')}
             </p>
           </BlurFade>
@@ -44,30 +44,33 @@ export const Experience = () => {
             <li key={idx} className='relative not-last:pb-12 group'>
               <div className='absolute left-0.5 top-2 h-full w-0.5 bg-muted' />
               <div className='absolute -left-0.5 top-2 size-2.5 rounded-full border-2 border-primary bg-background' />
-              <BlurFade direction='up' delay={BASE_DELAY + STAGGER_DELAY * (3 + idx)} inView>
-                <div className='pl-8'>
-                  <h3 className='text-lg font-medium text-balance sm:text-xl'>
+              <div className='flex flex-col gap-2 pl-6'>
+                <BlurFade delay={BASE_DELAY + idx * STAGGER_DELAY} inView>
+                  <h3 className='text-xl text-balance font-medium sm:text-2xl'>
                     {experience.company}
                   </h3>
-                  <h4 className='text-muted-foreground text-balance md:text-lg'>
-                    {experience.title}
-                  </h4>
-                  <div className='mb-2 text-muted-foreground text-balance text-sm'>
-                    <div className='flex items-center gap-2'>
-                      <CalendarIcon />
-                      <span>{experience.period}</span>
-                    </div>
+                </BlurFade>
+                <BlurFade delay={BASE_DELAY + idx * STAGGER_DELAY} inView>
+                  <div className='flex items-center gap-2'>
+                    <CalendarIcon />
+                    <span className='text-sm text-pretty text-muted-foreground sm:text-base'>
+                      {experience.period}
+                    </span>
                   </div>
-                  <p className='mb-4 text-muted-foreground text-balance'>
+                </BlurFade>
+                <BlurFade delay={BASE_DELAY + idx * STAGGER_DELAY} inView>
+                  <p className='text-base text-pretty text-muted-foreground sm:text-lg'>
                     {experience.description}
                   </p>
-                  <div className='flex flex-wrap gap-2'>
-                    {experience.technologies.map((tech) => (
-                      <Badge key={tech} variant='secondary'>{tech}</Badge>
-                    ))}
-                  </div>
+                </BlurFade>
+                <div className='flex flex-wrap gap-2'>
+                  {experience.technologies.map((tech, idx2) => (
+                    <BlurFade key={tech} delay={BASE_DELAY + idx2 * STAGGER_DELAY} inView>
+                      <Badge variant='secondary'>{tech}</Badge>
+                    </BlurFade>
+                  ))}
                 </div>
-              </BlurFade>
+              </div>
             </li>
           ))}
         </ul>

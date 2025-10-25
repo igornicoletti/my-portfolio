@@ -1,21 +1,29 @@
+import { BlurFade } from '@/components/ui/blur-fade'
 import { InteractiveHoverButton } from '@/components/ui/interactive-hover-button'
 import { useTranslation } from 'react-i18next'
+
+const BASE_DELAY = 0.25
+const STAGGER_DELAY = 0.05
 
 export const Footer = () => {
   const { t } = useTranslation()
 
   return (
-    <footer className='relative p-6 pt-20'>
-      <div className='container mx-auto'>
-        <div className='flex flex-col items-center justify-between gap-4 sm:flex-row'>
-          <InteractiveHoverButton className='text-sm'>
-            <a href="mailto:igor93nicoletti@gmail.com" target="_blank" rel="noopener noreferrer">
-              {t('footer_contact')}
-            </a>
-          </InteractiveHoverButton>
-          <span className='text-muted-foreground text-sm'>
-            {t('footer_copyright', { year: new Date().getFullYear() })}
-          </span>
+    <footer className='relative'>
+      <div className='mx-auto max-w-screen-md px-4 py-20'>
+        <div className='flex flex-col items-center gap-4 text-center'>
+          <BlurFade delay={BASE_DELAY + 1 * STAGGER_DELAY} inView>
+            <InteractiveHoverButton className='text-sm'>
+              <a href="mailto:igor93nicoletti@gmail.com" target="_blank" rel="noopener noreferrer">
+                {t('footer_contact')}
+              </a>
+            </InteractiveHoverButton>
+          </BlurFade>
+          <BlurFade delay={BASE_DELAY + 1 * STAGGER_DELAY} inView>
+            <p className='text-sm text-pretty text-muted-foreground'>
+              {t('footer_copyright', { year: new Date().getFullYear() })}
+            </p>
+          </BlurFade>
         </div>
       </div>
     </footer>

@@ -137,25 +137,21 @@
   "skills_items": [
     {
       "name": "Aplicações seguras",
-      "description": "Fluxos de autenticação seguros e validação de dados robusta (Zod).",
-      "cta": "Ver integrações"
+      "description": "Fluxos de autenticação seguros e validação de dados robusta (Zod)."
     },
     {
       "name": "Código Limpo e escalável",
-      "description": "Arquitetura modular e hooks personalizados que garantem separação de responsabilidades, facilitando a manutenção e escalabilidade.",
-      "cta": "Ver stack"
+      "description": "Arquitetura modular e hooks personalizados que garantem separação de responsabilidades, facilitando a manutenção e escalabilidade."
     },
     {
       "name": "UI moderna e ecessível",
-      "description": "Interfaces reativas e estilizadas com Tailwind CSS, combinadas com componentes acessíveis e funcionais do Radix UI.",
-      "cta": "Explorar UI/UX"
+      "description": "Interfaces reativas e estilizadas com Tailwind CSS, combinadas com componentes acessíveis e funcionais do Radix UI."
     },
     {
       "name": "Testes e automações",
-      "description": "Pipelines de automação (CI/CD) para testes, lint e build. Deploys contínuos otimizados.",
-      "cta": "Ver automações"
+      "description": "Pipelines de automação (CI/CD) para testes, lint e build. Deploys contínuos otimizados."
     }
   ],
-  "footer_copyright": "© {{year}} 2Ti All Rights Reserved.",
+  "footer_copyright": "2Ti © {{year}} All Rights Reserved.",
   "footer_contact": "Get In Touch"
 }
