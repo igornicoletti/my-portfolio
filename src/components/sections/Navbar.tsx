@@ -98,7 +98,7 @@ export const Navbar = () => {
               <DrawerContent>
                 <DrawerHeader>
                   <DrawerTitle>
-                    <Button variant='ghost' onClick={() => handleLinkClick('#home')}>
+                    <Button variant='ghost' onClick={() => handleDrawerLinkClick('#home')}>
                       <SpiralIcon weight='fill' className='size-8' />
                       <span className='text-xl font-bold'>2Ti</span>
                     </Button>
