@@ -12,7 +12,7 @@
   "dock_language": "Traduzir",
   "hero_badge": "Desenvolvedor Web Fullstack",
   "hero_title": "Experiências web modernas e eficientes",
-  "hero_subtitle": "Especializado na criação de aplicações web de alto desempenho, contribuindo para o desenvolvimento de produtos robustos, acessíveis e escaláveis.",
+  "hero_subtitle": "Especializado na criação de aplicações web de alto desempenho, contribuindo para o desenvolvimento de produtos robustos e escaláveis.",
   "about_badge": "Sobre mim",
   "about_title": "Filosofia de desenvolvimento e abordagem técnica",
   "about_paragraph_1": "Acredito que um código bem estruturado e testável é a base para produtos escaláveis e de longa vida útil. Meu trabalho combina conhecimento técnico sólido com atenção aos detalhes que tornam a experiência do usuário mais fluida e confiável.",
@@ -102,8 +102,8 @@
   "project_badge": "Projetos",
   "project_title": "Projetos mais recentes",
   "project_subtitle": "Trabalhei em diversos projetos, desde sites simples até aplicativos web complexos. Aqui estão alguns dos meus favoritos.",
-  "project_demo": "Demonstração ao vivo",
-  "project_code": "Ver código",
+  "project_demo": "Ver Aplicação",
+  "project_code": "Repositório GitHub",
   "project_image": "Captura de tela do projeto",
   "project_items": [
     {
@@ -137,8 +137,8 @@
   "skills_subtitle": "Tecnologias e práticas que aplico para criar produtos digitais de alta qualidade.",
   "skills_items": [
     {
-      "name": "Boas práticas de código",
-      "description": "Desenvolvimento orientado a padrões limpos, modulares e fáceis de manter ao longo do ciclo de vida do produto."
+      "name": "Interface de usuário generativa",
+      "description": "Interfaces de usuário dinâmicas que surpreendam seus usuários."
     },
     {
       "name": "Integrações e APIs",
@@ -149,8 +149,8 @@
       "description": "Implementação de fluxos seguros com JWT, OAuth e práticas modernas de proteção de dados."
     },
     {
-      "name": "Desempenho e escalabilidade",
-      "description": "Foco em eficiência e estabilidade, garantindo aplicações rápidas e preparadas para crescer."
+      "name": "Interface de usuário",
+      "description": "Interfaces de usuário dinâmicas que surpreendam seus usuários."
     }
   ],
   "footer_copyright": "2Ti © {{year}} Todos os direitos reservados.",

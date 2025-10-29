@@ -18,7 +18,6 @@ export const Hero = () => {
               {t('hero_badge')}
               <BorderBeam
                 size={40}
-                borderWidth={2}
                 initialOffset={20}
                 className='from-transparent via-accent-foreground to-transparent'
                 transition={{

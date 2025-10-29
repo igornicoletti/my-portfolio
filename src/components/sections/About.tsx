@@ -1,4 +1,3 @@
-import { Badge } from '@/components/ui/badge'
 import { BlurFade } from '@/components/ui/blur-fade'
 import { Button } from '@/components/ui/button'
 import { DownloadIcon, GitHubLogoIcon } from '@radix-ui/react-icons'
@@ -22,7 +21,9 @@ export const About = () => {
           <div className='flex-1'>
             <div className='mb-12 flex flex-col gap-4'>
               <BlurFade delay={BASE_DELAY + 0 * STAGGER_DELAY} inView>
-                <Badge variant='secondary'>{t('about_badge')}</Badge>
+                <b className="text-muted-foreground text-sm font-semibold uppercase">
+                  {t('about_badge')}
+                </b>
               </BlurFade>
               <BlurFade delay={BASE_DELAY + 2 * STAGGER_DELAY} inView>
                 <h2 className='text-3xl text-balance font-medium sm:text-4xl'>
@@ -52,7 +53,7 @@ export const About = () => {
             </div>
             <div className='flex flex-wrap gap-2'>
               <BlurFade delay={BASE_DELAY + 6 * STAGGER_DELAY} inView>
-                <Button asChild variant='default'>
+                <Button asChild variant='default' className='rounded-full'>
                   <a href='https://github.com/igornicoletti' target='_blank' rel='noopener noreferrer'>
                     <GitHubLogoIcon />
                     {t('about_github')}
@@ -60,7 +61,7 @@ export const About = () => {
                 </Button>
               </BlurFade>
               <BlurFade delay={BASE_DELAY + 7 * STAGGER_DELAY} inView>
-                <Button asChild variant='outline'>
+                <Button asChild variant='outline' className='rounded-full'>
                   <a href='/images/igornicoletti.pdf' download>
                     <DownloadIcon />
                     {t('about_resume')}

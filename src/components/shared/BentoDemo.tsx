@@ -1,3 +1,4 @@
+import { AnimatedBeamDemo } from '@/components/shared/AnimatedBeamDemo'
 import { AnimatedBeamMultipleOutputDemo } from '@/components/shared/AnimatedBeamMultipleOutputDemo'
 import { AnimatedListDemo } from '@/components/shared/AnimatedListDemo'
 import { BentoCard, BentoGrid } from "@/components/ui/bento-grid"
@@ -22,7 +23,7 @@ const items = [
           <figure
             key={idx}
             className={cn(
-              "relative w-44 cursor-pointer overflow-hidden rounded-xl border rounded-sm p-4",
+              "relative w-44 cursor-pointer overflow-hidden border rounded-sm p-4",
               "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
               "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]",
               "transform-gpu blur-[1px] transition-all duration-300 ease-out hover:blur-none"
@@ -40,12 +41,14 @@ const items = [
   {
     className: "col-span-3 lg:col-span-2",
     background: (
-      <AnimatedBeamMultipleOutputDemo className="absolute top-0 right-2 h-[300px] border-none [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] transition-all duration-300 ease-out group-hover:scale-105" />
+      <AnimatedBeamMultipleOutputDemo className="absolute top-0 right-0 h-[300px] border-none [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] transition-all duration-300 ease-out group-hover:scale-105" />
     ),
   },
   {
     className: "col-span-3 lg:col-span-2",
-    background: <></>,
+    background: (
+      <AnimatedBeamDemo className="absolute top-0 right-0 h-[300px] border-none [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] transition-all duration-300 ease-out group-hover:scale-105" />
+    ),
   },
   {
     className: "col-span-3 lg:col-span-1",
