@@ -10,6 +10,7 @@ export const Hero = () => {
 
   return (
     <section id='home' className='relative'>
+
       <div className='mx-auto max-w-screen-md px-4 py-20 md:py-40'>
         <div className='flex flex-col items-center gap-4 text-center'>
           <BlurFade delay={0.25 + 0 * 0.05} inView>

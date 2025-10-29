@@ -11,16 +11,16 @@ export const Footer = () => {
   return (
     <footer className='relative'>
       <div className='mx-auto max-w-screen-md px-4 py-20'>
-        <div className='flex flex-col items-center gap-4 text-center'>
+        <div className='flex flex-col items-center gap-6'>
           <BlurFade delay={BASE_DELAY + 0 * STAGGER_DELAY} inView>
             <InteractiveHoverButton>
-              <a href="mailto:igor93nicoletti@gmail.com" target="_blank" rel="noopener noreferrer">
+              <a href='mailto:igor93nicoletti@gmail.com' target='_blank' rel='noopener noreferrer'>
                 {t('footer_contact')}
               </a>
             </InteractiveHoverButton>
           </BlurFade>
           <BlurFade delay={BASE_DELAY + 1 * STAGGER_DELAY} inView>
-            <p className='text-sm text-pretty text-muted-foreground'>
+            <p className='text-sm text-muted-foreground font-semibold'>
               {t('footer_copyright', { year: new Date().getFullYear() })}
             </p>
           </BlurFade>

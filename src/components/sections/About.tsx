@@ -21,9 +21,9 @@ export const About = () => {
           <div className='flex-1'>
             <div className='mb-12 flex flex-col gap-4'>
               <BlurFade delay={BASE_DELAY + 0 * STAGGER_DELAY} inView>
-                <b className="text-muted-foreground text-sm font-semibold uppercase">
+                <p className='text-sm text-primary font-semibold uppercase'>
                   {t('about_badge')}
-                </b>
+                </p>
               </BlurFade>
               <BlurFade delay={BASE_DELAY + 2 * STAGGER_DELAY} inView>
                 <h2 className='text-3xl text-balance font-medium sm:text-4xl'>

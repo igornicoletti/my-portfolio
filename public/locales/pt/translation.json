@@ -4,12 +4,10 @@
   "nav_experience": "Experiência",
   "nav_projects": "Projetos",
   "nav_menu": "Menu",
-  "dock_github": "GitHub",
-  "dock_linkedin": "LinkedIn",
-  "dock_mail": "E-mail",
-  "dock_whatsapp": "WhatsApp",
-  "dock_theme": "Tema",
-  "dock_language": "Traduzir",
+  "dock_github": "Perfil no GitHub",
+  "dock_linkedin": "Perfil no LinkedIn",
+  "dock_theme": "Alternar tema",
+  "dock_language": "Alternar idioma",
   "hero_badge": "Desenvolvedor Web Fullstack",
   "hero_title": "Experiências web modernas e eficientes",
   "hero_subtitle": "Especializado na criação de aplicações web de alto desempenho, contribuindo para o desenvolvimento de produtos robustos e escaláveis.",
@@ -100,7 +98,7 @@
     }
   ],
   "project_badge": "Projetos",
-  "project_title": "Projetos mais recentes",
+  "project_title": "Aplicações mais recentes",
   "project_subtitle": "Trabalhei em diversos projetos, desde sites simples até aplicativos web complexos.",
   "project_demo": "Ver projeto",
   "project_code": "Explorar código",
@@ -150,8 +148,8 @@
   "skills_subtitle": "Tecnologias e práticas que aplico para criar produtos digitais de alta qualidade.",
   "skills_items": [
     {
-      "name": "Interface de usuário generativa",
-      "description": "Interfaces de usuário dinâmicas que surpreendam seus usuários."
+      "name": "Componentes da interface do usuário da organização",
+      "description": "Os componentes de interface do usuário do Clerk adicionam simplicidade pronta para uso a tarefas complexas de gerenciamento da organização."
     },
     {
       "name": "Integrações e APIs",

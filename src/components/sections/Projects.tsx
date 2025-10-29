@@ -37,9 +37,9 @@ export const Projects = () => {
       <div className='mx-auto max-w-screen-lg px-4 py-20'>
         <div className='mb-12 flex flex-col items-center gap-4 text-center'>
           <BlurFade delay={BASE_DELAY + 0 * STAGGER_DELAY} inView>
-            <b className="text-muted-foreground text-sm font-semibold uppercase">
+            <p className='text-sm text-primary font-semibold uppercase'>
               {t('project_badge')}
-            </b>
+            </p>
           </BlurFade>
           <BlurFade delay={BASE_DELAY + 1 * STAGGER_DELAY} inView>
             <h2 className='text-3xl text-balance font-medium sm:text-4xl'>
@@ -71,7 +71,7 @@ export const Projects = () => {
                       <Badge key={tech} variant='secondary'>{tech}</Badge>
                     ))}
                   </div>
-                  <CardFooter className='grid grid-cols-2 gap-2 p-4'>
+                  <CardFooter className='flex flex-wrap gap-2 p-4'>
                     {project.githubUrl && (
                       <Button asChild variant='default' size='sm' className='rounded-full'>
                         <a href={project.githubUrl} target='_blank' rel='noopener noreferrer'>

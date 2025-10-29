@@ -68,13 +68,12 @@ export const Navbar = () => {
   return (
     <header className='sticky top-0 z-50 h-16 p-4 border-b bg-background/80 backdrop-blur-sm'>
       <div className='container mx-auto'>
-        <div className='flex items-center gap-4'>
+        <div className='flex items-center gap-2'>
           <Button variant='ghost' onClick={() => handleLinkClick('#home')}>
             <SpiralIcon weight='fill' className='size-8' />
             <span className='text-xl font-bold'>2Ti</span>
           </Button>
-
-          <div className='hidden flex-1 items-center justify-between lg:flex'>
+          <div className='hidden lg:flex'>
             <NavigationMenu>
               <NavigationMenuList>
                 {menuItems.map((item) => (
@@ -86,9 +85,9 @@ export const Navbar = () => {
                 ))}
               </NavigationMenuList>
             </NavigationMenu>
-            <DockDemo />
           </div>
-          <div className='ml-auto lg:hidden'>
+          <DockDemo />
+          <div className='lg:hidden'>
             <Drawer open={isOpen} onOpenChange={setIsOpen}>
               <DrawerTrigger asChild>
                 <Button variant='ghost' size='icon'>
@@ -98,7 +97,7 @@ export const Navbar = () => {
               <DrawerContent>
                 <DrawerHeader>
                   <DrawerTitle>
-                    <Button variant='ghost' onClick={() => handleLinkClick('#home')}>
+                    <Button variant='ghost' onClick={() => handleDrawerLinkClick('#home')}>
                       <SpiralIcon weight='fill' className='size-8' />
                       <span className='text-xl font-bold'>2Ti</span>
                     </Button>
@@ -112,8 +111,8 @@ export const Navbar = () => {
                     </Button>
                   ))}
                 </div>
-                <DrawerFooter>
-                  <DockDemo />
+                <DrawerFooter className='mx-auto'>
+                  <DockDemo isDrawer />
                 </DrawerFooter>
               </DrawerContent>
             </Drawer>
