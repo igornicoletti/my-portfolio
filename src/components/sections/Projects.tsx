@@ -34,7 +34,7 @@ export const Projects = () => {
 
   return (
     <section id='projects' className='relative'>
-      <div className='mx-auto max-w-screen-md px-4 py-20'>
+      <div className='mx-auto max-w-screen-lg px-4 py-20'>
         <div className='mb-12 flex flex-col items-center gap-4 text-center'>
           <BlurFade delay={BASE_DELAY + 0 * STAGGER_DELAY} inView>
             <b className="text-muted-foreground text-sm font-semibold uppercase">
@@ -52,7 +52,7 @@ export const Projects = () => {
             </p>
           </BlurFade>
         </div>
-        <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-2'>
+        <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3'>
           {projects.map((project, idx) => (
             <BlurFade key={idx} delay={BASE_DELAY + idx * STAGGER_DELAY} inView>
               <Card className='w-full border-none p-0 shadow-none bg-transparent'>
@@ -71,7 +71,7 @@ export const Projects = () => {
                       <Badge key={tech} variant='secondary'>{tech}</Badge>
                     ))}
                   </div>
-                  <CardFooter className='flex flex-wrap gap-2 p-4'>
+                  <CardFooter className='grid grid-cols-2 gap-2 p-4'>
                     {project.githubUrl && (
                       <Button asChild variant='default' size='sm' className='rounded-full'>
                         <a href={project.githubUrl} target='_blank' rel='noopener noreferrer'>

@@ -101,9 +101,9 @@
   ],
   "project_badge": "Projetos",
   "project_title": "Projetos mais recentes",
-  "project_subtitle": "Trabalhei em diversos projetos, desde sites simples até aplicativos web complexos. Aqui estão alguns dos meus favoritos.",
-  "project_demo": "Ver Aplicação",
-  "project_code": "Repositório GitHub",
+  "project_subtitle": "Trabalhei em diversos projetos, desde sites simples até aplicativos web complexos.",
+  "project_demo": "Ver projeto",
+  "project_code": "Explorar código",
   "project_image": "Captura de tela do projeto",
   "project_items": [
     {
@@ -122,7 +122,20 @@
     {
       "title": "Plataforma de E-commerce",
       "description": "Uma plataforma de e-commerce completa, com gerenciamento de estoque em tempo real, processamento de pagamentos e painel administrativo.",
-      "image": "/images/screenshot_2.png",
+      "image": "/images/screenshot.png",
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "Stripe",
+        "Prisma"
+      ],
+      "liveUrl": "https://github.com/igornicoletti",
+      "githubUrl": "https://github.com/igornicoletti"
+    },
+    {
+      "title": "Plataforma de E-commerce",
+      "description": "Uma plataforma de e-commerce completa, com gerenciamento de estoque em tempo real, processamento de pagamentos e painel administrativo.",
+      "image": "/images/screenshot.png",
       "technologies": [
         "Next.js",
         "TypeScript",
