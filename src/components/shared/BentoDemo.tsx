@@ -71,7 +71,7 @@ export function BentoDemo() {
 
   return (
     <section className='relative'>
-      <div className='mx-auto max-w-screen-lg px-4 py-20'>
+      <div className='mx-auto max-w-screen-xl px-4 py-20'>
         <BentoGrid>
           {features.map((feature, idx) => (
             <BentoCard key={idx} {...feature} />

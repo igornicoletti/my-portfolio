@@ -22,7 +22,7 @@ export const About = () => {
             <div className='mb-12 flex flex-col gap-4'>
               <BlurFade delay={BASE_DELAY + 0 * STAGGER_DELAY} inView>
                 <p className='text-sm text-primary font-semibold uppercase'>
-                  {t('about_badge')}
+                  {t('nav_about')}
                 </p>
               </BlurFade>
               <BlurFade delay={BASE_DELAY + 2 * STAGGER_DELAY} inView>
@@ -31,7 +31,7 @@ export const About = () => {
                 </h2>
               </BlurFade>
               <BlurFade delay={BASE_DELAY + 1 * STAGGER_DELAY} inView>
-                <div className='max-w-xs rounded-lg overflow-hidden md:hidden'>
+                <div className='max-w-sm rounded-lg overflow-hidden md:hidden'>
                   <img src='/images/igornicoletti.png' alt={t('about_image')} className='w-full h-full object-cover' />
                 </div>
               </BlurFade>

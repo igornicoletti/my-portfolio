@@ -1,7 +1,6 @@
 import { Badge } from '@/components/ui/badge'
 import { BlurFade } from '@/components/ui/blur-fade'
 import { BorderBeam } from '@/components/ui/border-beam'
-import { Particles } from '@/components/ui/particles'
 import { LightningIcon } from '@phosphor-icons/react'
 import { useTranslation } from 'react-i18next'
 
@@ -10,7 +9,6 @@ export const Hero = () => {
 
   return (
     <section id='home' className='relative'>
-
       <div className='mx-auto max-w-screen-md px-4 py-20 md:py-40'>
         <div className='flex flex-col items-center gap-4 text-center'>
           <BlurFade delay={0.25 + 0 * 0.05} inView>
@@ -20,12 +18,8 @@ export const Hero = () => {
               <BorderBeam
                 size={40}
                 initialOffset={20}
-                className='from-transparent via-accent-foreground to-transparent'
-                transition={{
-                  type: 'spring',
-                  stiffness: 40,
-                  damping: 20,
-                }} />
+                transition={{ type: 'spring', stiffness: 40, damping: 20 }}
+                className='from-transparent via-accent-foreground to-transparent' />
             </Badge>
           </BlurFade>
           <BlurFade delay={0.25 + 1 * 0.05} inView>
@@ -40,7 +34,6 @@ export const Hero = () => {
           </BlurFade>
         </div>
       </div>
-      <Particles className='fixed inset-0 z-0 w-screen h-screen' refresh />
     </section>
 
   )

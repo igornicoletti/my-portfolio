@@ -27,7 +27,7 @@ export const Experience = () => {
         <div className='mb-12 flex flex-col items-center gap-4 text-center'>
           <BlurFade delay={BASE_DELAY + 0 * STAGGER_DELAY} inView>
             <p className='text-sm text-primary font-semibold uppercase'>
-              {t('experience_badge')}
+              {t('nav_experience')}
             </p>
           </BlurFade>
           <BlurFade delay={BASE_DELAY + 1 * STAGGER_DELAY} inView>

@@ -38,7 +38,7 @@ export const Projects = () => {
         <div className='mb-12 flex flex-col items-center gap-4 text-center'>
           <BlurFade delay={BASE_DELAY + 0 * STAGGER_DELAY} inView>
             <p className='text-sm text-primary font-semibold uppercase'>
-              {t('project_badge')}
+              {t('nav_projects')}
             </p>
           </BlurFade>
           <BlurFade delay={BASE_DELAY + 1 * STAGGER_DELAY} inView>
@@ -52,13 +52,13 @@ export const Projects = () => {
             </p>
           </BlurFade>
         </div>
-        <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3'>
+        <div className='grid grid-cols-1 gap-4 sm:grid-cols-2'>
           {projects.map((project, idx) => (
             <BlurFade key={idx} delay={BASE_DELAY + idx * STAGGER_DELAY} inView>
               <Card className='w-full border-none p-0 shadow-none bg-transparent'>
-                <MagicCard gradientFrom='#1e69dc' gradientTo='#7033ff'>
+                <MagicCard>
                   <CardHeader className='p-0.5'>
-                    <div className='relative w-full overflow-hidden rounded-t-lg'>
+                    <div className='relative w-full overflow-hidden rounded-t-xl'>
                       <img src={project.image} alt={t('project_image')} className='object-cover w-full h-full transition-transform duration-300 hover:scale-105' />
                     </div>
                   </CardHeader>
@@ -73,7 +73,7 @@ export const Projects = () => {
                   </div>
                   <CardFooter className='flex flex-wrap gap-2 p-4'>
                     {project.githubUrl && (
-                      <Button asChild variant='default' size='sm' className='rounded-full'>
+                      <Button asChild variant='secondary' className='rounded-full'>
                         <a href={project.githubUrl} target='_blank' rel='noopener noreferrer'>
                           <GitHubLogoIcon />
                           {t('project_code')}
@@ -81,7 +81,7 @@ export const Projects = () => {
                       </Button>
                     )}
                     {project.liveUrl && (
-                      <Button asChild variant='outline' size='sm' className='rounded-full'>
+                      <Button asChild variant='outline' className='rounded-full'>
                         <a href={project.liveUrl} target='_blank' rel='noopener noreferrer'>
                           <ExternalLinkIcon />
                           {t('project_demo')}

@@ -2,7 +2,6 @@ import { AnimatedThemeToggler } from '@/components/ui/animated-theme-toggler'
 import { Button } from '@/components/ui/button'
 import { Dock, DockIcon } from '@/components/ui/dock'
 import { Separator } from '@/components/ui/separator'
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
 import { useBreakpoint } from '@/hooks/useBreakpoint'
 import { GithubLogoIcon, GlobeSimpleIcon, LinkedinLogoIcon } from '@phosphor-icons/react'
 import { useTranslation } from 'react-i18next'
@@ -25,52 +24,35 @@ export const DockDemo = ({ isDrawer }: Props) => {
 
   return (
     <div className='relative ml-auto'>
-      <TooltipProvider>
-        <Dock>
+      <Dock>
+        <DockIcon>
+          <Button asChild variant='ghost' size='icon'>
+            <a href='https://linkedin.com/in/igornicoletti' aria-label={t('dock_linkedin')} target='_blank' rel='noopener noreferrer'>
+              <LinkedinLogoIcon />
+            </a>
+          </Button>
+        </DockIcon>
+        <DockIcon>
+          <Button asChild variant='ghost' size='icon'>
+            <a href='https://github.com/igornicoletti' aria-label={t('dock_github')} target='_blank' rel='noopener noreferrer'>
+              <GithubLogoIcon />
+            </a>
+          </Button>
+        </DockIcon>
+        <Separator orientation='vertical' className='data-[orientation=vertical]:h-6' />
+        {showExtraIcons && (
           <DockIcon>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Button asChild variant='ghost' size='icon'>
-                  <a href='https://linkedin.com/in/igornicoletti' target='_blank' rel='noopener noreferrer'>
-                    <LinkedinLogoIcon />
-                  </a>
-                </Button>
-              </TooltipTrigger>
-              <TooltipContent>{t('dock_linkedin')}</TooltipContent>
-            </Tooltip>
+            <Button onClick={handleLanguageChange} aria-label={t('dock_language')} variant='ghost' size='icon'>
+              <GlobeSimpleIcon />
+            </Button>
           </DockIcon>
+        )}
+        {showExtraIcons && (
           <DockIcon>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Button asChild variant='ghost' size='icon'>
-                  <a href='https://github.com/igornicoletti' target='_blank' rel='noopener noreferrer'>
-                    <GithubLogoIcon />
-                  </a>
-                </Button>
-              </TooltipTrigger>
-              <TooltipContent>{t('dock_github')}</TooltipContent>
-            </Tooltip>
+            <AnimatedThemeToggler aria-label={t('dock_theme')} />
           </DockIcon>
-          {showExtraIcons && (
-            <>
-              <Separator orientation='vertical' className='data-[orientation=vertical]:h-6' />
-              <DockIcon>
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <Button onClick={handleLanguageChange} variant='ghost' size='icon'>
-                      <GlobeSimpleIcon />
-                    </Button>
-                  </TooltipTrigger>
-                  <TooltipContent>{t('dock_language')}</TooltipContent>
-                </Tooltip>
-              </DockIcon>
-              <DockIcon>
-                <AnimatedThemeToggler />
-              </DockIcon>
-            </>
-          )}
-        </Dock>
-      </TooltipProvider>
+        )}
+      </Dock>
     </div>
   )
 }

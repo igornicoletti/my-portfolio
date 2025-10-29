@@ -1,5 +1,5 @@
-import React, { useCallback, useEffect } from "react"
 import { motion, useMotionTemplate, useMotionValue } from "motion/react"
+import React, { useCallback, useEffect } from "react"
 
 import { cn } from "@/lib/utils"
 
@@ -19,8 +19,8 @@ export function MagicCard({
   gradientSize = 200,
   gradientColor = "#262626",
   gradientOpacity = 0.8,
-  gradientFrom = "#9E7AFF",
-  gradientTo = "#FE8BBB",
+  gradientFrom = "#1e69dc",
+  gradientTo = "#7033ff",
 }: MagicCardProps) {
   const mouseX = useMotionValue(-gradientSize)
   const mouseY = useMotionValue(-gradientSize)

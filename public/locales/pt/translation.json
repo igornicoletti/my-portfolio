@@ -11,17 +11,35 @@
   "hero_badge": "Desenvolvedor Web Fullstack",
   "hero_title": "Experiências web modernas e eficientes",
   "hero_subtitle": "Especializado na criação de aplicações web de alto desempenho, contribuindo para o desenvolvimento de produtos robustos e escaláveis.",
-  "about_badge": "Sobre mim",
+  "skills_section_title": "Habilidades e Stack",
+  "skills_subtitle": "Tecnologias e práticas que aplico para criar produtos digitais de alta qualidade.",
+  "skills_items": [
+    {
+      "name": "Componentes de interface do usuário para organizações",
+      "description": "Os componentes de interface do usuário do Clerk trazem simplicidade pronta para uso a tarefas complexas de gerenciamento organizacional."
+    },
+    {
+      "name": "Integrações e APIs",
+      "description": "Conexão entre sistemas e serviços com foco em desempenho, segurança e consistência de dados."
+    },
+    {
+      "name": "Segurança e autenticação",
+      "description": "Implementação de fluxos seguros com JWT, OAuth e práticas modernas de proteção de dados."
+    },
+    {
+      "name": "Interface do usuário",
+      "description": "Interfaces dinâmicas que encantam os usuários."
+    }
+  ],
   "about_title": "Filosofia de desenvolvimento e abordagem técnica",
-  "about_paragraph_1": "Acredito que um código bem estruturado e testável é a base para produtos escaláveis e de longa vida útil. Meu trabalho combina conhecimento técnico sólido com atenção aos detalhes que tornam a experiência do usuário mais fluida e confiável.",
+  "about_paragraph_1": "Acredito que um código bem estruturado e testável é a base para produtos escaláveis e duradouros. Meu trabalho combina conhecimento técnico sólido com atenção aos detalhes que tornam a experiência do usuário mais fluida e confiável.",
   "about_paragraph_2": "Trabalho com um ecossistema moderno de desenvolvimento web que integra React 19, TypeScript e Vite para construir aplicações seguras e robustas. Adoto práticas ágeis e integração contínua para garantir entregas consistentes e de alta qualidade.",
   "about_paragraph_3": "Tenho experiência na construção e evolução de sistemas complexos, contribuindo para decisões técnicas, definição de ferramentas e desenho de arquitetura. Busco constantemente novas tecnologias que impulsionem a inovação e a melhoria contínua dos processos de desenvolvimento.",
   "about_github": "Explorar GitHub",
   "about_resume": "Baixar currículo",
   "about_image": "Imagem de perfil profissional",
-  "experience_badge": "Experiência",
   "experience_title": "Trajetória profissional",
-  "experience_subtitle": "Uma linha do tempo do meu crescimento profissional e tecnologias utilizadas.",
+  "experience_subtitle": "Uma linha do tempo do meu crescimento profissional e das tecnologias utilizadas.",
   "experience_items": [
     {
       "title": "Desenvolvedor Frontend",
@@ -56,7 +74,7 @@
       "title": "Desenvolvedor Frontend",
       "company": "Trinto | Digital Partners",
       "period": "nov. 2020 - mar. 2021",
-      "description": "Implementações de defesas contra vulnerabilidades XSS e CSRF, fortalecimento da segurança das aplicações e otimização de estratégias de cache para maior estabilidade e agilidade em produção.",
+      "description": "Implementação de defesas contra vulnerabilidades XSS e CSRF, fortalecimento da segurança das aplicações e otimização de estratégias de cache para maior estabilidade e agilidade em produção.",
       "technologies": [
         "Linx Commerce",
         "React",
@@ -85,7 +103,7 @@
       "title": "Desenvolvedor Frontend",
       "company": "Velani Contabilidade",
       "period": "jun. 2019 - set. 2019",
-      "description": "Desenvolvimento de interfaces intuitivas para o sistema financeiro, transformando dados complexos em visualizações claras e acionáveis. Responsável por integrações de APIs externas e aprimoramento da experiência do usuário.",
+      "description": "Desenvolvimento de interfaces intuitivas para o sistema financeiro, transformando dados complexos em visualizações claras e acionáveis. Responsável por integrações com APIs externas e aprimoramento da experiência do usuário.",
       "technologies": [
         "Bootstrap",
         "Chart.js",
@@ -97,9 +115,8 @@
       ]
     }
   ],
-  "project_badge": "Projetos",
-  "project_title": "Aplicações mais recentes",
-  "project_subtitle": "Trabalhei em diversos projetos, desde sites simples até aplicativos web complexos.",
+  "project_title": "Casos de uso",
+  "project_subtitle": "Atuei em diversos projetos, desde sites simples até aplicativos web complexos.",
   "project_demo": "Ver projeto",
   "project_code": "Explorar código",
   "project_image": "Captura de tela do projeto",
@@ -107,7 +124,7 @@
     {
       "title": "Plataforma de E-commerce",
       "description": "Uma plataforma de e-commerce completa, com gerenciamento de estoque em tempo real, processamento de pagamentos e painel administrativo.",
-      "image": "/images/screenshot.png",
+      "image": "/images/screenshot_01.png",
       "technologies": [
         "Next.js",
         "TypeScript",
@@ -120,7 +137,7 @@
     {
       "title": "Plataforma de E-commerce",
       "description": "Uma plataforma de e-commerce completa, com gerenciamento de estoque em tempo real, processamento de pagamentos e painel administrativo.",
-      "image": "/images/screenshot.png",
+      "image": "/images/screenshot_02.png",
       "technologies": [
         "Next.js",
         "TypeScript",
@@ -129,39 +146,6 @@
       ],
       "liveUrl": "https://github.com/igornicoletti",
       "githubUrl": "https://github.com/igornicoletti"
-    },
-    {
-      "title": "Plataforma de E-commerce",
-      "description": "Uma plataforma de e-commerce completa, com gerenciamento de estoque em tempo real, processamento de pagamentos e painel administrativo.",
-      "image": "/images/screenshot.png",
-      "technologies": [
-        "Next.js",
-        "TypeScript",
-        "Stripe",
-        "Prisma"
-      ],
-      "liveUrl": "https://github.com/igornicoletti",
-      "githubUrl": "https://github.com/igornicoletti"
-    }
-  ],
-  "skills_section_title": "Habilidades e Stack",
-  "skills_subtitle": "Tecnologias e práticas que aplico para criar produtos digitais de alta qualidade.",
-  "skills_items": [
-    {
-      "name": "Componentes da interface do usuário da organização",
-      "description": "Os componentes de interface do usuário do Clerk adicionam simplicidade pronta para uso a tarefas complexas de gerenciamento da organização."
-    },
-    {
-      "name": "Integrações e APIs",
-      "description": "Conexão entre sistemas e serviços com foco em desempenho, segurança e consistência de dados."
-    },
-    {
-      "name": "Segurança e autenticação",
-      "description": "Implementação de fluxos seguros com JWT, OAuth e práticas modernas de proteção de dados."
-    },
-    {
-      "name": "Interface de usuário",
-      "description": "Interfaces de usuário dinâmicas que surpreendam seus usuários."
     }
   ],
   "footer_copyright": "2Ti © {{year}} Todos os direitos reservados.",

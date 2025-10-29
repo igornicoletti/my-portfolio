@@ -23,7 +23,7 @@
   --border: oklch(0.9300 0.0094 286.2156);
   --input: oklch(0.9401 0 0);
   --ring: oklch(0.6132 0.2294 291.7437);
-  --radius: 1.4rem;
+  --radius: 1.25rem;
   --shadow-x: 0px;
   --shadow-y: 2px;
   --shadow-blur: 3px;
@@ -62,7 +62,7 @@
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
   --ring: oklch(0.6132 0.2294 291.7437);
-  --radius: 1.4rem;
+  --radius: 1.25rem;
   --shadow-x: 0px;
   --shadow-y: 2px;
   --shadow-blur: 3px;

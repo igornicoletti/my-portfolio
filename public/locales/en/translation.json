@@ -4,30 +4,48 @@
   "nav_experience": "Experience",
   "nav_projects": "Projects",
   "nav_menu": "Menu",
-  "dock_github": "GitHub profile",
-  "dock_linkedin": "LinkedIn profile",
+  "dock_github": "GitHub Profile",
+  "dock_linkedin": "LinkedIn Profile",
   "dock_theme": "Toggle theme",
   "dock_language": "Switch language",
   "hero_badge": "Fullstack Web Developer",
   "hero_title": "Modern and efficient web experiences",
-  "hero_subtitle": "Specialized in building high-performance web applications, contributing to the development of robust, accessible, and scalable products.",
-  "about_badge": "About Me",
-  "about_title": "Development philosophy and technical approach",
-  "about_paragraph_1": "I believe that well-structured and testable code is the foundation for scalable and long-lasting products. My work combines solid technical knowledge with attention to detail that makes the user experience smoother and more reliable.",
-  "about_paragraph_2": "I work with a modern web development ecosystem that integrates React 19, TypeScript, and Vite to build fast and scalable applications. I adopt agile practices and continuous integration to ensure consistent and high-quality deliveries.",
-  "about_paragraph_3": "I have experience building and evolving complex systems, contributing to technical decisions, tool selection, and architecture design. I constantly seek new technologies that drive innovation, scalability, and continuous improvement in development processes.",
+  "hero_subtitle": "Specialized in building high-performance web applications, contributing to the development of robust and scalable products.",
+  "skills_section_title": "Skills and Stack",
+  "skills_subtitle": "Technologies and practices I use to create high-quality digital products.",
+  "skills_items": [
+    {
+      "name": "Organizational UI Components",
+      "description": "Clerk’s UI components bring ready-to-use simplicity to complex organizational management tasks."
+    },
+    {
+      "name": "Integrations and APIs",
+      "description": "Connecting systems and services with a focus on performance, security, and data consistency."
+    },
+    {
+      "name": "Security and Authentication",
+      "description": "Implementation of secure flows using JWT, OAuth, and modern data protection practices."
+    },
+    {
+      "name": "User Interface",
+      "description": "Dynamic interfaces that delight users."
+    }
+  ],
+  "about_title": "Development Philosophy and Technical Approach",
+  "about_paragraph_1": "I believe that well-structured and testable code is the foundation for scalable and long-lasting products. My work combines strong technical knowledge with attention to details that make the user experience smoother and more reliable.",
+  "about_paragraph_2": "I work with a modern web development ecosystem that integrates React 19, TypeScript, and Vite to build secure and robust applications. I follow agile practices and continuous integration to ensure consistent, high-quality deliveries.",
+  "about_paragraph_3": "I have experience in building and evolving complex systems, contributing to technical decisions, tool selection, and architectural design. I constantly explore new technologies that drive innovation and continuous improvement in development processes.",
   "about_github": "Explore GitHub",
   "about_resume": "Download Resume",
-  "about_image": "Professional profile picture",
-  "experience_badge": "Experience",
+  "about_image": "Professional profile image",
   "experience_title": "Professional Journey",
-  "experience_subtitle": "A timeline of my professional growth and key technologies.",
+  "experience_subtitle": "A timeline of my professional growth and the technologies used.",
   "experience_items": [
     {
       "title": "Frontend Developer",
       "company": "Hublab",
       "period": "Oct 2019 - Feb 2023",
-      "description": "Frontend development of a chatbot ecosystem, including a modern interface and dynamic admin panel. The solution allowed the operations team to manage conversation flows autonomously, significantly reducing time-to-market.",
+      "description": "Development of a chatbot ecosystem, including a modern interface and dynamic admin panel. The solution enabled the operations team to manage conversation flows autonomously, significantly reducing time-to-market.",
       "technologies": [
         "Angular",
         "MirageJS",
@@ -42,7 +60,7 @@
       "title": "Frontend Developer",
       "company": "Olivas Digital",
       "period": "Mar 2021 - Jan 2022",
-      "description": "Development of high-fidelity responsive interfaces and performance optimization through lazy loading, code refactoring, and technical SEO. The improvements boosted Core Web Vitals metrics and enhanced overall product performance.",
+      "description": "Development of high-fidelity responsive interfaces and performance optimization through lazy loading, code refactoring, and technical SEO. Improvements boosted Core Web Vitals metrics and enhanced overall product performance.",
       "technologies": [
         "Framer Motion",
         "jQuery",
@@ -56,7 +74,7 @@
       "title": "Frontend Developer",
       "company": "Trinto | Digital Partners",
       "period": "Nov 2020 - Mar 2021",
-      "description": "Implementation of XSS and CSRF vulnerability defenses, strengthening application security and optimizing caching strategies for greater stability and speed in production.",
+      "description": "Implementation of defenses against XSS and CSRF vulnerabilities, strengthening application security and optimizing cache strategies for greater stability and speed in production.",
       "technologies": [
         "Linx Commerce",
         "React",
@@ -70,7 +88,7 @@
       "title": "Frontend Developer",
       "company": "2morrow Sports",
       "period": "Jan 2020 - Oct 2020",
-      "description": "Architecture and development of key user-facing features, including login, profile management, and financial history. The improvements increased personalization and transparency of information for platform members.",
+      "description": "Development of key user features including login, profile management, and financial history. Enhancements increased personalization and transparency for platform members.",
       "technologies": [
         "Axios",
         "Bootstrap",
@@ -85,9 +103,10 @@
       "title": "Frontend Developer",
       "company": "Velani Contabilidade",
       "period": "Jun 2019 - Sep 2019",
-      "description": "Architecture and development of an intuitive interface for a financial system, turning complex data into clear and actionable visualizations. Responsible for integrating external APIs and enhancing user experience.",
+      "description": "Development of intuitive interfaces for the financial system, turning complex data into clear and actionable visualizations. Responsible for integrating external APIs and enhancing user experience.",
       "technologies": [
         "Bootstrap",
+        "Chart.js",
         "HTML5",
         "CSS3",
         "JavaScript",
@@ -96,17 +115,16 @@
       ]
     }
   ],
-  "project_badge": "Projects",
-  "project_title": "Latest Projects",
-  "project_subtitle": "I have worked on several projects, from simple websites to complex web applications. Here are some of my favorites.",
-  "project_demo": "Live Demo",
-  "project_code": "View Code",
+  "project_title": "Use Cases",
+  "project_subtitle": "I have worked on various projects, from simple websites to complex web applications.",
+  "project_demo": "View Project",
+  "project_code": "Explore Code",
   "project_image": "Project screenshot",
   "project_items": [
     {
       "title": "E-commerce Platform",
-      "description": "A complete e-commerce platform with real-time inventory management, payment processing, and an admin dashboard.",
-      "image": "/images/screenshot.png",
+      "description": "A complete e-commerce platform featuring real-time inventory management, payment processing, and an admin dashboard.",
+      "image": "/images/screenshot_01.png",
       "technologies": [
         "Next.js",
         "TypeScript",
@@ -117,39 +135,19 @@
       "githubUrl": "https://github.com/igornicoletti"
     },
     {
-      "title": "AI Task Manager",
-      "description": "An intelligent task management app that uses AI to categorize, prioritize, and suggest optimal task scheduling.",
-      "image": "/images/screenshot.png",
+      "title": "E-commerce Platform",
+      "description": "A complete e-commerce platform featuring real-time inventory management, payment processing, and an admin dashboard.",
+      "image": "/images/screenshot_02.png",
       "technologies": [
-        "React",
-        "Python",
-        "FastAPI",
-        "MongoDB"
+        "Next.js",
+        "TypeScript",
+        "Stripe",
+        "Prisma"
       ],
       "liveUrl": "https://github.com/igornicoletti",
       "githubUrl": "https://github.com/igornicoletti"
     }
   ],
-  "skills_section_title": "Habilidades e Stack",
-  "skills_subtitle": "Tecnologias e práticas que aplico para criar produtos digitais de alta qualidade.",
-  "skills_items": [
-    {
-      "name": "Boas práticas de código",
-      "description": "Desenvolvimento orientado a padrões limpos, modulares e fáceis de manter ao longo do ciclo de vida do produto."
-    },
-    {
-      "name": "Integrações e APIs",
-      "description": "Conexão entre sistemas e serviços com foco em desempenho, segurança e consistência de dados."
-    },
-    {
-      "name": "Segurança e autenticação",
-      "description": "Implementação de fluxos seguros com JWT, OAuth e práticas modernas de proteção de dados."
-    },
-    {
-      "name": "Desempenho e escalabilidade",
-      "description": "Foco em eficiência e estabilidade, garantindo aplicações rápidas e preparadas para crescer."
-    }
-  ],
-  "footer_copyright": "2Ti © {{year}} All Rights Reserved.",
-  "footer_contact": "Get In Touch"
+  "footer_contact": "Get in touch",
+  "footer_copyright": "2Ti © {{year}} All rights reserved."
 }
