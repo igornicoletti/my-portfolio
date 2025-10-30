@@ -12,7 +12,7 @@ import { ScrollProgress } from '@/components/ui/scroll-progress'
 export const App = () => (
   <div className='relative min-h-screen'>
     <div className='absolute inset-0 h-full w-full z-0'>
-      <Particles ease={80} refresh className="h-full w-full" />
+      <Particles quantity={80} ease={80} refresh className="h-full w-full" />
     </div>
     <div className='relative z-10'>
       <ScrollProgress />
