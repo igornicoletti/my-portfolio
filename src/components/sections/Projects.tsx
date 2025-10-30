@@ -1,14 +1,8 @@
 import { Badge } from '@/components/ui/badge'
 import { BlurFade } from '@/components/ui/blur-fade'
 import { Button } from '@/components/ui/button'
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card'
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
+import { HyperText } from '@/components/ui/hyper-text'
 import { MagicCard } from '@/components/ui/magic-card'
 import { ExternalLinkIcon, GitHubLogoIcon } from '@radix-ui/react-icons'
 import { useTranslation } from 'react-i18next'
@@ -37,9 +31,9 @@ export const Projects = () => {
       <div className='mx-auto max-w-screen-md px-4 py-20'>
         <div className='mb-12 flex flex-col items-center gap-4 text-center'>
           <BlurFade delay={BASE_DELAY + 0 * STAGGER_DELAY} inView>
-            <p className='text-sm text-primary font-semibold uppercase'>
+            <HyperText startOnView className='text-sm text-primary font-semibold uppercase'>
               {t('nav_projects')}
-            </p>
+            </HyperText>
           </BlurFade>
           <BlurFade delay={BASE_DELAY + 1 * STAGGER_DELAY} inView>
             <h2 className='text-3xl text-balance font-medium sm:text-4xl'>
