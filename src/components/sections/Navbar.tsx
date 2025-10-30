@@ -69,10 +69,10 @@ export const Navbar = () => {
     <header className='sticky top-0 z-50 h-16 p-4 border-b bg-background/80 backdrop-blur-sm'>
       <div className='container mx-auto'>
         <div className='flex items-center gap-2 lg:gap-6'>
-          <div className='flex items-center gap-2'>
+          <Button variant='none' onClick={() => handleLinkClick('#home')}>
             <SpiralIcon weight='fill' className='size-8' />
             <span className='text-xl font-bold'>2Ti</span>
-          </div>
+          </Button>
           <div className='hidden lg:flex'>
             <NavigationMenu>
               <NavigationMenuList>

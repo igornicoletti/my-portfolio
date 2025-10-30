@@ -15,8 +15,8 @@ export const App = () => (
       <Particles quantity={80} ease={80} refresh className="h-full w-full" />
     </div>
     <div className='relative z-10'>
-      <ScrollProgress />
       <Navbar />
+      <ScrollProgress />
       <Hero />
       <Technology />
       <BentoDemo />
