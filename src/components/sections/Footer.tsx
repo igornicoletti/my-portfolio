@@ -21,7 +21,7 @@ export const Footer = () => {
             </InteractiveHoverButton>
           </BlurFade>
           <BlurFade delay={BASE_DELAY + 1 * STAGGER_DELAY} inView>
-            <HyperText className='text-sm text-muted-foreground font-semibold'>
+            <HyperText className='text-xs text-muted-foreground font-semibold'>
               {t('footer_copyright', { year: new Date().getFullYear() })}
             </HyperText>
           </BlurFade>
