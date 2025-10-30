@@ -9,8 +9,8 @@ export const Hero = () => {
 
   return (
     <section id='home' className='relative'>
-      <div className='mx-auto max-w-screen-md px-4 py-20 md:py-40'>
-        <div className='flex flex-col items-center gap-4 text-center'>
+      <div className='mx-auto max-w-screen-md px-4 py-20 md:pt-40'>
+        <div className='flex flex-col items-center gap-6 text-center'>
           <BlurFade delay={0.25 + 0 * 0.05} inView>
             <Badge className='relative py-1 text-accent-foreground bg-accent/50 overflow-hidden'>
               <LightningIcon weight='duotone' />

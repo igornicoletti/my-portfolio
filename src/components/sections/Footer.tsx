@@ -1,4 +1,5 @@
 import { BlurFade } from '@/components/ui/blur-fade'
+import { HyperText } from '@/components/ui/hyper-text'
 import { InteractiveHoverButton } from '@/components/ui/interactive-hover-button'
 import { useTranslation } from 'react-i18next'
 
@@ -20,9 +21,9 @@ export const Footer = () => {
             </InteractiveHoverButton>
           </BlurFade>
           <BlurFade delay={BASE_DELAY + 1 * STAGGER_DELAY} inView>
-            <p className='text-sm text-muted-foreground font-semibold'>
+            <HyperText className='text-sm text-muted-foreground font-semibold'>
               {t('footer_copyright', { year: new Date().getFullYear() })}
-            </p>
+            </HyperText>
           </BlurFade>
         </div>
       </div>

@@ -34,7 +34,7 @@ export const Projects = () => {
 
   return (
     <section id='projects' className='relative'>
-      <div className='mx-auto max-w-screen-lg px-4 py-20'>
+      <div className='mx-auto max-w-screen-md px-4 py-20'>
         <div className='mb-12 flex flex-col items-center gap-4 text-center'>
           <BlurFade delay={BASE_DELAY + 0 * STAGGER_DELAY} inView>
             <p className='text-sm text-primary font-semibold uppercase'>

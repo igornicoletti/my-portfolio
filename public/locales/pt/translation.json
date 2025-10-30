@@ -11,6 +11,7 @@
   "hero_badge": "Desenvolvedor Web Fullstack",
   "hero_title": "Experiências web modernas e eficientes",
   "hero_subtitle": "Especializado na criação de aplicações web de alto desempenho, contribuindo para o desenvolvimento de produtos robustos e escaláveis.",
+  "hero_cta": "Entre em contato",
   "skills_section_title": "Habilidades e Stack",
   "skills_subtitle": "Tecnologias e práticas que aplico para criar produtos digitais de alta qualidade.",
   "skills_items": [
@@ -115,7 +116,7 @@
       ]
     }
   ],
-  "project_title": "Casos de uso",
+  "project_title": "Estudos de caso",
   "project_subtitle": "Atuei em diversos projetos, desde sites simples até aplicativos web complexos.",
   "project_demo": "Ver projeto",
   "project_code": "Explorar código",
@@ -148,6 +149,6 @@
       "githubUrl": "https://github.com/igornicoletti"
     }
   ],
-  "footer_copyright": "2Ti © {{year}} Todos os direitos reservados.",
-  "footer_contact": "Entre em contato"
+  "footer_contact": "Entre em contato",
+  "footer_copyright": "2Ti © {{year}} Todos os direitos reservados."
 }

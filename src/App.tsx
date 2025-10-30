@@ -7,6 +7,7 @@ import { Projects } from '@/components/sections/Projects'
 import { Technology } from '@/components/sections/Technology'
 import { BentoDemo } from '@/components/shared/BentoDemo'
 import { Particles } from '@/components/ui/particles'
+import { ScrollProgress } from '@/components/ui/scroll-progress'
 
 export const App = () => (
   <div className='relative min-h-screen'>
@@ -14,6 +15,7 @@ export const App = () => (
       <Particles ease={80} refresh className="h-full w-full" />
     </div>
     <div className='relative z-10'>
+      <ScrollProgress />
       <Navbar />
       <Hero />
       <Technology />
