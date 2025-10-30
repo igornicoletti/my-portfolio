@@ -3,9 +3,7 @@ import { Experience } from '@/components/sections/Experience'
 import { Footer } from '@/components/sections/Footer'
 import { Hero } from '@/components/sections/Hero'
 import { Navbar } from '@/components/sections/Navbar'
-import { Projects } from '@/components/sections/Projects'
 import { Technology } from '@/components/sections/Technology'
-import { BentoDemo } from '@/components/shared/BentoDemo'
 import { Particles } from '@/components/ui/particles'
 import { ScrollProgress } from '@/components/ui/scroll-progress'
 
@@ -19,10 +17,10 @@ export const App = () => (
       <ScrollProgress />
       <Hero />
       <Technology />
-      <BentoDemo />
+      {/* <BentoDemo /> */}
       <About />
       <Experience />
-      <Projects />
+      {/* <Projects /> */}
       <Footer />
     </div>
   </div>

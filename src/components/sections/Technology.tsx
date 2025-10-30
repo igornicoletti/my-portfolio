@@ -47,7 +47,7 @@ export const Technology = () => (
     <ScrollVelocityContainer className='text-muted-foreground font-mono'>
       <ScrollVelocityRow baseVelocity={2} direction={1}>
         {techItemsSup.map((tech) => (
-          <div key={tech.name} className='flex items-center justify-center gap-2 px-6 py-4'>
+          <div key={tech.name} className='flex items-center justify-center gap-2 px-6 lg:px-12 py-2'>
             <img className='h-6 shrink-0' src={tech.icon} alt={tech.name} />
             <span>{tech.name}</span>
           </div>
@@ -55,7 +55,7 @@ export const Technology = () => (
       </ScrollVelocityRow>
       <ScrollVelocityRow baseVelocity={2} direction={-1}>
         {techItemsSub.map((tech) => (
-          <div key={tech.name} className='flex items-center justify-center gap-2 px-6 py-4'>
+          <div key={tech.name} className='flex items-center justify-center gap-2 px-6 lg:px-12 py-2'>
             <img className='h-6 shrink-0' src={tech.icon} alt={tech.name} />
             <span>{tech.name}</span>
           </div>
