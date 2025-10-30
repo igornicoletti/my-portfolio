@@ -1,3 +1,4 @@
+import { HyperText } from '@/components/ui/hyper-text'
 import { BlurFade } from '@/components/ui/blur-fade'
 import { Button } from '@/components/ui/button'
 import { DownloadIcon, GitHubLogoIcon } from '@radix-ui/react-icons'
@@ -21,9 +22,9 @@ export const About = () => {
           <div className='flex-1'>
             <div className='mb-12 flex flex-col gap-4'>
               <BlurFade delay={BASE_DELAY + 0 * STAGGER_DELAY} inView>
-                <p className='text-sm text-primary font-semibold uppercase'>
+                <HyperText startOnView className='text-sm text-primary font-semibold uppercase'>
                   {t('nav_about')}
-                </p>
+                </HyperText>
               </BlurFade>
               <BlurFade delay={BASE_DELAY + 2 * STAGGER_DELAY} inView>
                 <h2 className='text-3xl text-balance font-medium sm:text-4xl'>
